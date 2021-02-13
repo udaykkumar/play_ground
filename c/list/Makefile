@@ -19,7 +19,7 @@ STATICLIB=out/liblist.a
 TEST_EXE=out/list
 
 
-all: $(SHAREDLIB) $(STATICLIB) $(TEST_EXE)
+all: $(SHAREDLIB) $(STATICLIB) #$(TEST_EXE)
 
 $(STATICLIB): $(OBJ)
 	mkdir -p out

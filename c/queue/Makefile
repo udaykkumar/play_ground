@@ -19,7 +19,7 @@ STATICLIB=out/libqueue.a
 TEST_EXE=out/queue
 
 
-all: $(SHAREDLIB) $(STATICLIB) $(TEST_EXE)
+all: $(SHAREDLIB) $(STATICLIB) #$(TEST_EXE)
 
 $(STATICLIB): $(OBJ) 
 	mkdir -p out

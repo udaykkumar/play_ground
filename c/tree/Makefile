@@ -19,7 +19,7 @@ STATICLIB=out/libtree.a
 TEST_EXE=out/tree
 
 
-all: $(SHAREDLIB) $(STATICLIB) $(TEST_EXE)
+all: $(SHAREDLIB) $(STATICLIB) #$(TEST_EXE)
 
 $(STATICLIB): $(OBJ)
 	mkdir -p out

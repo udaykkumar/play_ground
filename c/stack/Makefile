@@ -19,7 +19,7 @@ STATICLIB=out/libstack.a
 TEST_EXE=out/stack
 
 
-all: $(SHAREDLIB) $(STATICLIB) $(TEST_EXE)
+all: $(SHAREDLIB) $(STATICLIB) #$(TEST_EXE)
 
 $(STATICLIB): $(OBJ) 
 	mkdir -p out

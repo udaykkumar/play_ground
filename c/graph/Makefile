@@ -19,7 +19,7 @@ STATICLIB=out/libgraph.a
 TEST_EXE=out/graph
 
 
-all: $(SHAREDLIB) $(STATICLIB) $(TEST_EXE)
+all: $(SHAREDLIB) $(STATICLIB) #$(TEST_EXE)
 
 $(STATICLIB): $(OBJ)
 	mkdir -p out
