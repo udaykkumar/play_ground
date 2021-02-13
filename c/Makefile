@@ -1,13 +1,13 @@
 all:
-	make -s -C stack
-	make -s -C queue
-	make -s -C list
-	make -s -C tree
-	make -s -C graph
+	make -C stack
+	make -C queue
+	make -C list
+	make -C tree
+	make -C graph
 
 clean:
-	make -s -C stack clean
-	make -s -C queue clean
-	make -s -C list clean
-	make -s -C tree clean
-	make -s -C graph clean
+	make -C stack clean
+	make -C queue clean
+	make -C list clean
+	make -C tree clean
+	make -C graph clean
