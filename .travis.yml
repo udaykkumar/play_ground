@@ -60,7 +60,7 @@ script:
 
   # Run your build commands next
   - ( cmake -G "Ninja" . && ninja )
-  - ( cd c && make && cd - )
+  - ( cd c ; make ; cd .. )
   
   
     #- sudo ./usdfs_test
