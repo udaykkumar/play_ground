@@ -11,8 +11,6 @@ include_directories(${CURSES_INCLUDE_DIR})
 
 
 #Boost and Family
-
-#set(BOOST_ROOT 		"deps/boost_1_68_0/"		)
 set(Boost_USE_STATIC_LIBS ON)
 find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 add_definitions(-DNCURSES_NOMACROS)
@@ -31,7 +29,7 @@ file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
 
 
 #Project Includes
-include_directories( "./src"  "deps/boost_1_68_0/")
+include_directories( "./src" )
 
 
 
