@@ -12,7 +12,7 @@ struct screens {
 BOOST_FIXTURE_TEST_SUITE( TEST_sudoku, screens )
 
 /* Disable this for now */
-BOOST_AUTO_TEST_CASE( Case_1, * utf::disabled())
+BOOST_AUTO_TEST_CASE( Case_1)//, * utf::disabled())
 {
 	std::vector<size_t> inputVector  = { 
     				   3, 0, 6, 5, 0, 8, 4, 0, 0 ,  
@@ -34,7 +34,7 @@ BOOST_AUTO_TEST_CASE( Case_1, * utf::disabled())
 
 
 
-BOOST_AUTO_TEST_CASE( Case_2, * utf::disabled())
+BOOST_AUTO_TEST_CASE( Case_2)//, * utf::disabled())
 {
 	
     ml::sudoku puzzle1;
@@ -43,7 +43,7 @@ BOOST_AUTO_TEST_CASE( Case_2, * utf::disabled())
 }
 
 
-BOOST_AUTO_TEST_CASE( Case_3, * utf::disabled())
+BOOST_AUTO_TEST_CASE( Case_3)//, * utf::disabled())
 {	
    std::vector<size_t> inputVector  = { 
     				   0,0,0,0,0,0,0,0,0,
@@ -64,7 +64,7 @@ BOOST_AUTO_TEST_CASE( Case_3, * utf::disabled())
 }
 
 
-BOOST_AUTO_TEST_CASE( Case_4, * utf::disabled())
+BOOST_AUTO_TEST_CASE( Case_4)//, * utf::disabled())
 {	
    std::vector<size_t> inputVector  = { 
     				   0,0,0,0,0,0,0,0,0,
