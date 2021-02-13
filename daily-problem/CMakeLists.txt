@@ -17,7 +17,7 @@ git_clone(
     GIT_BRANCH      master
     )
 
-add_subdirectory( ${googletest_SOURCE_DIR} )
+add_subdirectory( googletest )
 
 git_clone(
     PROJECT_NAME    benchmark
@@ -25,7 +25,7 @@ git_clone(
     GIT_BRANCH      master
     )
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
-add_subdirectory( ${benchmark_SOURCE_DIR} )
+add_subdirectory( benchmark )
 
 
 
