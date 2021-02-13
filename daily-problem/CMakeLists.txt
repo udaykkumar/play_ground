@@ -8,25 +8,6 @@ project (daily-problem)
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 
-include(cmake/GitUtils.cmake)
-
-#Benchmark Find and other stuff
-git_clone(
-    PROJECT_NAME    googletest
-    GIT_URL         https://github.com/google/googletest.git
-    GIT_BRANCH      master
-    )
-
-add_subdirectory( googletest )
-
-git_clone(
-    PROJECT_NAME    benchmark
-    GIT_URL         https://github.com/google/benchmark.git
-    GIT_BRANCH      master
-    )
-set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
-add_subdirectory( benchmark )
-
 
 
 #Boost and Family
