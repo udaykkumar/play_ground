@@ -1,6 +1,7 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8,9)
-
+project(stack)
+enable_testing()
 
 #Project Compiler Arguments
 SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
@@ -17,3 +18,4 @@ add_executable("stack-test" ${PROBLEM_SOURCES} ${TEST_SOURCES})
 target_link_libraries("stack-test" ${Boost_LIBRARIES})
 
 add_library("stack" STATIC ${PROBLEM_SOURCES})
+add_test( NAME stack-test COMMAND stack-test )
