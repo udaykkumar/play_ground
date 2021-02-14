@@ -71,7 +71,8 @@ after_success:
   # Uploading report to CodeCov
   - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 
-  - sudo ~/.local/bin/coveralls -r . -b .  --gcov-options '\-lp'
+  - sudo ~/.local/bin/coveralls -r . -b .  --gcov-options '\-lp' \
+     --exclude 'googletest' --exclude 'benchmark'
   #- coveralls  
 
   
