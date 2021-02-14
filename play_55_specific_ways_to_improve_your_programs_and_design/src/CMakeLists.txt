@@ -1,5 +1,7 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8,9)
+project( 55_specific_ways_to_improve_your_programs_and_design )
+enable_testing()
 
 file(GLOB APP_SOURCES *.cpp)
 foreach(testsourcefile ${APP_SOURCES})
