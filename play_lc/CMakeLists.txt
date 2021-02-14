@@ -2,6 +2,7 @@
 # Minimum CMake
 cmake_minimum_required (VERSION 2.8,9)
 project (lc)
+enable_testing()
 
 #Boost and Family
 set(Boost_USE_STATIC_LIBS ON)
@@ -33,3 +34,4 @@ add_executable("lc-bm" ${PROBLEM_SOURCES} ${BM_SOURCES})
 target_link_libraries("lc-bm" benchmark )
 
 
+add_test( NAME lc COMMAND lc )

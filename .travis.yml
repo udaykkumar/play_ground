@@ -57,8 +57,8 @@ script:
     #  cd libfuse/build &&  sudo meson .. && sudo ninja && sudo ninja install && cd - && sudo ldconfig )
 
   # Run your build commands next
-  - ( cmake -G "Ninja" . && ninja )
-  - ( cd play_c ; make ; cd .. )
+  #- ( cmake -G "Ninja" . && ninja && ninja test)
+  - ( cmake -G "Ninja" . && ninja && ctest --verbose)
   - ( cd play_ctci_6_e ; make ; cd .. )
   
   
@@ -71,8 +71,7 @@ after_success:
   # Uploading report to CodeCov
   - bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 
-  - sudo ~/.local/bin/coveralls -r . -b .  --gcov-options '\-lp' \
-    -e googletest -e benchmark
+  - sudo ~/.local/bin/coveralls -r . -b .  --gcov-options '\-lp' 
   #- coveralls  
 
   

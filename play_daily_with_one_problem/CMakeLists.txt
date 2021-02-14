@@ -2,7 +2,7 @@
 # Minimum CMake
 cmake_minimum_required (VERSION 2.8,9)
 project (daily-problem)
-
+enable_testing()
 
 #Curses
 find_package(Curses REQUIRED)
@@ -46,3 +46,4 @@ target_link_libraries("daily-problem-bm" benchmark )
 target_link_libraries("daily-problem-bm" ${CURSES_LIBRARIES})
 
 
+add_test(NAME daily-problem COMMAND daily-problem )
