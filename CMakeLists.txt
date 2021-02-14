@@ -23,15 +23,12 @@ git_clone(
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
 add_subdirectory( ${benchmark_SOURCE_DIR} )
 
-
-
-
-add_subdirectory( play_daily_with_one_problem )
-add_subdirectory( play_cpp )
-add_subdirectory( play_cphb )
-add_subdirectory( play_lc )
-add_subdirectory( play_c )
 add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
-
+add_subdirectory( play_c )
+add_subdirectory( play_cphb )
+add_subdirectory( play_cpp )
+#add_subdirectory( play_ctci_6_e )
+add_subdirectory( play_daily_with_one_problem )
+add_subdirectory( play_lc )
 
 
