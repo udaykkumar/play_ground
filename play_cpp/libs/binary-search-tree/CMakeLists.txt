@@ -1,5 +1,10 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8,9)
+project( binary-search-tree )
+enable_testing()
+
+set(PROJECT_COMPILER_FLAGS " -Wall -fprofile-arcs -ftest-coverage  -std=c++11 ")
+set(PROJECT_LINK_FLAGS "-lgcov --coverage")
 
 # Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*")
@@ -12,3 +17,4 @@ add_executable("binary-search-tree-test" ${PROBLEM_SOURCES}
 target_link_libraries("binary-search-tree-test" ${Boost_LIBRARIES})
 
 add_library("binary-search-tree" STATIC ${PROBLEM_SOURCES})
+add_test( NAME binary-search-tree-test COMMAND binary-search-tree-test)

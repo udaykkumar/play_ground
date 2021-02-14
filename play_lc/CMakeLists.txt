@@ -10,8 +10,8 @@ find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 
 
 #Project Compiler Arguments
-#SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-#SET(PROJECT_LINK_FLAGS    "-lgcov")
+SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+SET(PROJECT_LINK_FLAGS    "-lgcov")
 
 #Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.cpp")
@@ -19,7 +19,7 @@ file(GLOB TEST_SOURCES "tests/*.cpp")
 file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
 
 #Project Includes
-include_directories( "./src"  "benchmark/include/")
+include_directories( "./src" )
 
 
 

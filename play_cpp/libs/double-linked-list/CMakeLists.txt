@@ -1,5 +1,11 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8,9)
+project( double-linked-list )
+enable_testing()
+
+
+set(PROJECT_COMPILER_FLAGS " -Wall -fprofile-arcs -ftest-coverage  -std=c++11 ")
+set(PROJECT_LINK_FLAGS "-lgcov --coverage")
 
 # Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.cpp")
@@ -11,3 +17,4 @@ add_executable("double-linked-list-test" ${PROBLEM_SOURCES} ${TEST_SOURCES})
 target_link_libraries("double-linked-list-test" ${Boost_LIBRARIES})
 
 add_library("double-linked-list" STATIC ${PROBLEM_SOURCES})
+add_test( NAME double-linked-list-test COMMAND double-linked-list-test)
