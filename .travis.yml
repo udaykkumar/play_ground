@@ -58,7 +58,6 @@ script:
 
   # Run your build commands next
   - ( cmake -G "Ninja" . && ninja test)
-  - ( cd play_c ; make ; cd .. )
   - ( cd play_ctci_6_e ; make ; cd .. )
   
   
