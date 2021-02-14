@@ -46,4 +46,4 @@ target_link_libraries("daily-problem-bm" benchmark )
 target_link_libraries("daily-problem-bm" ${CURSES_LIBRARIES})
 
 
-add_test(NAME daily-problem COMMAND daily-problem )
+add_test(NAME daily-problem COMMAND daily-problem --verbose )
