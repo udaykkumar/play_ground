@@ -3,6 +3,13 @@ cmake_minimum_required(VERSION 2.8,9)
 project(list)
 enable_testing()
 
+
+#Project Compiler Arguments
+SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+SET(PROJECT_LINK_FLAGS    "-lgcov")
+
+
+
 # Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.c")
 file(GLOB TEST_SOURCES "test/*.c")
