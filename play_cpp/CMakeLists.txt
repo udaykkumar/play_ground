@@ -10,12 +10,10 @@ find_package(
   COMPONENTS unit_test_framework
   REQUIRED)
 
-#This one for my Mac setup
-set(CMAKE_CXX_STANDARD 17)
 
-# Project Compiler Arguments
-set(PROJECT_COMPILER_FLAGS " -Wall -fprofile-arcs -ftest-coverage  -std=c++11 ")
-set(PROJECT_LINK_FLAGS "-lgcov --coverage")
+#Project Compiler Arguments
+SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+SET(PROJECT_LINK_FLAGS    "-lgcov")
 
 add_subdirectory(boring)
 add_subdirectory(learncpp)
