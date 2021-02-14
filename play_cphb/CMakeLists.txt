@@ -16,7 +16,7 @@ find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 
 #Project Compiler Arguments
 # -std=c++2a is for clang .. and this obviously needs tuning
-SET(PROJECT_COMPILER_FLAGS "-std=c++2a ")
+# SET(PROJECT_COMPILER_FLAGS "-std=c++2a ")
 #SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage -std=c++2a ")
 #SET(PROJECT_LINK_FLAGS    "-lgcov")
 
