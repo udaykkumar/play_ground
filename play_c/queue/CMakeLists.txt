@@ -3,11 +3,13 @@ cmake_minimum_required(VERSION 2.8,9)
 project(queue)
 enable_testing()
 
-#Project Compiler Arguments
-SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-SET(PROJECT_LINK_FLAGS    "-lgcov")
 
+#This one for my Mac setup
+set(CMAKE_CXX_STANDARD 17)
 
+# Project Compiler Arguments
+set(PROJECT_COMPILER_FLAGS " -Wall -fprofile-arcs -ftest-coverage  -std=c++11 ")
+set(PROJECT_LINK_FLAGS "-lgcov --coverage")
 
 # Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.c")
