@@ -26,7 +26,7 @@ file(GLOB TEST_SOURCES "tests/*.cpp")
 file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
 
 #Project Includes
-include_directories( "./src"  "benchmark/include/" "./tests")
+include_directories( "./src"  "./tests")
 
 
 
