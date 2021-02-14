@@ -57,8 +57,8 @@ script:
     #  cd libfuse/build &&  sudo meson .. && sudo ninja && sudo ninja install && cd - && sudo ldconfig )
 
   # Run your build commands next
-  #- ( cmake -G "Ninja" . && ninja && ninja test)
-  - ( cmake -G "Ninja" . && ninja && ctest --verbose)
+  - ( cmake -G "Ninja" . && ninja && ninja test)
+  #- ( cmake -G "Ninja" . && ninja && ctest --verbose)
   - ( cd play_ctci_6_e ; make ; cd .. )
   
   
