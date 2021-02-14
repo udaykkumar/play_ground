@@ -25,9 +25,9 @@ add_subdirectory( ${benchmark_SOURCE_DIR} )
 
 
 
-add_subdirectory( daily-problem )
-add_subdirectory( cpp )
-add_subdirectory( cphb )
-add_subdirectory( lc )
+add_subdirectory( play_daily_with_one_problem )
+add_subdirectory( play_cpp )
+add_subdirectory( play_cphb )
+add_subdirectory( play_lc )
 
 

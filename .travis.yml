@@ -58,8 +58,8 @@ script:
 
   # Run your build commands next
   - ( cmake -G "Ninja" . && ninja )
-  - ( cd c ; make ; cd .. )
-  - ( cd ctci6e ; make ; cd .. )
+  - ( cd play_c ; make ; cd .. )
+  - ( cd play_ctci_6_e ; make ; cd .. )
   
   
     #- sudo ./usdfs_test
