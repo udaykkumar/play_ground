@@ -1,6 +1,6 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8,9)
-project(CPP)
+project(cpp)
 
 # Boost and Family
 set(Boost_USE_STATIC_LIBS ON)
