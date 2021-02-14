@@ -30,5 +30,8 @@ add_subdirectory( play_daily_with_one_problem )
 add_subdirectory( play_cpp )
 add_subdirectory( play_cphb )
 add_subdirectory( play_lc )
+add_subdirectory( play_c )
+add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
+
 
 
