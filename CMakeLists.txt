@@ -25,5 +25,7 @@ add_subdirectory( ${benchmark_SOURCE_DIR} )
 
 
 add_subdirectory( daily-problem )
+add_subdirectory( CPP )
+add_subdirectory( cpbh )
 
 
