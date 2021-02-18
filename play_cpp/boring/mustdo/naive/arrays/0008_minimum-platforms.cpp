@@ -75,7 +75,7 @@ void exec_test(int index)
 		departures.push_back( to_minutes(time) );
 	}
 
-	std::cout << " " << minimum_platforms( arrivals, departures ) << std::endl;
+	//std::cout << " " << minimum_platforms( arrivals, departures ) << std::endl;
 }
 
 int main( int ac, char **av )
