@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <vector>
-std::vector< std::vector< std::string> > numTwoWrods = { "Nope", "one", "two", "three", "four", "five",
+std::vector< std::string > numTwoWrods = { "Nope", "one", "two", "three", "four", "five",
                         "six", "seven", "eight", "nine", "ten" };
 
 static void pronounce( int x )
