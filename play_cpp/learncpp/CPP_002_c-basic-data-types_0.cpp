@@ -20,7 +20,7 @@ static bool isFloat( std::string s )
     return (s.size() - s.find(".")) < 7;
 }
 
-int main()
+int main(int ac, char **av)
 {
     int T{0};
         std::cin >> T;
