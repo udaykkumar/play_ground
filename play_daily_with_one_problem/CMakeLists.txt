@@ -39,7 +39,7 @@ SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
 #add_executable("daily-problem" ${PROBLEM_SOURCES} ${TEST_SOURCES})
 add_executable("daily-problem" "tests/suite-runner.cpp" 
-								src/01_08_2019.cpp" "tests/TEST_01_08_2019.cpp")
+								"src/01_08_2019.cpp" "tests/TEST_01_08_2019.cpp")
 target_link_libraries("daily-problem" ${Boost_LIBRARIES} )
 target_link_libraries("daily-problem" ${CURSES_LIBRARIES})
 
