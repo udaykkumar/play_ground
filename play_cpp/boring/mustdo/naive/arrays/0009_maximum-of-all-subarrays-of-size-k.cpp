@@ -46,7 +46,7 @@ void exec_test(int index)
 
 int main( int ac, char **av )
 {
-	std::cout << "Skipping  " << ac[0] << "\n";
+	std::cout << "Skipping  " << av[0] << "\n";
 	return 0;
 	int t;
 		std::cin >> t;
