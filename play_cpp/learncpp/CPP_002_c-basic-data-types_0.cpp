@@ -22,7 +22,7 @@ static bool isFloat( std::string s )
 
 int main(int ac, char **av)
 {
-    int T{0};
+    int T;
         std::cin >> T;
         for( ; T > 0 ; T --)
         {
