@@ -2,7 +2,15 @@
 # Minimum CMake
 cmake_minimum_required (VERSION 2.8,9)
 project(play_ground)
+set(CMAKE_PROJECT_VERSION 		"0")
+set(CMAKE_PROJECT_VERSION_MAJOR "0")
+set(CMAKE_PROJECT_VERSION_MINOR "0")
+set(CMAKE_PROJECT_VERSION_PATCH "0")
 enable_testing()
+
+if(APPLE)
+    message("-- Detected Apple/MacOS for ${project}")
+endif()
 
 include(cmake/GitUtils.cmake)
 

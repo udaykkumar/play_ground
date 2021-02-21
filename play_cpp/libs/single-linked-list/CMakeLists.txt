@@ -4,8 +4,12 @@ project("single-linked-list")
 enable_testing()
 
 #Project Compiler Arguments
-SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-SET(PROJECT_LINK_FLAGS    "-lgcov")
+ if(APPLE)
+    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
+ else()
+    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+    SET(PROJECT_LINK_FLAGS    "-lgcov")
+ endif()
 
 
 # Project SourceFiles

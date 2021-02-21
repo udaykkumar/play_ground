@@ -12,8 +12,12 @@ find_package(
 
 
 #Project Compiler Arguments
-SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-SET(PROJECT_LINK_FLAGS    "-lgcov")
+ if(APPLE)
+    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
+ else()
+    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+    SET(PROJECT_LINK_FLAGS    "-lgcov")
+ endif()
 
 add_subdirectory(boring)
 add_subdirectory(learncpp)

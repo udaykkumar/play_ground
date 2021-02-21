@@ -1,10 +1,7 @@
 
 # Minimum CMake
 cmake_minimum_required (VERSION 2.8,9)
-set(CMAKE_PROJECT_VERSION 		"0")
-set(CMAKE_PROJECT_VERSION_MAJOR "0")
-set(CMAKE_PROJECT_VERSION_MINOR "0")
-set(CMAKE_PROJECT_VERSION_PATCH "0")
+
 
 project (cphb)
 enable_testing()
@@ -15,10 +12,13 @@ find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 
 
 #Project Compiler Arguments
-SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-SET(PROJECT_LINK_FLAGS    "-lgcov")
-
-
+if(APPLE)
+    message( "Skipping coverage on Apple/MacOS ")
+else()
+	SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+	SET(PROJECT_LINK_FLAGS    "-lgcov")
+endif()
+add_compile_options( -std=c++11 )
 
 #Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.cpp")

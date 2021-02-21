@@ -10,9 +10,14 @@ find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 
 
 #Project Compiler Arguments
-SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-SET(PROJECT_LINK_FLAGS    "-lgcov")
+if(APPLE)
+    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
+else()
+    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+    SET(PROJECT_LINK_FLAGS    "-lgcov")
+endif()
 
+add_compile_options( -std=c++17 )
 #Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.cpp")
 file(GLOB TEST_SOURCES "tests/*.cpp")
