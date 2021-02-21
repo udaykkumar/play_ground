@@ -3,15 +3,27 @@ cmake_minimum_required(VERSION 2.8,9)
 project( 55_specific_ways_to_improve_your_programs_and_design )
 enable_testing()
 
-file(GLOB APP_SOURCES *.cpp)
+# Minimum CMake
+cmake_minimum_required(VERSION 2.8,9)
+project(learncpp)
+enable_testing()
+
+#Project Compiler Arguments
+SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
+SET(PROJECT_LINK_FLAGS    "-lgcov")
+
+
+file(GLOB APP_SOURCES *.c**)
 foreach(testsourcefile ${APP_SOURCES})
   get_filename_component(testname ${testsourcefile} NAME_WE)
+  get_filename_component(baseDir ${testsourcefile} DIRECTORY)
+  message( ${testname} )
+  set( TEST_IN  ${baseDir}/${testname}.in)
+  message( ${TEST_IN} )
   add_executable(${testname} ${testsourcefile})
-endforeach(testsourcefile ${APP_SOURCES})
-
-
-file(GLOB APP_SOURCES *.cpp)
-foreach(testsourcefile ${APP_SOURCES})
-  get_filename_component(testname ${testsourcefile} NAME_WE)
-  add_test(NAME ${testname} COMMAND ${testname})
+  if ( EXISTS ${TEST_IN})
+  	add_test( NAME ${testname} COMMAND "${testname} < ${TEST_IN}" )
+  else()
+  	add_test( NAME ${testname} COMMAND "${testname}" )
+  endif()
 endforeach(testsourcefile ${APP_SOURCES})
