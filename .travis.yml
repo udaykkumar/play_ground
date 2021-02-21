@@ -58,8 +58,8 @@ script:
 
   # Run your build commands next
   - ( cmake -G "Ninja" . && ninja && ninja test)
-  #- ( cmake -G "Ninja" . && ninja && ctest --verbose)
-  #- ( cmake -DCMAKE_VERBOSE_MAKEFILE=1 . && make VERBOSE=1 && make test VERBOSE=1)
+    #- ( cmake -G "Ninja" . && ninja && ctest --verbose)
+    #- ( cmake -DCMAKE_VERBOSE_MAKEFILE=1 . && make VERBOSE=1 && make test VERBOSE=1)
   - ( cd play_ctci_6_e ; make ; cd .. )
   
   
