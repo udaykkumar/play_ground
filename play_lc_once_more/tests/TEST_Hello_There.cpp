@@ -7,7 +7,7 @@ BOOST_AUTO_TEST_SUITE( TEST_Hello_There )
 
 BOOST_AUTO_TEST_CASE( Case_1 )
 {
-
+	BOOST_CHECK( lc::say_hello() == "hello" );
 }
 BOOST_AUTO_TEST_SUITE_END()
 

@@ -2,6 +2,9 @@
 
 namespace lc
 {
-
+	std::string say_hello(void)
+	{
+		return "hello";
+	}
 }
 
