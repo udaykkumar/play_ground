@@ -2,10 +2,6 @@
 cmake_minimum_required (VERSION 2.8,9)
 project(naive)
 enable_testing()
-# Minimum CMake
-cmake_minimum_required(VERSION 2.8,9)
-project(learncpp)
-enable_testing()
 
 #Project Compiler Arguments
  if(APPLE)
@@ -27,6 +23,6 @@ foreach(testsourcefile ${APP_SOURCES})
   if ( EXISTS ${TEST_IN})
   	add_test( NAME ${testname} COMMAND "${testname} < ${TEST_IN}" )
   else()
-  	add_test( NAME ${testname} COMMAND "${testname}" )
+  	add_test( NAME ${testname} COMMAND ${testname} )
   endif()
 endforeach(testsourcefile ${APP_SOURCES})

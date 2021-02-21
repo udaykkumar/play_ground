@@ -10,6 +10,10 @@ Given an array arr of N integers. Find the contiguous sub-array with maximum sum
 #include <vector>
 //#include<bits/stdc++.h> 
 
+#ifndef INT_MIN
+#define INT_MIN -123456
+#endif 
+
 int  subarray_with_max_sum( std::vector<int>& array )
 {
 	int max_ending_here = 0;
