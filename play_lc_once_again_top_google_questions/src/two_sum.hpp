@@ -39,7 +39,7 @@ Only one valid answer exists.
 namespace lc 
 {
 
-	std::vector<int> twoSum(vector<int>& nums, int target);
+	std::vector<int> twoSum(std::vector<int>& nums, int target);
 
 }
 
