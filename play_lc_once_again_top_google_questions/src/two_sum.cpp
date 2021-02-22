@@ -1,8 +1,8 @@
 #include <two_sum.hpp>
-
+#include <unordered_map>
 namespace lc
 {
-	std::vector<int> twoSum(vector<int> &nums, int target)
+	std::vector<int> twoSum(std::vector<int> &nums, int target)
 	{
 	    std::unordered_map< int, int > map;
 	    int i = 0;
