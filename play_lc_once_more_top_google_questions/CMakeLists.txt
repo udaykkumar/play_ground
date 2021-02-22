@@ -1,7 +1,7 @@
 
 # Minimum CMake
 cmake_minimum_required (VERSION 2.8,9)
-project (play_lc_once_again)
+project (play_lc_once_again_top_google_questions)
 enable_testing()
 
 #Boost and Family
@@ -32,11 +32,11 @@ SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS}")
 SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
 
-add_executable("play_lc_once_again" ${PROBLEM_SOURCES} ${TEST_SOURCES})
-target_link_libraries("play_lc_once_again" ${Boost_LIBRARIES} )
+add_executable("play_lc_once_again_top_google_questions" ${PROBLEM_SOURCES} ${TEST_SOURCES})
+target_link_libraries("play_lc_once_again_top_google_questions" ${Boost_LIBRARIES} )
 
-add_executable("play_lc_once_again-bm" ${PROBLEM_SOURCES} ${BM_SOURCES})
-target_link_libraries("play_lc_once_again-bm" benchmark )
+add_executable("play_lc_once_again_top_google_questions-bm" ${PROBLEM_SOURCES} ${BM_SOURCES})
+target_link_libraries("play_lc_once_again_top_google_questions-bm" benchmark )
 
 
-add_test( NAME play_lc_once_again COMMAND play_lc_once_again )
+add_test( NAME play_lc_once_again_top_google_questions COMMAND play_lc_once_again_top_google_questions )
