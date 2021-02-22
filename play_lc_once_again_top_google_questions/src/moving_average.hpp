@@ -1,7 +1,7 @@
 #ifndef __moving_average_HPP_INCLUDED__
 #define __moving_average_HPP_INCLUDED__
 #include <iostream>
-#include <vector>
+#include <list>
 
 /**
 	https://leetcode.com/problems/moving-average-from-data-stream/
@@ -45,7 +45,7 @@ namespace lc
 		moving_average(int sz);
 		~moving_average();
 
-		double next();
+		double next(int v);
 
 	private:
 		std::list< int >  window_;
