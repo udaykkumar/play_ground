@@ -4,6 +4,7 @@
 #include <numeric>
 #include <random>
 #include <algorithm>
+#include <iterator>
 
 void show_vector( const std::string &label,
 		const std::vector<int> &iv );
