@@ -43,7 +43,7 @@ namespace lc
 	{
 		
 		moving_average(int sz);
-		~moving_average();
+		~moving_average(){}
 
 		double next(int v);
 
