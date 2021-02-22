@@ -1,17 +1,22 @@
 #ifndef __logger_rate_limiter_HPP_INCLUDED__
 #define __logger_rate_limiter_HPP_INCLUDED__
-#include<iostream>
+#include <iostream>
+#include <unordered_map>
 /*
 
-Design a logger system that receives a stream of messages along with their timestamps. Each unique message should only be printed at most every 10 seconds (i.e. a message printed at timestamp t will prevent other identical messages from being printed until timestamp t + 10).
+Design a logger system that receives a stream of messages along with their timestamps.
+Each unique message should only be printed at most every 10 seconds
+(i.e. a message printed at timestamp t will prevent other identical messages from being printed
+until timestamp t + 10).
 
 All messages will come in chronological order. Several messages may arrive at the same timestamp.
 
 Implement the Logger class:
 
 Logger() Initializes the logger object.
-bool shouldPrintMessage(int timestamp, string message) Returns true if the message should be printed in the given timestamp, otherwise returns false.
- 
+bool shouldPrintMessage(int timestamp, string message)
+Returns true if the message should be printed in the given timestamp, otherwise returns false.
+
 
 Example 1:
 
@@ -30,7 +35,7 @@ logger.shouldPrintMessage(8, "bar");  // 8 < 12, return false
 logger.shouldPrintMessage(10, "foo"); // 10 < 11, return false
 logger.shouldPrintMessage(11, "foo"); // 11 >= 11, return true, next allowed timestamp for "foo" is
                                       // 11 + 10 = 21
- 
+
 
 Constraints:
 
@@ -40,20 +45,43 @@ Every timestamp will be passed in non-decreasing order (chronological order).
 At most 104 calls will be made to shouldPrintMessage.
 
 */
-namespace lc 
+namespace lc
 {
-	struct Logger {
+    struct logger_rate_limiter
+    {
+        /** Initialize your data structure here. */
+        logger_rate_limiter()
+        {
 
-    /** Initialize your data structure here. */
-    Logger() {
-        
-    }
-    
-    /** Returns true if the message should be printed in the given timestamp, otherwise returns false.
-        If this method returns false, the message will not be printed.
-        The timestamp is in seconds granularity. */
-    bool shouldPrintMessage(int timestamp, std::string message);
-};
+        }
+
+        /** Returns true if the message should be printed in the given timestamp, otherwise returns false.
+            If this method returns false, the message will not be printed.
+            The timestamp is in seconds granularity. */
+        bool shouldPrintMessage(int timestamp, std::string message);
+
+
+    private:
+    	std::unordered_map< std::string, int > stamperlookup;
+
+    	int allowed_time(std::string m)
+    	{
+    		auto kvp = stamperlookup.find(m);
+    		if ( kvp != stamperlookup.end()) 
+    			return kvp->second;
+    		return -1;
+    	}
+
+    	void update_allowed_time( std::string m, int ts )
+    	{
+    		auto kvp = stamperlookup.find(m);
+            if ( kvp != stamperlookup.end() )
+    		    stamperlookup[m] = ts + 10;
+            else
+                stamperlookup.insert(std::pair<std::string, int>(m, ts+10));
+    	}
+
+    };
 }
 
 #endif
