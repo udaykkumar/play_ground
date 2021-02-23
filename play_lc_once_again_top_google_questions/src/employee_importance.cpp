@@ -2,13 +2,7 @@
 #include <unordered_map>
 namespace lc
 {
-	typedef int type_employee_id_t;
-	typedef int type_importance_t;
-	typedef std::vector<type_importance_t> type_subordinates_list_t;
-	typedef std::pair<type_importance_t, type_subordinates_list_t> type_employee_map_value_t;
-    typedef std::pair<type_employee_id_t, type_employee_map_value_t> type_employee_map_key_value_t;
-	typedef std::unordered_map< type_employee_id_t, type_employee_map_value_t > type_employee_map_t;
-
+	
 		
 	int getImportance(std::vector<Employee *> employees, int id)
 	{
