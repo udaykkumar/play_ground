@@ -2,7 +2,7 @@
 #define __employee_importance_HPP_INCLUDED__
 
 #include <vector>
-
+#include <unordered_map>
 /*
 	https://leetcode.com/problems/employee-importance/
 
