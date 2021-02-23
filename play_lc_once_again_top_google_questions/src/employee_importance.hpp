@@ -47,7 +47,6 @@ namespace lc
     class Employee
     {
     public:
-    
     	Employee(int id_, int importance_, std::vector<int> v_ )
     	{
     		id = id_;
