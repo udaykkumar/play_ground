@@ -4,7 +4,8 @@ namespace lc
 {
 	std::vector< std::vector<int> > merge( std::vector< std::vector<int> >& intervals)
 	{
-		if ( intervals.size() == 0 or  intervals.size() == 1 )
+		std::sort( intervals.begin(), intervals.end() );
+        if ( intervals.size() == 0 or  intervals.size() == 1 )
 			return intervals;
 
 		std::vector< std::vector<int> > res;
@@ -13,12 +14,13 @@ namespace lc
 		for ( int i = 1 ; i < intervals.size() ; ++i )
 		{
 			int s = intervals[i][0];
+			int e = intervals[i][1];
 			if ( end < s )
 			{
 				res.push_back({start,end});
 				start = s;
 			}	
-			end = intervals[i][1];
+			end = (end > e) ? end : e;
 		}
 		res.push_back({start,end});
 		return res;
