@@ -1,5 +1,5 @@
 #include <merge_intervals.hpp>
-
+#include <algorithm>
 namespace lc
 {
 	std::vector< std::vector<int> > merge( std::vector< std::vector<int> >& intervals)

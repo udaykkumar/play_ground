@@ -9,7 +9,7 @@ namespace lc
 
     int Solution::pickIndex()
     {
-
+    	return 0;
     }
 
 }
