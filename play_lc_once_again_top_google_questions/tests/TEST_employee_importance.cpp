@@ -12,7 +12,7 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 		employees.push_back(new lc::Employee( 2, 3, std::vector<int>(     )));
 		employees.push_back(new lc::Employee( 3, 3, std::vector<int>(     )));
 
-	std::cout << "res " << lc::getImportance(employees, 1);
+	BOOST_CHECK(lc::getImportance(employees, 1) == 11);
 
 }
 BOOST_AUTO_TEST_SUITE_END()
