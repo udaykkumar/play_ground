@@ -1,6 +1,6 @@
 #ifndef __random_pick_with_weight_HPP_INCLUDED__
 #define __random_pick_with_weight_HPP_INCLUDED__
-#include <random>
+
 #include <vector>
 /**
 	https://leetcode.com/problems/random-pick-with-weight/
@@ -68,9 +68,7 @@ namespace lc
 {
     class Solution
     {
-    	std::mt19937 gen; //Standard mersenne_twister_engine seeded with rd()
-    	std::uniform_int_distribution<int> distrib;
-    	
+    	std::vector<int> prefixSums;
     public:
         Solution(std::vector<int> &w);
         int pickIndex();
