@@ -1,6 +1,6 @@
 #ifndef __random_pick_with_weight_HPP_INCLUDED__
 #define __random_pick_with_weight_HPP_INCLUDED__
-
+#include <cstdlib>
 #include <vector>
 /**
 	https://leetcode.com/problems/random-pick-with-weight/
