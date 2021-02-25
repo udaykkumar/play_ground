@@ -7,7 +7,7 @@ BOOST_AUTO_TEST_SUITE( TEST_random_pick_with_weight )
 
 BOOST_AUTO_TEST_CASE( Case_1 )
 {
-	std::vector<int> v;
+	std::vector<int> v{1, 3, 4, 5, 24, 67};
 	lc::Solution s(v);
 	for (int i = 0; i < 20; ++i)
 	{
