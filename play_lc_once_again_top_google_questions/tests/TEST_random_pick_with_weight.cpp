@@ -9,7 +9,11 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 {
 	std::vector<int> v;
 	lc::Solution s(v);
-	std::cout << s.pickIndex() << "\n"
+	for (int i = 0; i < 20; ++i)
+	{
+		std::cout << s.pickIndex() << "\n";
+	}
+	
 
 }
 BOOST_AUTO_TEST_SUITE_END()
