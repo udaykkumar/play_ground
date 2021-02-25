@@ -2,7 +2,7 @@
 
 namespace lc
 {
-	int maxAreaOfIsland(vector<vector<int>>& grid)
+	int maxAreaOfIsland(std::vector<std::vector<int>>& grid)
 	{
 		return 0;
 	}

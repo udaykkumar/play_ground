@@ -27,7 +27,7 @@ Note: The length of each dimension in the given grid does not exceed 50.
 */
 namespace lc 
 {
-	int maxAreaOfIsland(vector<vector<int>>& grid);
+	int maxAreaOfIsland(std::vector<std::vector<int>>& grid);
 }
 
 #endif
