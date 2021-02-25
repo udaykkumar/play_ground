@@ -12,7 +12,7 @@ namespace lc
 
     int Solution::pickIndex()
     {
-    	return 0;
+    	return distrib(gen);
     }
 
 }
