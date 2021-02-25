@@ -13,6 +13,16 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 	{
 		std::cout << s.pickIndex() << "\n";
 	}
+}
+
+BOOST_AUTO_TEST_CASE( Case_2 )
+{
+	std::vector<int> v{1, 3};
+	lc::Solution s(v);
+	for (int i = 0; i < 20; ++i)
+	{
+		std::cout << s.pickIndex() << "\n";
+	}
 	
 
 }
