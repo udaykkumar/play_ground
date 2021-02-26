@@ -12,14 +12,13 @@ namespace lc
 
 	int dfs( std::vector< std::vector< int > > g, int i, int j)
 	{
-		if(not_in_limits(i,j))
+		if(not_in_limits(i,j) or g[i][j] == 0 )
 		{
-			std::cout << "Found to be not in limits " << i << " " << j << "\n";
+			std::cout << "Skip this [" << i << "," << j << "] => " << grid[i][j] << "\n";
 			return 0;
 		}
 
-		if( g[i][j] == 0 )
-			return 0;
+		g[i][j] = 0; // Key here is this one 
 
 		return 1 + dfs(g, i-1, j) + dfs(g, i+1, j) + dfs(g, i, j-1) + dfs( g, i, j+1 );
 	}
