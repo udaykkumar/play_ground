@@ -5,15 +5,18 @@ namespace lc
 	int row = 0;
 	int col = 0;
 
-	bool not_in_limits( int i, int j )
+	bool in_limits( int i, int j )
 	{
-		return ( i < 0 or i >= row or j < 0 or j >= col );
+		return ( i >= 0 and i < row ) and ( j >= 0 and j < col );
 	}
 
 	int dfs( std::vector< std::vector< int > > g, int i, int j)
 	{
-		if(not_in_limits(i,j))
+		if(not in_limits(i,j))
+		{
+			std::cout << "Found to be not in limits " << i << " " << j << "\n";
 			return 0;
+		}
 
 		if( g[i][j] == 0 )
 			return 0;
