@@ -14,7 +14,7 @@ namespace lc
 	{
 		if(not_in_limits(i,j) or g[i][j] == 0 )
 		{
-			std::cout << "Skip this [" << i << "," << j << "] => " << grid[i][j] << "\n";
+			std::cout << "Skip this [" << i << "," << j << "] => " << g[i][j] << "\n";
 			return 0;
 		}
 
