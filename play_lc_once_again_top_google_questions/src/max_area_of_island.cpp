@@ -26,8 +26,8 @@ namespace lc
 	
 	int maxAreaOfIsland(std::vector<std::vector<int>>& grid)
 	{
-		int row = grid.size();
-		int col = grid[0].size();
+		row = grid.size();
+		col = grid[0].size();
 		std::cout << " row " << row << " col " << col << "\n";
 		int ma = 0;
 		for ( int i = 0 ; i < grid.size() ; ++i ) {
