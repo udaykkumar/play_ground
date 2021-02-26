@@ -17,8 +17,9 @@ BOOST_AUTO_TEST_CASE( Case_1 )
         {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0}
     };
-    std::cout <<  lc::maxAreaOfIsland(v) << "\n";
-    BOOST_CHECK( lc::maxAreaOfIsland(v) == 6);
+    int ma = lc::maxAreaOfIsland(v);
+    std::cout << ma  << "\n";
+    BOOST_CHECK( ma == 6);
 }
 BOOST_AUTO_TEST_SUITE_END()
 
