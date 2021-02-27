@@ -7,9 +7,9 @@ enable_testing()
 
 
 #Project SourceFiles
-#file(GLOB PROBLEM_SOURCES "src/*.cpp")
-#file(GLOB TEST_SOURCES "tests/*.cpp")
-#file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
+file(GLOB PROBLEM_SOURCES "src/*.cpp")
+file(GLOB TEST_SOURCES "tests/*.cpp")
+file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
 
 # list(APPEND PROBLEM_SOURCES
 #     		src/accounts_merge.cpp
