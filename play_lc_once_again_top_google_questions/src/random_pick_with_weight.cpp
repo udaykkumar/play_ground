@@ -16,7 +16,7 @@ namespace lc
         float randNum = (float) rand() / RAND_MAX;
         float target =  randNum * prefixSums.back();
         // run a linear search to find the target zone
-        for (int i = 0; i < prefixSums.size(); ++i)
+        for (size_t i = 0; i < prefixSums.size(); ++i)
             if (target < prefixSums[i])
                 return i;
         return prefixSums.size() - 1;

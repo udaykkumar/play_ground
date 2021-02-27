@@ -11,7 +11,7 @@ namespace lc
 		std::vector< std::vector<int> > res;
 		int start = intervals[0][0];
 		int end   = intervals[0][1];
-		for ( int i = 1 ; i < intervals.size() ; ++i )
+		for ( size_t i = 1 ; i < intervals.size() ; ++i )
 		{
 			int s = intervals[i][0];
 			int e = intervals[i][1];

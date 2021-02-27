@@ -13,7 +13,7 @@ namespace lc
         for ( auto a : accounts )
         {
             auto name = a[0];
-            for ( int i = 0 ; i < a.size(); ++i )
+            for ( size_t i = 0 ; i < a.size(); ++i )
             {
                 //g.insert( std::pair< std::string, stringmap>( name, std::pair() ));
             }
