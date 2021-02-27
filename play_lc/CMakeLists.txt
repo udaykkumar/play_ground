@@ -4,11 +4,6 @@ cmake_minimum_required (VERSION 2.8,9)
 project (lc)
 enable_testing()
 
-#Boost and Family
-set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
-
-
 #Project Compiler Arguments
 if(APPLE)
     message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )

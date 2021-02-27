@@ -4,13 +4,6 @@ cmake_minimum_required (VERSION 2.8,9)
 project (c)
 enable_testing()
 
-# Boost and Family
-set(Boost_USE_STATIC_LIBS ON)
-find_package(
-  Boost
-  COMPONENTS unit_test_framework
-  REQUIRED)
-
 #This one for my Mac setup
 set(CMAKE_CXX_STANDARD 17)
 

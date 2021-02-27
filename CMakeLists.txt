@@ -31,6 +31,24 @@ git_clone(
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
 add_subdirectory( ${benchmark_SOURCE_DIR} )
 
+
+
+
+#Curses
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
+
+
+
+#Boost and Family
+set(Boost_USE_STATIC_LIBS ON)
+find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
+add_definitions(-DNCURSES_NOMACROS)
+#find_package(Boost  COMPONENTS program_options filesystem system log thread log_setup  REQUIRED )
+
+
+
+
 add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
 add_subdirectory( play_c )
 add_subdirectory( play_cphb )

@@ -4,19 +4,6 @@ cmake_minimum_required (VERSION 2.8,9)
 project (daily-problem)
 enable_testing()
 
-#Curses
-find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
-
-
-
-#Boost and Family
-set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
-add_definitions(-DNCURSES_NOMACROS)
-
-#find_package(Boost  COMPONENTS program_options filesystem system log thread log_setup  REQUIRED )
-
 
 #Project Compiler Arguments
  if(APPLE)
