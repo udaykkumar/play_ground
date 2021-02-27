@@ -4,20 +4,6 @@ cmake_minimum_required(VERSION 2.8,9)
 project( 55_specific_ways_to_improve_your_programs_and_design )
 enable_testing()
 
-# Minimum CMake
-cmake_minimum_required(VERSION 2.8,9)
-project(learncpp)
-enable_testing()
-
-#Project Compiler Arguments
- if(APPLE)
-    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
- else()
-    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-    SET(PROJECT_LINK_FLAGS    "-lgcov")
- endif()
-add_compile_options( -std=c++17 )
-
 
 file(GLOB APP_SOURCES *.c**)
 foreach(testsourcefile ${APP_SOURCES})
