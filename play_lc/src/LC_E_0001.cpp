@@ -8,8 +8,8 @@ namespace lc
     {
         std::vector<int> res{-1, -1};
 
-        int  index_1 = 0;
-        int  index_2 = 0;
+        size_t  index_1 = 0;
+        size_t  index_2 = 0;
         for(  ; index_1 < nums.size() - 1; ++ index_1 )
         {
             int look_for = (target - nums[index_1]);
@@ -17,8 +17,8 @@ namespace lc
             {
                 if( nums[index_2] == look_for)
                 {
-                    res[0] =  index_1 ;
-                    res[1] =  index_2 ;
+                    res[0] =  (int)index_1 ;
+                    res[1] =  (int)index_2 ;
                     return res;
                 }
             }
@@ -32,14 +32,14 @@ namespace lc
     {
         std::vector<int> res{-1, -1};
 
-        for( int  index_1 = 0 ; index_1 < nums.size() ; ++index_1 )
+        for( size_t  index_1 = 0 ; index_1 < nums.size() ; ++index_1 )
         {
             int look_for = (target - nums[index_1]);
             auto it      = std::find( nums.begin() + index_1 + 1, nums.end(), look_for);
             if( it != nums.end() )
             {
-                res[0] =  index_1 ;
-                res[1] =  std::distance( nums.begin(), it) ;
+                res[0] =  (int)index_1 ;
+                res[1] =  (int)std::distance( nums.begin(), it) ;
                 return res;
             }
         }
@@ -51,14 +51,14 @@ namespace lc
     {
         std::vector<int> res{-1, -1};
 
-        for( int  index_1 = 0 ; index_1 < nums.size() - 1; ++index_1 )
+        for( size_t  index_1 = 0 ; index_1 < nums.size() - 1; ++index_1 )
         {
             int look_for = (target - nums[index_1]);
             auto it      = std::find( nums.begin() + index_1 + 1, nums.end(), look_for);
             if( it != nums.end() )
             {
-                res[0] =  index_1 ;
-                res[1] =  std::distance( nums.begin(), it) ;
+                res[0] =  (int)index_1 ;
+                res[1] =  (int)std::distance( nums.begin(), it) ;
                 return res;
             }
         }
@@ -76,7 +76,7 @@ namespace lc
             nums_map.insert( std::make_pair(nums[i], i) );
         }
 
-        for( int  i = 0 ; i < nums.size(); ++ i )
+        for( size_t  i = 0 ; i < nums.size(); ++ i )
         {
             int look_for = (target - nums[i]);
             auto it = std::find_if( nums_map.begin(),
@@ -89,8 +89,8 @@ namespace lc
 
             if( nums_map.end() != it )
             {
-                res[0] =  i ;
-                res[1] =  it->second;
+                res[0] =  (int)i ;
+                res[1] =  (int)it->second;
                 return res;
             }
         }

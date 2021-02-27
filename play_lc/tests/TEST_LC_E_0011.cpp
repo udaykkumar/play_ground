@@ -26,7 +26,7 @@ BOOST_AUTO_TEST_CASE( searchInsert_Case_1 )
         2, 1, 4, 0
     };
 
-    for( int i = 0; i < inputset_arg1.size(); i ++ )
+    for( size_t i = 0; i < inputset_arg1.size(); i ++ )
     {
         BOOST_CHECK( lc::searchInsert( inputset_arg1[i], inputset_arg2[i]) == outputset[i] );
     }

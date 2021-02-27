@@ -18,7 +18,7 @@ BOOST_AUTO_TEST_CASE( countAndSay_Case_1 )
         "1113213211"
     };
 
-    for (int i = 0; i < resVector.size(); ++i)
+    for (size_t i = 0; i < resVector.size(); ++i)
     {
         BOOST_CHECK(lc::countAndSay(i+2) == resVector[i]);    
     }
