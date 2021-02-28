@@ -14,15 +14,15 @@ static void mergesort( std::vector<int> &v, int lo, int hi, int &swaps)
 
     size_t lvs = mid - lo + 1;
     std::vector<int> lv(lvs, 0);
-    for ( int i = 0 ; i < lvs; i ++ )
+    for ( size_t i = 0 ; i < lvs; i ++ )
         lv[i] = v[lo + i];
 
     size_t rvs = hi - mid;
     std::vector<int> rv(rvs, 0);
-    for ( int i = 0 ; i < rvs; i ++ )
+    for ( size_t i = 0 ; i < rvs; i ++ )
         rv[i] = v[mid + 1 + i];
 
-    int i = 0, j = 0, k = lo;
+    size_t i = 0, j = 0, k = lo;
     while (i < lvs && j < rvs)
     {
         v[k++] = (lv[i] <= rv[j]) ? lv[i++] : rv[j++];

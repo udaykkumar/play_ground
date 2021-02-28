@@ -9,7 +9,7 @@ namespace lc
                 return 0;
 
             int compare_to = 0;
-            for (int i = 1; i < nums.size(); ++i)
+            for (size_t i = 1; i < nums.size(); ++i)
             {
                 if( nums[i] != nums[compare_to] )
                 {

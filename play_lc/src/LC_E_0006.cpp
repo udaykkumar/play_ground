@@ -13,14 +13,14 @@ namespace lc
 
         for( auto c : s )
         {
-            if( isOpen[c] )
+            if( isOpen[(size_t)c] )
                 stack.push_back(c);
             else
             {
                 auto top = stack.back();
-                if( top == '[' and c == ']' ||
-                    top == '{' and c == '}' ||
-                    top == '(' and c == ')' )
+                if( ((top == '[') and (c == ']')) or
+                    ((top == '{') and (c == '}')) or
+                    ((top == '(') and (c == ')')) )
                 {
                     stack.pop_back();
                     continue;

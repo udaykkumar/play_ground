@@ -15,12 +15,12 @@ int  max_sum_increasing_subsequence( std::vector<int>& array )
 	int max_ending_here = array[0];
 	int max_so_far		= array[0];
 
-	for( int i = 1; i < array.size();  i ++  ) 
+	for( size_t i = 1; i < array.size();  i ++  ) 
     {
 		max_ending_here = std::max( max_ending_here, max_ending_here +  array.at(i));
         if( array[i] <= array[i-1] )
         {
-            for( int n = i;  array[n] < array[n-1]; n -- )
+            for( size_t n = i;  array[n] < array[n-1]; n -- )
                 max_ending_here -= array[n-1];
         }
 		max_so_far      = std::max( max_ending_here, max_so_far);

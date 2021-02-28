@@ -26,66 +26,83 @@ print findSequence([1, 3, 5, 3, 1, 3, 1, 5])
 
 namespace daily_interview
 {
-	size_t find_sequence( std::vector<int>& seq )
-	{
-		struct tracker
-		{
-			std::vector<int> s;
-			size_t			 len;
-			bool 			 e1_init_done;
+    size_t find_sequence( std::vector<int> &seq )
+    {
+        struct tracker
+        {
+            std::vector<int> s;
+            size_t			 len;
+            bool 			 e1_init_done;
 
-			tracker() :
-				s(std::vector<int>{0,0}),
-				len(0),
-				e1_init_done(false) {} 
-			
+            tracker() :
+                s(std::vector<int>
+            {
+                0, 0
+            }),
+            len(0),
+            e1_init_done(false) {}
 
-			bool exists(int x)
-			{
-				bool yes =  s[0] == x || s[1] == x ;
-				if( x == s[1] ) 
-					return yes;
 
-					s[0] = s[1];
-					s[1] = x;
-				return yes;
-			}	
+            bool exists(int x)
+            {
+                bool yes =  s[0] == x || s[1] == x ;
+                if( x == s[1] )
+                {
+                    return yes;
+                }
 
-			void update(int x)
-			{
-				if( e1_init_done == false )
-				{
-					e1_init_done = true;
-					len = 0;
-					return;
-				}
+                s[0] = s[1];
+                s[1] = x;
+                return yes;
+            }
 
-				len = ( s[0] == s[1] ) ? 0 : 2 ;
-					
-			}
+            void update(int x)
+            {
+                if( e1_init_done == false )
+                {
+                    e1_init_done = true;
+                    len = 0;
+                    return;
+                }
 
-			void increment()	{ ++len; 	  }
-			size_t  length()    { return len; }
+                len = ( s[0] == s[1] ) ? 0 : 2 ;
 
-		};
-		
-		tracker t;
-		size_t  max_seq = 0;
-		for( auto s: seq ) {
-			if( t.exists(s) ) {
-				t.increment();
-			} else {
-				if( max_seq < t.length() ) {
-					max_seq = t.length();
-				}
-				t.update(s);
-			}
-		}
+            }
 
-		if( max_seq < t.length() ) {
-			max_seq = t.length();
-		}
-		return max_seq;	
-	}
+            void increment()
+            {
+                ++len;
+            }
+            size_t  length()
+            {
+                return len;
+            }
+
+        };
+
+        tracker t;
+        size_t  max_seq = 0;
+        for( auto s : seq )
+        {
+            if( t.exists(s) )
+            {
+                t.increment();
+            }
+            else
+            {
+                if( max_seq < t.length() )
+                {
+                    max_seq = t.length();
+                }
+                t.update(s);
+            }
+        }
+
+        if( max_seq < t.length() )
+        {
+            max_seq = t.length();
+        }
+        return max_seq;
+    }
 }
 

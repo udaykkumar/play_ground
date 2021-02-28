@@ -49,7 +49,7 @@ namespace lc
 
 	private:
 		std::list< int >  window_;
-		int 			  max_size_;
+		size_t			  max_size_;
 		double 			  sum_;
 
 		std::list< int > &window() { return window_ ; }

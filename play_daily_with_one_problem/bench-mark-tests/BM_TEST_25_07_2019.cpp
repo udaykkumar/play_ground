@@ -7,7 +7,7 @@ static void BM_25_07_2019_Solution(benchmark::State& state)
   for (auto _ : state) 
   {
     std::vector<size_t> v ;
-	for( size_t i = 1; i < state.range(0); i ++ )
+	for( decltype(state.range(0)) i = 1; i < state.range(0); i ++ )
 		v.push_back(23);
 	
 	v[997] = 293;

@@ -14,6 +14,6 @@ int main()
     //    int &ref = returnByValue();
     //Okay
         const int &ref = returnByValue();
-
+     std::cout << " ref " << ref ;
     return 0;
 }

@@ -4,32 +4,52 @@ cmake_minimum_required (VERSION 2.8,9)
 project (play_lc_once_again_top_google_questions)
 enable_testing()
 
-#Boost and Family
-set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
 
 
-#Project Compiler Arguments
-if(APPLE)
-    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
-else()
-    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-    SET(PROJECT_LINK_FLAGS    "-lgcov")
-endif()
-
-add_compile_options( -std=c++17 )
 #Project SourceFiles
 file(GLOB PROBLEM_SOURCES "src/*.cpp")
 file(GLOB TEST_SOURCES "tests/*.cpp")
 file(GLOB BM_SOURCES "bench-mark-tests/*.cpp" )
 
+# list(APPEND PROBLEM_SOURCES
+#     		src/accounts_merge.cpp
+# 			src/employee_importance.cpp
+# 			src/Hello_There.cpp
+# 			src/logger_rate_limiter.cpp
+# 			src/max_area_of_island.cpp
+# 			src/merge_intervals.cpp
+# 			src/moving_average.cpp
+# 			src/random_pick_with_weight.cpp
+# 			src/two_sum.cpp
+# 	)
+# list(APPEND TEST_SOURCES
+#     		tests/suite-runner.cpp
+# 			tests/TEST_accounts_merge.cpp
+# 			tests/TEST_employee_importance.cpp
+# 			tests/TEST_Hello_There.cpp
+# 			tests/TEST_logger_rate_limiter.cpp
+# 			tests/TEST_max_area_of_island.cpp
+# 			tests/TEST_merge_intervals.cpp
+# 			tests/TEST_moving_average.cpp
+# 			tests/TEST_random_pick_with_weight.cpp
+# 			tests/TEST_two_sum.cpp
+# 	)
+# list(APPEND BM_SOURCES
+#     		bench-mark-tests/bench-mark.cpp
+# 			bench-mark-tests/BM_TEST_accounts_merge.cpp
+# 			bench-mark-tests/BM_TEST_employee_importance.cpp
+# 			bench-mark-tests/BM_TEST_Hello_There.cpp
+# 			bench-mark-tests/BM_TEST_logger_rate_limiter.cpp
+# 			bench-mark-tests/BM_TEST_max_area_of_island.cpp
+# 			bench-mark-tests/BM_TEST_merge_intervals.cpp
+# 			bench-mark-tests/BM_TEST_moving_average.cpp
+# 			bench-mark-tests/BM_TEST_random_pick_with_weight.cpp
+# 			bench-mark-tests/BM_TEST_two_sum.cpp
+# 	)
+
 #Project Includes
 include_directories( "./src" )
 
-
-
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS}")
-SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
 
 add_executable("play_lc_once_again_top_google_questions" ${PROBLEM_SOURCES} ${TEST_SOURCES})

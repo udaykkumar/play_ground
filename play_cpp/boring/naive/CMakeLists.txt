@@ -3,13 +3,7 @@ cmake_minimum_required (VERSION 2.8,9)
 project(naive)
 enable_testing()
 
-#Project Compiler Arguments
- if(APPLE)
-    message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
- else()
-    SET(PROJECT_COMPILER_FLAGS "-fprofile-arcs -ftest-coverage ")
-    SET(PROJECT_LINK_FLAGS    "-lgcov")
- endif()
+ 
 
 
 file(GLOB APP_SOURCES *.c**)

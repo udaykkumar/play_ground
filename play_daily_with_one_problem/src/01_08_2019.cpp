@@ -72,8 +72,8 @@ namespace daily_interview
         for( size_t idx = 0 ; idx < i ; idx ++ )
             c[0][idx] = 1;
 
-        for (int idx = 1; idx < i; idx ++) 
-            for (int jdx = 1; jdx < j; jdx++) 
+        for (size_t idx = 1; idx < i; idx ++) 
+            for (size_t jdx = 1; jdx < j; jdx++) 
               c[idx][jdx] = c[idx - 1][jdx] + c[idx][jdx - 1];
         
         return c[i-1][j-1];

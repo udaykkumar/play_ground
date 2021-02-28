@@ -9,10 +9,10 @@ static void BM_02_08_2019_Solution(benchmark::State& state)
     state.PauseTiming();
     daily_interview::list l1, l2;
 
-    for( size_t i = 0; i <= state.range(0); i ++ )
+    for( decltype(state.range(0)) i = 0; i <= state.range(0); i ++ )
         l1.add(i);
 
-    for( size_t i = state.range(0); i <= (state.range(0) * 2); i ++ )
+    for( decltype(state.range(0)) i = state.range(0); i <= (state.range(0) * 2); i ++ )
         l2.add(i);
     state.ResumeTiming(); 
     daily_interview::intersection(l1,l2);

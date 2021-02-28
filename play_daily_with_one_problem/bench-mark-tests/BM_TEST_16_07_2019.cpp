@@ -7,7 +7,7 @@ static void BM_16_07_2019_001_List_Add_At_End(benchmark::State& state)
   for (auto _ : state) 
   {
     list l;
-    for( size_t i = 0 ; i < state.range(0); i ++ )
+    for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
       l.add(i);
   }
 }
@@ -22,7 +22,7 @@ static void BM_16_07_2019_002_List_Add_At_End_Reverse(benchmark::State& state)
   for (auto _ : state) 
   {
     list l;
-    for( size_t i = 0 ; i < state.range(0); i ++ )
+    for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
         l.add(i);
     l.reverse();
 
