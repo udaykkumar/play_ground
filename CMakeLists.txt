@@ -45,6 +45,7 @@ add_definitions(-DNCURSES_NOMACROS)
 #Project Compiler Arguments
  if(APPLE)
     message( "-- Detected Apple/MacOS ( Skipping Coverage ) " )
+    SET(PROJECT_COMPILER_FLAGS "-Wall -std=c++17 ")
  else()
     SET(PROJECT_COMPILER_FLAGS "-Wall -fprofile-arcs -ftest-coverage -std=c++17 ")
     SET(PROJECT_LINK_FLAGS    "-lgcov")
