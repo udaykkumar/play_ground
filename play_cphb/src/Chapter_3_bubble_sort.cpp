@@ -8,9 +8,9 @@
 int cphb::bubble_sort_v1( std::vector<int> &v )
 {
 	int inversions = 0;
-	for ( int i = 0 ; i < v.size() ; i ++ )
+	for ( size_t i = 0 ; i < v.size() ; i ++ )
 	{
-		for ( int j = 0; j < v.size()-1; j ++ )
+		for ( size_t j = 0; j < v.size()-1; j ++ )
 		{
 			if ( v[j] > v[j+1] )
 			{
@@ -26,9 +26,9 @@ int cphb::bubble_sort_v1( std::vector<int> &v )
 int cphb::bubble_sort_v2( std::vector<int> &v )
 {
 	int inversions = 0;
-	for ( int i = 0 ; i < v.size() ; i ++ )
+	for ( size_t i = 0 ; i < v.size() ; i ++ )
 	{
-		for ( int j = 0; j < v.size()-i-1; j ++ )
+		for ( size_t j = 0; j < v.size()-i-1; j ++ )
 		{
 			if ( v[j] > v[j+1] )
 			{

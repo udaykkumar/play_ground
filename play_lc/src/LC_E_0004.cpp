@@ -16,12 +16,12 @@ namespace lc
             {'M', 1000}
         };
 
-        int res = SVMap.at( s.at(0) );
+        int res = SVMap.at( (size_t) s.at(0) );
 
         int pre_value = res;
         for( size_t i = 1 ; i < s.length() ; ++ i )
         {
-            int cur_value =   SVMap.at( s.at(i) );
+            int cur_value =   SVMap.at( (size_t) s.at(i) );
 
             res += cur_value;
 
@@ -45,12 +45,12 @@ namespace lc
         SVMap['D'] =   500;
         SVMap['M'] =   1000;
 
-        int res = SVMap[ s.at(0) ];
+        int res = SVMap[ (size_t)s.at(0) ];
 
         int pre_value = res;
         for( size_t i = 1 ; i < s.length() ; ++ i )
         {
-            int cur_value =   SVMap[s.at(i) ];
+            int cur_value =   SVMap[ (size_t) s.at(i) ];
 
             res += cur_value;
 

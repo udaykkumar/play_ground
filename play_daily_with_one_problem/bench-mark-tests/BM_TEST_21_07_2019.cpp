@@ -8,7 +8,7 @@ static void BM_21_07_2019_Solution(benchmark::State& state)
   {
     daily_interview::bst bst;
 
-	for( size_t i = 0 ; i < state.range(0); i ++ )
+	for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
 		bst.add( static_cast<int>(rand()) );
 	
   }

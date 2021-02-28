@@ -7,7 +7,7 @@ namespace lc
     int searchInsert(std::vector<int>& nums, int target)
     {
         int index = 0;
-        for (int i = 0; i < nums.size(); ++i)
+        for (size_t i = 0; i < nums.size(); ++i)
         {
             if( target == nums[i] )
                 return i;

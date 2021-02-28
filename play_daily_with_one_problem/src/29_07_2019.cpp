@@ -47,7 +47,7 @@ namespace daily_interview
 				if( has_cycle( *it, visited, vertex ))
 					return true;
 			}
-			else if ( *it != parent )
+			else if ( *it != (int) parent )
 				return true;
 		}
 

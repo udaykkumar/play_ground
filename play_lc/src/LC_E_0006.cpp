@@ -18,9 +18,9 @@ namespace lc
             else
             {
                 auto top = stack.back();
-                if( (top == '[') and (c == ']') or
-                    (top == '{') and (c == '}') or
-                    (top == '(') and (c == ')') )
+                if( ((top == '[') and (c == ']')) or
+                    ((top == '{') and (c == '}')) or
+                    ((top == '(') and (c == ')')) )
                 {
                     stack.pop_back();
                     continue;

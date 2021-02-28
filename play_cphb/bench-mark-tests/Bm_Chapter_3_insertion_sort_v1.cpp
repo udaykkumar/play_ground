@@ -13,7 +13,7 @@ static void Bm_Chapter_1_insertion_sort_v1_random(benchmark::State& state)
   
     std::vector<int>      iv;
     
-    for ( int i = 0 ; i < state.range(0); i ++ )
+    for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
       iv.emplace_back(i);
 
     std::vector<int>      ov(iv.size());

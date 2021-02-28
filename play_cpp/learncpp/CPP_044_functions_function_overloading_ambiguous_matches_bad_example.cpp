@@ -3,11 +3,13 @@
 int print( unsigned int x )
 {
     std::cout << x << std::endl;
+    return 0;
 }
 
 int print( float x )
 {
     std::cout << x << std::endl;
+    return 0;
 }
 
 int main()

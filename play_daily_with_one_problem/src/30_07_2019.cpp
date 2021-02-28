@@ -59,9 +59,9 @@ namespace daily_interview
 
 	bool word_search( char matrix[][1024], int M, int N, char *word, size_t word_len )
 	{
-		for( size_t i = 0; i < M; i ++ )
+		for( int i = 0; i < M; i ++ )
 		{	
-			for( size_t j = 0; j < N; j ++)
+			for( int j = 0; j < N; j ++)
 			{
 				if( matrix[i][j] == *word )	
 				{

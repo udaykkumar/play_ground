@@ -1,12 +1,10 @@
 #include<iostream>
 #include<vector>
 
-int fibonacci(int f)
+size_t fibonacci(size_t f)
 {
-    if( f == 0 )
-        return 0;
-    if( f == 1 )
-        return 1;
+    if( f <= 1 )
+        return f;
 
     return fibonacci( f-1 ) + fibonacci(f-2);
 }
@@ -14,7 +12,9 @@ int fibonacci(int f)
 
 int main()
 {
-    for( int i = 0 ; i < 10 ; i ++ )
+	size_t n = 10;
+    for( size_t i = 0 ; i < n ; i ++ ) {
         std::cout << fibonacci(i) <<  "  " ;
+    }
 	return 0;
 }

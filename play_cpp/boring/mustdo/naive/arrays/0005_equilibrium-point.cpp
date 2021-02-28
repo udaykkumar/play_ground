@@ -20,13 +20,13 @@ int equilibrium_point( std::vector<size_t> &array )
 
     sumRight = sum;
     sumLeft  = 0;
-    for( int i = 1; i < array.size(); i ++ )
+    for( size_t i = 1; i < array.size(); i ++ )
     {
         sumLeft  += array[i-1];
         sumRight  = sum - sumLeft - array[i];
 
         if( sumLeft == sumRight )
-            return i+1;
+            return (int)i+1;
 
     }
 

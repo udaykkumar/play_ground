@@ -11,10 +11,10 @@ namespace lc
             return -1;
 
 
-        for( int pos = 0 ; pos < (haystack.length() - needle.length() + 1)  ; pos ++)
+        for( size_t pos = 0 ; pos < (haystack.length() - needle.length() + 1)  ; pos ++)
             if( needle[0] == haystack[pos] && 
                 haystack.compare( pos, needle.length(), needle) == 0 )
-                return pos;
+                return (int)pos;
 
         return -1;
     }

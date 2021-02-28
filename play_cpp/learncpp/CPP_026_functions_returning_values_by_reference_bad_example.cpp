@@ -1,11 +1,11 @@
 #include <iostream>
 #include <array>
 
-int& returnByReference(  int x )
-{
-    int a = x + 1;
-    return a;
-}
+// int& returnByReference(  int x )
+// {
+//     int a = x + 1;
+//     return a;
+// }
 
 int main()
 {

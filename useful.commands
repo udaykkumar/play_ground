@@ -1,0 +1,22 @@
+Useful Commands
+
+Get build time bench marks
+
+for i in $(seq 10) ;
+do
+    d1=$(date +%s);
+    git pull 2>&1 ; rm -rf * 2>&1 ; cmake -GNinja ..  2>&1; ninja 2>&1 ; ninja test 2>&1;
+    d2=$(date +%s);
+    d=$(echo "$d2-$d1"|bc);
+    echo $d;
+done
+
+
+for i in $(seq 10) ;
+do
+    d1=$(date +%s);
+    ninja clean 2>&1 ;ninja 2>&1 ;
+    d2=$(date +%s);
+    d=$(echo "$d2-$d1"|bc);
+    echo $d;
+done

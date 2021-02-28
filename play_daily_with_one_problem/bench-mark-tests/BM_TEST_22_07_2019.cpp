@@ -8,7 +8,7 @@ static void BM_22_07_2019_Solution(benchmark::State& state)
   {
     daily_interview::binary_tree binay_tree;
     state.PauseTiming();
-	for( size_t i = 0 ; i < state.range(0); i ++ )
+	for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
 		binay_tree.add(rand());
 	state.ResumeTiming();
 	binay_tree.invert();
