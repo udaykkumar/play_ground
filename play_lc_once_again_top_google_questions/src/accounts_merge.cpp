@@ -48,31 +48,21 @@ namespace lc
     std::vector<std::set<size_t>> paths;
     std::set<size_t> path;
 
-    void log()
-    {
-        for ( auto p : paths )
-        {
-            for ( auto x : p)
-                std::cout << x << " ";
-            std::cout << "\n";
-        }
-    }
-
     void dfs(std::vector< std::vector<int> > &g, size_t i, size_t j, size_t row, size_t col)
     {
-        if( i < 0 or j < 0 or i >= row or j >= col or  g[i][j] == 0)
-            return;
+        if( i < 0 or j < 0 or i >= row or j >= col )
+            return ;
+        if ( g[i][j] == 0 )
+        	return ;
         path.insert(i);
         path.insert(j);
         g[i][j] = 0;
+        
         dfs(g, i + 1, j, row, col);
         dfs(g, i - 1, j, row, col);
-        dfs(g, i,   j + 1, row, col);
-        dfs(g, i,   j - 1, row, col);
-        dfs(g, i + 1, j + 1, row, col);
-        dfs(g, i - 1, j - 1, row, col);
-        dfs(g, i - 1, j + 1, row, col);
-        dfs(g, i + 1, j - 1, row, col);
+        dfs(g, i,     j + 1, row, col);
+        dfs(g, i,     j - 1, row, col);
+        return;
     }
 
 
@@ -99,14 +89,45 @@ namespace lc
         {
             for (size_t j = 0; j < m[i].size(); ++j )
             {
-                dfs(m, i, j, nodes.size(), nodes.size());
-                paths.push_back(path);
-                log();
-                path.clear();
+                 dfs(m, i, j, nodes.size(), nodes.size());
+                 if( path.size() > 0 )
+                 {
+                 	if( path.size() > 1 )
+                	 	paths.push_back(path);
+                 	path.clear();
+                 }
             }
         }
 
-        return accounts;
+        std::vector<std::vector<std::string>> ret;
+
+        for ( size_t i = 0 ; i < nodes.size(); ++i )
+        {
+        	for( auto p : paths )
+        	{
+        		if ( p.find(i) == p.end() )
+        		{
+        			ret.push_back(accounts[i]);
+        		}
+        	}
+        }
+
+
+        for( auto p : paths )
+        {
+        	int i = 0;
+        	for( auto index : p )
+        	{
+        		if ( i == 0 ) {
+        			ret.push_back( std::vector< std::string > ({ nodes[index].name() }));
+        		}
+        		ret.push_back(std::vector< std::string>(accounts[index].begin()+1, accounts[index].end()));
+        		i++;
+        	}
+        }
+
+
+        return ret;
     }
 
 
