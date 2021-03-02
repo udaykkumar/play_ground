@@ -80,7 +80,7 @@ void play(std::shared_ptr<player> &&p)
 			++(*p);
 			put_the_ball();
 		}
-		std::this_thread::sleep_for(std::chrono::milliseconds(rand()%23));
+		//std::this_thread::sleep_for(std::chrono::milliseconds(rand()%23));
 	}
 }
 
@@ -103,9 +103,13 @@ int main(int argc, char const *argv[])
 
 	for ( i = 0 ; i < 120 ; i ++ )
 	{
-		for ( auto p : players )
-			std::cout << i << " " << *p;
+		std::cout << "Wait for " << 120 << " seconds remaining " << 120 - i << "\n";
 		std::this_thread::sleep_for( std::chrono::seconds(1));
 	}
+	running = false;
+	
+	for ( auto p : players )
+			std::cout << i << " " << *p;
+		
 	return 0;
 }
