@@ -2,6 +2,9 @@
 #include <thread>
 #include <chrono>
 #include <atomic>
+#include <algorithm>
+#include <memory>
+#include <vector>
 
 bool running = true;
 
@@ -20,34 +23,94 @@ bool put_the_ball()
 	return ball.compare_exchange_strong( is_locked, is_free );
 }
 
-void play(std::string s)
+struct player {
+	
+	player(std::string n) :
+		name_(n),
+		score_(0)
+		{ }
+
+	player(const char *n) :
+		name_(n),
+		score_(0)
+		{ }
+
+	// Copy constructor
+    player(const player &p) {
+    	name_  = p.name(); 
+    	score_ = p.score(); 
+    }
+
+    // move constructor
+    player (player && p){
+    	name_  = std::move(p.name()); 
+    	score_ = std::move(p.score()); 
+  	}
+
+  	void operator ++()
+  	{
+  		++score_;
+  	}
+
+	friend std::ostream& operator<<( std::ostream &os , const player p )
+	{
+		os << " Name : " << p.name() << " Score " << p.score() << "\n";
+		return os;
+	} 
+
+	std::string name() const { return name_; }
+	size_t 	    score() const{ return score_;}
+
+private:
+	std::string name_;
+	size_t 		score_;
+};
+
+static std::string make_name(int i)
+{
+	return "Player "+ std::to_string(i);
+}
+
+void play(std::shared_ptr<player> &&p)
 {
 	while ( running )
-	{
-		
+	{	
 		if( get_the_ball() )
 		{
-			std::cout << s << " I got the ball\n";
-			std::this_thread::sleep_for( std::chrono::milliseconds(500));
+			++(*p);
 			put_the_ball();
 		}
 		else
 		{
-			std::cout << s << " I am waiting \n";
-			std::this_thread::sleep_for( std::chrono::milliseconds(100));
+			std::this_thread::sleep_for( std::chrono::milliseconds(rand()%23));
 		}
 	}
 }
 
+
+ 
 int main(int argc, char const *argv[])
 {
-	std::cout << "Hello Ping Pong .. \n";
-	for ( int i = 0 ; i < 10 ; i ++ )
-	{
-		std::thread t(play, std::string("Thread ")+std::to_string(i) );	
+	const size_t max_players = 10;
+	std::vector< std::shared_ptr<player> > players(max_players);
+
+	int i = 0;
+	std::generate(players.begin(), players.end(), [&i]() {
+		return std::make_shared<player>(make_name(i++));
+	});
+
+	for ( auto p : players ) {
+		std::thread t( play, std::move(p) );
+		t.detach();
 	}
-	
-	for ( int i = 0 ; i < 120 ; i ++ )
+
+	for ( i = 0 ; i < 120 ; i ++ )
+	{
+		for ( auto p : players )
+		{
+			std::cout << *p << "\n";
+		}
 		std::this_thread::sleep_for( std::chrono::seconds(1));
+	}
 	return 0;
 }

@@ -17,4 +17,4 @@ include_directories( "./src" )
 
 
 add_executable("play_ping_pong" ${PROBLEM_SOURCES} ${TEST_SOURCES})
-target_link_libraries("play_ping_pong" ${Boost_LIBRARIES} )
+target_link_libraries("play_ping_pong" ${Boost_LIBRARIES} "pthread" )
