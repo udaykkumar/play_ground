@@ -54,7 +54,7 @@ struct player {
 
 	friend std::ostream& operator<<( std::ostream &os , const player p )
 	{
-		os << " Name : " << p.name() << " Score " << p.score() << "\n";
+		os << " " << p.name() << " " << p.score() << "\n";
 		return os;
 	} 
 
@@ -80,10 +80,7 @@ void play(std::shared_ptr<player> &&p)
 			++(*p);
 			put_the_ball();
 		}
-		else
-		{
-			std::this_thread::sleep_for( std::chrono::milliseconds(rand()%23));
-		}
+		std::this_thread::sleep_for(std::chrono::milliseconds(rand()%23));
 	}
 }
 
@@ -107,9 +104,7 @@ int main(int argc, char const *argv[])
 	for ( i = 0 ; i < 120 ; i ++ )
 	{
 		for ( auto p : players )
-		{
-			std::cout << *p << "\n";
-		}
+			std::cout << i << " " << *p;
 		std::this_thread::sleep_for( std::chrono::seconds(1));
 	}
 	return 0;
