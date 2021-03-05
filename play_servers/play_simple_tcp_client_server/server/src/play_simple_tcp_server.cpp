@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -40,9 +41,10 @@ int main(int argc, char const *argv[])
 		std::exit(-1);
 	}
 
+	size_t served = 0;
 	for ( ;; )
 	{
-		std::cout << "INFO  : we do the thing ..\n";
+		//std::cout << "DEBUG  : we do the thing ..\n";
 		struct sockaddr_in raddr;
 		socklen_t          raddrlen;
 		int cfd = accept( socfd, (struct sockaddr*)&raddr, &raddrlen);
@@ -51,7 +53,22 @@ int main(int argc, char const *argv[])
 			std::cerr << "ERROR : we have a accept failure here\n";
 			continue;
 		}
-		std::cout << "INFO  : have some cfd here " << cfd << " ..\n";
+		served ++;
+		//std::cout << "DEBUG  : we handle " << cfd << "\n";
+		size_t totalRead = 0;
+		for(char buf[1024]; ;) 
+		{
+			memset(buf, 0, 1024);
+			size_t nbytes = recv(cfd, buf, sizeof buf, 0);
+			if ( nbytes <= 0 )
+			{
+				std::cerr << "ERROR : [" << cfd << "] we have a recv failure here ( client exit ? )\n";
+				break;
+			}
+			totalRead += nbytes;
+			//std::cout << "DEBUG  : ["<< cfd << "] we got " << nbytes << " bytes \n";
+		}
+		std::cout << "INFO  : ["<< cfd << "] we got total " << totalRead << " bytes " << "served " << served << " connections" << "\n";
 	}
 	
 	return 0;
