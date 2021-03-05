@@ -65,5 +65,5 @@ add_subdirectory( play_daily_with_one_problem )
 add_subdirectory( play_lc )
 add_subdirectory( play_lc_once_again_top_google_questions )
 add_subdirectory( play_ping_pong )
-
+add_subdirectory( play_servers )
 
