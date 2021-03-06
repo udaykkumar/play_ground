@@ -1,3 +1,5 @@
+#ifndef __CLIENT_COMMON_HPP__
+#define __CLIENT_COMMON_HPP__
 
 #include <iostream>
 #include <thread>
@@ -12,14 +14,8 @@
 #include <netinet/ip.h> /* superset of previous */
 #include <arpa/inet.h>
 #include <unistd.h>
-
 #include "client_common.hpp"
 
-int main(int argc, char const *argv[])
-{
-	int socfd = make_connection();
-	do_push(socfd);
-	close(socfd);
-
-	return 0;
-}
+void do_push(int socfd);
+int  make_connection();
+#endif
