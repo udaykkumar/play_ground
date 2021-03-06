@@ -11,6 +11,7 @@
 #include <netinet/in.h>
 #include <netinet/ip.h> /* superset of previous */
 #include <arpa/inet.h>
+#include <cstring>
 
 int main(int argc, char const *argv[])
 {
@@ -56,7 +57,7 @@ int main(int argc, char const *argv[])
 		size_t totalRead = 0;
 		for(char buf[1024]; ;) 
 		{
-			memset(buf, 0, 1024);
+			std::memset(buf, 0, 1024);
 			size_t nbytes = recv(cfd, buf, sizeof buf, 0);
 			if ( nbytes <= 0 )
 				break;
