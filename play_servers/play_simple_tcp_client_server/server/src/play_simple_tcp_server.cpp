@@ -11,6 +11,7 @@
 #include <netinet/in.h>
 #include <netinet/ip.h> /* superset of previous */
 #include <arpa/inet.h>
+#include <unistd.h>
 #include <cstring>
 
 int main(int argc, char const *argv[])
@@ -64,6 +65,9 @@ int main(int argc, char const *argv[])
 			totalRead += nbytes;
 		}
 		std::cout << "INFO  : ["<< cfd << "] we got total " << totalRead << " bytes " << "served " << served << " connections" << "\n";
+
+		// unclosed cfd will take things to CLOSE_WAIT and that is a pure no no
+		close(cfd);
 	}
 	
 	return 0;
