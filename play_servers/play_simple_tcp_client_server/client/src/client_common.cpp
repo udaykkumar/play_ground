@@ -4,7 +4,14 @@ void do_push(int socfd)
 {
     const std::string hi("Hello There");
     for ( int i = 0 ; i < 100000; ++i )
-        send(socfd, hi.c_str(), hi.size(), 0);
+    {
+        std::size_t nbytes = send(socfd, hi.c_str(), hi.size(), 0);
+        if ( nbytes <= 0 )
+        {
+            std::cout << "ERROR : We have problem in sending to socket [ " 
+                << socfd << " ] returned [ " << nbytes << " ]\n";
+        }
+    }   
 
 }
 
@@ -16,8 +23,8 @@ int make_connection( )
     int socfd = socket(AF_INET, SOCK_STREAM, 0);
     if( socfd <= 0 )
     {
-        std::cerr << "ERROR : We have problem creating socket \n";
-        std::exit(socfd);
+        perror("ERROR : We have problem creating socket : ");
+        return -1;
     }
 
     struct sockaddr_in saddr;
@@ -27,8 +34,8 @@ int make_connection( )
 
     if( connect(socfd, (struct sockaddr *) &saddr, sizeof(saddr)) != 0 )
     {
-        std::cerr << "ERROR : we have a connect failure here\n";
-        std::exit(-1);
+        perror("ERROR : we have a connect failure here :");
+        return -1;
     }
 
     return socfd;
