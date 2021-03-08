@@ -19,7 +19,8 @@
 int main(int argc, char const *argv[])
 {
     auto push_client = [](){
-        if ( int socfd = make_connection() )
+        int socfd = make_connection();
+        if ( socfd > 0 )
         {
             do_push(socfd);
             close(socfd);

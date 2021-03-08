@@ -8,7 +8,7 @@ void do_push(int socfd)
         std::size_t nbytes = send(socfd, hi.c_str(), hi.size(), 0);
         if ( nbytes <= 0 )
         {
-            std::cout << "ERROR : We have problem in sending to socket [ " 
+            std::cerr << "ERROR : We have problem in sending to socket [ " 
                 << socfd << " ] returned [ " << nbytes << " ]\n";
         }
     }   
@@ -24,6 +24,7 @@ int make_connection( )
     if( socfd <= 0 )
     {
         perror("ERROR : We have problem creating socket : ");
+        std::cerr << "Done\n";
         return -1;
     }
 
@@ -35,6 +36,7 @@ int make_connection( )
     if( connect(socfd, (struct sockaddr *) &saddr, sizeof(saddr)) != 0 )
     {
         perror("ERROR : we have a connect failure here :");
+        std::cerr << "Done\n";
         return -1;
     }
 
