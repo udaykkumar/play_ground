@@ -4,6 +4,6 @@
 #include <iostream>
 #include <vector>
 
-std::pair<int,int> bounds(std::vector<int> array, int target );
+std::pair<int, int> bounds(std::vector<int> array, int target);
 
 #endif

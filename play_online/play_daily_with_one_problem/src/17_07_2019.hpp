@@ -5,15 +5,20 @@
 
 namespace daily_bira
 {
-	struct dose
+struct dose
+{
+	std::vector<int> list_;
+
+	dose(std::vector<int> &v) :
+			list_(v)
 	{
-		std::vector<int> list_;
+	}
 
-		dose(std::vector<int> &v) :
-			list_(v) {}
-
-		void sort();
-		std::vector<int> &get() { return list_ ; }
-	};
+	void sort();
+	std::vector<int>& get()
+	{
+		return list_;
+	}
+};
 }
 #endif

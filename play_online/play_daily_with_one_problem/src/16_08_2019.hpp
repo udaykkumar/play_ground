@@ -4,9 +4,9 @@
 #include <vector>
 #include <list>
 
-namespace daily_interview 
+namespace daily_interview
 {
-	std::list<int> merge( std::vector< std::list<int> >  &list );
+std::list<int> merge(std::vector<std::list<int> > &list);
 }
 
 #endif

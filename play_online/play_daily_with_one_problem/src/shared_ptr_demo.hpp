@@ -5,32 +5,32 @@
 #include <memory>
 #include <vector>
 
-namespace daily_interview 
+namespace daily_interview
 {
-	struct shared
-    {
-        private:
-            std::weak_ptr< std::vector<int> > sptr_;
+struct shared
+{
+private:
+	std::weak_ptr<std::vector<int> > sptr_;
 
-        public:
+public:
 
-        shared();
-        std::weak_ptr< std::vector<int> >&      get();
-        void put(int x);
-        size_t  size()  const ;
-        
-        // Equivalent to Show
-        friend std::ostream& operator << ( std::ostream &out, shared &s )
-        {
-            if( auto sp = s.get().lock() )
-            {
-                for( auto v : *sp )
-                    out << " " << v ;
-                out << std::endl;
-            }
-            return out;
-        }
-    };
+	shared();
+	std::weak_ptr<std::vector<int> >& get();
+	void put(int x);
+	size_t size() const;
+
+	// Equivalent to Show
+	friend std::ostream& operator <<(std::ostream &out, shared &s)
+	{
+		if (auto sp = s.get().lock())
+		{
+			for (auto v : *sp)
+				out << " " << v;
+			out << std::endl;
+		}
+		return out;
+	}
+};
 }
 
 #endif

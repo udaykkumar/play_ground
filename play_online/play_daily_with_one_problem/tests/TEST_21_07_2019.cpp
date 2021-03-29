@@ -7,10 +7,11 @@ BOOST_AUTO_TEST_SUITE( TEST_21_07_2019 )
 
 BOOST_AUTO_TEST_CASE( Case_1 )
 {
-    daily_interview::bst bst;
-	
-	std::vector<int> ints = {1,2,3,4,5,6,7};
-	for( auto i: ints )
+	daily_interview::bst bst;
+
+	std::vector<int> ints =
+	{ 1, 2, 3, 4, 5, 6, 7 };
+	for (auto i : ints)
 	{
 		bst.add(i);
 	}

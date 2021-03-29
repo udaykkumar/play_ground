@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-namespace bira {
-    std::string infix_to_post_fix( std::string &expression );
+namespace bira
+{
+std::string infix_to_post_fix(std::string &expression);
 }
-
 
 #endif

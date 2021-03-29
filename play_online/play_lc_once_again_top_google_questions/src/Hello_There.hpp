@@ -2,9 +2,9 @@
 #define __Hello_There_HPP_INCLUDED__
 #include <iostream>
 
-namespace lc 
+namespace lc
 {
-	std::string say_hello(void);
+std::string say_hello(void);
 }
 
 #endif

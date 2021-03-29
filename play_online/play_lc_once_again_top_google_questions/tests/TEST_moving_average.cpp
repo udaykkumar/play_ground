@@ -19,15 +19,11 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 	double rhs3 = 4.66667;
 	double rhs4 = 6.00000;
 
+	BOOST_CHECK((int ) lhs1 == (int ) rhs1);
+	BOOST_CHECK((int ) lhs2 == (int ) rhs2);
+	BOOST_CHECK((int ) lhs3 == (int ) rhs3);
+	BOOST_CHECK((int ) lhs4 == (int ) rhs4);
 
-
-	BOOST_CHECK( (int) lhs1 == (int) rhs1 );
-	BOOST_CHECK( (int) lhs2 == (int) rhs2 );
-	BOOST_CHECK( (int) lhs3 == (int) rhs3 );
-	BOOST_CHECK( (int) lhs4 == (int) rhs4 );
-	
-
-	
 }
 BOOST_AUTO_TEST_SUITE_END()
 

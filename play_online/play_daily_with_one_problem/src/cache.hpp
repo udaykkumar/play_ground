@@ -3,15 +3,15 @@
 
 namespace bira
 {
-    struct cache
-    {
-        cache();
-        ~cache();
+struct cache
+{
+	cache();
+	~cache();
 
-        int get(void *p);
-        void put(void *p);
+	int get(void *p);
+	void put(void *p);
 
-    };
+};
 }
 
 #endif

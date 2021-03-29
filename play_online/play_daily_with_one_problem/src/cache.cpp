@@ -4,35 +4,34 @@
 
 namespace bira
 {
-    struct cmeta
-    {
-        void          *data_ptr;
-        time_t      last_access;
-        size_t   rate_of_access;
-    };
+struct cmeta
+{
+	void *data_ptr;
+	time_t last_access;
+	size_t rate_of_access;
+};
 
-    struct cache_impl
-    {
+struct cache_impl
+{
 
-    };
+};
 
-    std::shared_ptr<struct cache_impl>  impl_;
+std::shared_ptr<struct cache_impl> impl_;
 
-    cache::cache()
-    {
-        if( impl_ == nullptr )
-            impl_ = std::make_shared< struct cache_impl > (); 
-    }
+cache::cache()
+{
+	if (impl_ == nullptr)
+		impl_ = std::make_shared<struct cache_impl>();
+}
 
-    int  cache::get(void *p)
-    {
-        return 0;
-    }
+int cache::get(void *p)
+{
+	return 0;
+}
 
-    void cache::put(void *p)
-    {
-        return;
-    }
-
+void cache::put(void *p)
+{
+	return;
+}
 
 }

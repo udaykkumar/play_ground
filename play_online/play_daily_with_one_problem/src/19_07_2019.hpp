@@ -3,8 +3,8 @@
 #include <vector>
 namespace daily_interview
 {
-	int non_duplicate( std::vector<int> &v );
-	int non_duplicate_im( std::vector<int> &v );
+int non_duplicate(std::vector<int> &v);
+int non_duplicate_im(std::vector<int> &v);
 }
 
 #endif

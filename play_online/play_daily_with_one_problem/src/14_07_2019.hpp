@@ -8,19 +8,22 @@ struct bracket_sequence
 {
 
 private:
-    std::string sequence;
-    std::vector<char> stack;
+	std::string sequence;
+	std::vector<char> stack;
 
 public:
-    bracket_sequence(std::string s) : sequence(s) {}
-    bool is_valid();
+	bracket_sequence(std::string s) :
+			sequence(s)
+	{
+	}
+	bool is_valid();
 
 private:
-    bool is_open_bracket(const char c);
+	bool is_open_bracket(const char c);
 
-    bool is_stack_empty();
+	bool is_stack_empty();
 
-    bool is_matching_pair(const char current);
+	bool is_matching_pair(const char current);
 };
 
 #endif

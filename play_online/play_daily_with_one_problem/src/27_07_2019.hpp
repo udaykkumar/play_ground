@@ -4,9 +4,9 @@
 #include <iostream>
 #include <string>
 
-namespace daily_interview 
+namespace daily_interview
 {
-	int eval(std::string exp);
+int eval(std::string exp);
 }
 
 #endif
