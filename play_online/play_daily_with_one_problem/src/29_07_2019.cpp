@@ -79,12 +79,12 @@ void graph::show()
 {
 	for (size_t u = 0; u < vertices; u++)
 	{
-		std::cout << "Vertex " << u << "->";
-		for (auto i : adjcency_list[u])
+		//std::cout << "Vertex " << u << "->";
+		//for (auto i : adjcency_list[u])
 		{
-			std::cout << i << "->";
+			//std::cout << i << "->";
 		}
-		std::cout << "\n";
+		//std::cout << "\n";
 	}
 }
 }

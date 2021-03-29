@@ -20,9 +20,9 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 
 	g.show();
 
-	std::cout
-			<< "Get Path from 1 - > 6 [ expected to get 1 -> 3 -> 6 or 1 -> 4 -> 6 or 1 -> 2 -> 6 ] \n";
-	std::cout << g.path(1, 6) << "\n";
+	//std::cout
+	//		<< "Get Path from 1 - > 6 [ expected to get 1 -> 3 -> 6 or 1 -> 4 -> 6 or 1 -> 2 -> 6 ] \n";
+	//std::cout << g.path(1, 6) << "\n";
 
 }
 
@@ -47,9 +47,9 @@ BOOST_AUTO_TEST_CASE( Case_2 )
 
 	g.show();
 
-	std::cout
-			<< "Get Path from 1 - > 49 [ expected to get 1 -> 4 -> 10 -> 11 -> 16 -> 49  ] \n";
-	std::cout << g.path(1, 49) << "\n";
+	//std::cout
+	//		<< "Get Path from 1 - > 49 [ expected to get 1 -> 4 -> 10 -> 11 -> 16 -> 49  ] \n";
+	//std::cout << g.path(1, 49) << "\n";
 
 }
 BOOST_AUTO_TEST_SUITE_END()

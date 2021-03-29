@@ -27,10 +27,10 @@ struct node
 
 	void show()
 	{
-		std::cout << "Name " << this->name() << " Emails ";
-		for (auto e : this->emails())
-			std::cout << e << " ";
-		std::cout << "\n";
+		//std::cout << "Name " << this->name() << " Emails ";
+		//for (auto e : this->emails())
+			//std::cout << e << " ";
+		//std::cout << "\n";
 	}
 
 	bool connected(node &n)
@@ -74,7 +74,7 @@ std::vector<std::vector<std::string>> accounts_merge(
 		nodes.push_back(node(r));
 
 	std::vector<std::vector<int> > m(nodes.size(),
-			std::vector(nodes.size(), 0));
+			std::vector<int>(nodes.size(), 0));
 	for (size_t i = 0; i < m.size(); ++i)
 	{
 		for (size_t j = 0; j < m[i].size(); ++j)

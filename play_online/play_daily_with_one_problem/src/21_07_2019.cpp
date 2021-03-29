@@ -41,7 +41,7 @@ void bst::show(node *r)
 {
 	if (r != nullptr)
 	{
-		std::cout << " " << r->get();
+		//std::cout << " " << r->get();
 		show(r->left());
 		show(r->right());
 	}

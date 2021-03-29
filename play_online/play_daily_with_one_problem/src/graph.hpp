@@ -85,15 +85,15 @@ public:
 
 	void show()
 	{
-		for (auto it : adjList)
-		{
-			std::cout << it.first << " : ";
-			for (auto e : it.second)
-			{
-				std::cout << e << " -> ";
-			}
-			std::cout << "\n";
-		}
+//		for (auto it : adjList)
+//		{
+//			std::cout << it.first << " : ";
+//			for (auto e : it.second)
+//			{
+//				std::cout << e << " -> ";
+//			}
+//			std::cout << "\n";
+//		}
 	}
 
 	std::string path(vertexType u, vertexType v)

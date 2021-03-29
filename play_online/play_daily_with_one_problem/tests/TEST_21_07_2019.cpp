@@ -18,7 +18,7 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 
 	//bst.show();
 
-	//std::cout << "\n CEIL " << bst.ceil(4) << " FLOOR " << bst.floor(4);
+	////std::cout << "\n CEIL " << bst.ceil(4) << " FLOOR " << bst.floor(4);
 	//BOOST_CHECK( bst.ceil(4) == 5 );
 	//BOOST_CHECK( bst.floor(4) == 4 );
 }

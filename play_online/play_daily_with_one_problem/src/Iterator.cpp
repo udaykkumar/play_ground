@@ -27,7 +27,7 @@ void list::traverse()
 {
 	for (node *crawl = root(); crawl; crawl = crawl->next())
 	{
-		std::cout << crawl->get() << " " << "\n";
+		//std::cout << crawl->get() << " " << "\n";
 	}
 }
 
