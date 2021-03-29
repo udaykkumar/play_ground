@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-namespace daily_interview 
+namespace daily_interview
 {
-	std::string falling_dominoes(std::string &dominoes);
+std::string falling_dominoes(std::string &dominoes);
 }
 
 #endif

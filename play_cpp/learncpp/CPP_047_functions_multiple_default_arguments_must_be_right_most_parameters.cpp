@@ -1,10 +1,9 @@
 #include <iostream>
 
-
 /* This is Okay */
-int defaultArgument(int x = 10, int y = 0, int z = 0 )
+int defaultArgument(int x = 10, int y = 0, int z = 0)
 {
-    return x + y + x;
+	return x + y + x;
 }
 
 /* This is Not */
@@ -17,6 +16,6 @@ int defaultArgument(int x = 10, int y, int z )
 
 int main()
 {
-    std::cout << defaultArgument() << std::endl;
-    return (0);
+	std::cout << defaultArgument() << std::endl;
+	return (0);
 }

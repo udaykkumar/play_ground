@@ -1,25 +1,33 @@
 #ifndef __ITEM_2_005_HPP_INCLUDED__
 #define __ITEM_2_005_HPP_INCLUDED__
-	
+
 class GamePlayer_Item2_005
 {
 public:
 	GamePlayer_Item2_005()
-	{}
+	{
+	}
 	~GamePlayer_Item2_005()
-	{}
+	{
+	}
 
-/**
- * Now this function is needed to expose the Turns_ outside
- * because these members are private there is no way
- * one can access these from within a scope, be in even main, which again is a scope
- * the onlything that can be done is initialize or read from a global scope
- * see cpp file for how it is done.
- * 
- * @return [description]
- */
-int turns() const 	{	return Turns_;		}
-int players() const {	return Players_;	}
+	/**
+	 * Now this function is needed to expose the Turns_ outside
+	 * because these members are private there is no way
+	 * one can access these from within a scope, be in even main, which again is a scope
+	 * the onlything that can be done is initialize or read from a global scope
+	 * see cpp file for how it is done.
+	 * 
+	 * @return [description]
+	 */
+	int turns() const
+	{
+		return Turns_;
+	}
+	int players() const
+	{
+		return Players_;
+	}
 
 private:
 

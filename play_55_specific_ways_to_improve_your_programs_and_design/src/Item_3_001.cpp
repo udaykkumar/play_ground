@@ -19,19 +19,19 @@ int main(int argc, char const *argv[])
 	const char *p2 = greeting;
 
 	//p2[0] = 'f';  // Not allowed,'read only ' 
-	p2 =	"Another String"; // Allowed, no warning
+	p2 = "Another String"; // Allowed, no warning
 	std::cout << p2 << "\n";
 	/**
 	 * const pointer, non-const data
 	 */
-	char * const p3 = greeting;
+	char *const p3 = greeting;
 	p3[0] = '4'; // Allowed
 	//p3 = "Another String"; // Not allowed at all
 
 	/**
 	 * const pointer, const data;
 	 */
-	const char * const p4 = greeting;
+	const char *const p4 = greeting;
 	//p4[0] = 'x'; // Not Allowed
 	//p4    = "Hyoasd"; // Not Allowed
 	std::cout << p4 << "\n";

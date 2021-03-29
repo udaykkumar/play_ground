@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -17,58 +16,58 @@
 int main(int argc, char const *argv[])
 {
 	std::cout << "Hello " << argv[0] << "\n";
-	int socfd = socket( AF_INET, SOCK_STREAM, 0 );
-	if( socfd <= 0 )
+	int socfd = socket( AF_INET, SOCK_STREAM, 0);
+	if (socfd <= 0)
 	{
 		std::cerr << "ERROR : We have problem creating socket \n";
 		std::exit(socfd);
 	}
 
 	struct sockaddr_in saddr;
-		saddr.sin_family 		= AF_INET;
-		saddr.sin_port   		= htons(1231);
-		saddr.sin_addr.s_addr	= INADDR_ANY;
+	saddr.sin_family = AF_INET;
+	saddr.sin_port = htons(1231);
+	saddr.sin_addr.s_addr = INADDR_ANY;
 
-
-	if (bind(socfd, (struct sockaddr *) &saddr,
-                   sizeof(struct sockaddr_in)) == -1)
+	if (bind(socfd, (struct sockaddr*) &saddr, sizeof(struct sockaddr_in))
+			== -1)
 	{
 		std::cerr << "ERROR : we have a bind failure here\n";
 		std::exit(-1);
 	}
 
-	if (listen(socfd, 5) == -1 )
+	if (listen(socfd, 5) == -1)
 	{
 		std::cerr << "ERROR : we have a listen failure here\n";
 		std::exit(-1);
 	}
 
 	size_t served = 0;
-	for ( ;; )
+	for (;;)
 	{
 		struct sockaddr_in raddr;
-		socklen_t          raddrlen;
-		int cfd = accept( socfd, (struct sockaddr*)&raddr, &raddrlen);
-		if( cfd <= 0 )
+		socklen_t raddrlen;
+		int cfd = accept(socfd, (struct sockaddr*) &raddr, &raddrlen);
+		if (cfd <= 0)
 		{
 			std::cerr << "ERROR : we have a accept failure here\n";
 			continue;
 		}
-		served ++;
+		served++;
 		size_t totalRead = 0;
-		for(char buf[1024]; ;) 
+		for (char buf[1024];;)
 		{
 			std::memset(buf, 0, 1024);
 			size_t nbytes = recv(cfd, buf, sizeof buf, 0);
-			if ( nbytes <= 0 )
+			if (nbytes <= 0)
 				break;
 			totalRead += nbytes;
 		}
-		std::cout << "INFO  : ["<< cfd << "] we got total " << totalRead << " bytes " << "served " << served << " connections" << "\n";
+		std::cout << "INFO  : [" << cfd << "] we got total " << totalRead
+				<< " bytes " << "served " << served << " connections" << "\n";
 
 		// unclosed cfd will take things to CLOSE_WAIT and that is a pure no no
 		close(cfd);
 	}
-	
+
 	return 0;
 }

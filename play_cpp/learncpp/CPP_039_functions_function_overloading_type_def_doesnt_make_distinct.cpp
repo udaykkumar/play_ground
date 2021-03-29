@@ -1,9 +1,8 @@
 #include <iostream>
 
-
-void print( const char *s )
+void print(const char *s)
 {
-    std::cout << "the char * is : " << s << std::endl;
+	std::cout << "the char * is : " << s << std::endl;
 }
 
 /* Obviously this is as good as above so 
@@ -20,8 +19,8 @@ void print( string s )
 
 int main()
 {
-    const char *s = "String"; 
-    print(s);
+	const char *s = "String";
+	print(s);
 
-    return (0);
+	return (0);
 }

@@ -17,5 +17,5 @@
 #include "client_common.hpp"
 
 void do_push(int socfd);
-int  make_connection();
+int make_connection();
 #endif

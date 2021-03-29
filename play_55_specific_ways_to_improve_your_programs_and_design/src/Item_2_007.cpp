@@ -1,11 +1,10 @@
 #include <iostream>
 
-void f( int x )
+void f(int x)
 {
-	(void)x;
-	return ;
+	(void) x;
+	return;
 }
-
 
 /**
  * Check how the undesired behavior kicks in with the two different calls
@@ -25,10 +24,9 @@ void Try_With_Macro()
 	CALL_WITH_MAX(++a, b);
 	std::cout << "After Call 1 CALL_WITH_MAX a = " << a << " b = " << b << "\n";
 
-	CALL_WITH_MAX(++a, b+10);
+	CALL_WITH_MAX(++a, b + 10);
 	std::cout << "After Call 2 CALL_WITH_MAX a = " << a << " b = " << b << "\n";
 
-	
 }
 
 /**
@@ -38,12 +36,11 @@ void Try_With_Macro()
  * becuase its a real function it obeys all the scope related rules
  * 
  */
-template < typename T >
-inline void CallWithMax( const T& a, const T& b )
+template<typename T>
+inline void CallWithMax(const T &a, const T &b)
 {
-	f( a > b ? a : b );
+	f(a > b ? a : b);
 }
-
 
 void Try_With_Inline()
 {
@@ -52,7 +49,7 @@ void Try_With_Inline()
 
 	CallWithMax(++a, b);
 	std::cout << "After Call 1 CallWithMax a = " << a << " b = " << b << "\n";
-	CallWithMax(++a, b+10);
+	CallWithMax(++a, b + 10);
 	std::cout << "After Call 2 CallWithMax a = " << a << " b = " << b << "\n";
 
 }

@@ -3,60 +3,64 @@
 
 namespace bira
 {
-    template < typename valueType >
-    struct leaf
-    {
-    private:
-        valueType   v_;
-        struct leaf<valueType> *left_, *right_;   
+template<typename valueType>
+struct leaf
+{
+private:
+	valueType v_;
+	struct leaf<valueType> *left_, *right_;
 
-    public:
-        leaf(const valueType v) :
-            v_( v ) , left_( nullptr ), right_( nullptr ) 
-            {}
+public:
+	leaf(const valueType v) :
+			v_(v), left_(nullptr), right_(nullptr)
+	{
+	}
 
-        valueType& get() const
-        {
-            return v_;
-        }
+	valueType& get() const
+	{
+		return v_;
+	}
 
-        struct leaf<valueType>  *left() { return left_ ; }
-        struct leaf<valueType> *right() { return right_; }
+	struct leaf<valueType>* left()
+	{
+		return left_;
+	}
+	struct leaf<valueType>* right()
+	{
+		return right_;
+	}
 
-    };
+};
 
+template<typename valueType>
+struct tree
+{
+	typedef struct leaf<valueType> nodeType_t;
 
-    template < typename valueType >
-    struct tree
-    {
-        typedef struct leaf<valueType>  nodeType_t;
+private:
+	nodeType_t *root_;
+	nodeType_t*& root()
+	{
+		return root_;
+	}
 
-    private:
-        nodeType_t*  root_;
-        nodeType_t* &root() 
-        { 
-            return root_; 
-        }
+public:
+	void add(const valueType v)
+	{
+		/* hmmm ..*/
+	}
 
+	bool exists(const valueType v)
+	{
 
+	}
 
-    public:
-        void add(const valueType v)
-        {
-            /* hmmm ..*/
-        }
+	void show()
+	{
 
-        bool exists(const valueType v)
-        {
+	}
 
-        }
-
-        void show()
-        {
-
-        }
-
-    };
+};
 }
 
 #endif

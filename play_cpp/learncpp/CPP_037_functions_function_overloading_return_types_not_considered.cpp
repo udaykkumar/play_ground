@@ -1,8 +1,8 @@
 #include <iostream>
 
-int add( int a, int b )
+int add(int a, int b)
 {
-    return a+b;
+	return a + b;
 }
 
 /*
@@ -21,5 +21,5 @@ double add( int a, int b )
 
 int main()
 {
-    return (0);
+	return (0);
 }

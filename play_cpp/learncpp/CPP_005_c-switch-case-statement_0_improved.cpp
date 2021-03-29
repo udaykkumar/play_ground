@@ -4,29 +4,30 @@
 
 #include <iostream>
 #include <vector>
-std::vector< std::string > numTwoWrods = { "Nope", "one", "two", "three", "four", "five",
-                        "six", "seven", "eight", "nine", "ten" };
+std::vector<std::string> numTwoWrods =
+{ "Nope", "one", "two", "three", "four", "five", "six", "seven", "eight",
+		"nine", "ten" };
 
-static void pronounce( int x )
+static void pronounce(int x)
 {
-    if( x > 0 && x <= 10 )
-    {
-        std::cout <<  numTwoWrods[x]  << std::endl;    
-    }
-    else
-    {
-        std::cout << "not in range" << std::endl;
-    }
-}   
+	if (x > 0 && x <= 10)
+	{
+		std::cout << numTwoWrods[x] << std::endl;
+	}
+	else
+	{
+		std::cout << "not in range" << std::endl;
+	}
+}
 int main()
 {
-    int T;
-    for( std::cin >> T; T > 0 ; T -- )
-    {
-        int x;
-            std::cin >> x;
-            pronounce(x);
-    }
+	int T;
+	for (std::cin >> T; T > 0; T--)
+	{
+		int x;
+		std::cin >> x;
+		pronounce(x);
+	}
 
-    return (0);
+	return (0);
 }

@@ -4,7 +4,7 @@
 #include<vector>
 namespace daily_interview
 {
-	bool can_it_be_made_non_decreasing(const std::vector<int> &arr);
+bool can_it_be_made_non_decreasing(const std::vector<int> &arr);
 }
 
 #endif

@@ -3,17 +3,20 @@
 class GamePlayer
 {
 public:
-	GamePlayer(){}
-	~GamePlayer(){}
-	
+	GamePlayer()
+	{
+	}
+	~GamePlayer()
+	{
+	}
 
 private:
 	static const int NumTurns = 5;
-	int scores[ NumTurns ];
+	int scores[NumTurns];
 };
 
 int main()
 {
 	GamePlayer gp;
-	return 0;	
+	return 0;
 }

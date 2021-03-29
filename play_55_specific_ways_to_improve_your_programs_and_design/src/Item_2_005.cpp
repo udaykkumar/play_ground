@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Item_2_005.hpp"
 
-
 /** 
  * If you refer to the hpp file 
  * Players_ is not defined just declared as static and private

@@ -6,14 +6,16 @@ class Item_3_005_CText_Block_Err
 {
 public:
 	Item_3_005_CText_Block_Err()
-	{}
+	{
+	}
 
 	~Item_3_005_CText_Block_Err()
-	{}
+	{
+	}
 
 	std::size_t length() const
 	{
-		if( !lengthIsValid_ )
+		if (!lengthIsValid_)
 		{
 			// we are not supposed to do that
 			//txtLength_ = std::strlen( text_ );  // Error
@@ -26,39 +28,40 @@ public:
 	}
 
 private:
-	char 			*text_;
-	std::size_t 	txtLength_;
-	bool 			lengthIsValid_;
-	
-};
+	char *text_;
+	std::size_t txtLength_;
+	bool lengthIsValid_;
 
+};
 
 class Item_3_005_CText_Block_Alternative
 {
 public:
 	Item_3_005_CText_Block_Alternative()
-	{}
+	{
+	}
 
 	~Item_3_005_CText_Block_Alternative()
-	{}
+	{
+	}
 
 	std::size_t length() const
 	{
-		if( !lengthIsValid_ )
+		if (!lengthIsValid_)
 		{
 			// we can not do this thanks to mutable 
-			txtLength_ = std::strlen( text_ );  
-			lengthIsValid_ = true;	 
+			txtLength_ = std::strlen(text_);
+			lengthIsValid_ = true;
 		}
 
 		return txtLength_;
 	}
 
 private:
-	char 			*text_;
-	mutable std::size_t 	txtLength_;
-	mutable bool 			lengthIsValid_;
-	
+	char *text_;
+	mutable std::size_t txtLength_;
+	mutable bool lengthIsValid_;
+
 };
 
 int main(int argc, char const *argv[])

@@ -5,6 +5,6 @@
 
 namespace daily_interview
 {
-	bool two_sum_exists(const std::vector<int> &numlist, int k);
+bool two_sum_exists(const std::vector<int> &numlist, int k);
 }
 #endif

@@ -4,14 +4,14 @@
 
 #include <iostream>
 
-void simple_function(  )
+void simple_function()
 {
-    std::cout << "Hello Function" << std::endl;
+	std::cout << "Hello Function" << std::endl;
 }
 
 int main()
 {
-    std::cout << "Calling Function simple_function from main()" << std::endl;
-    simple_function();
-    return (0);
+	std::cout << "Calling Function simple_function from main()" << std::endl;
+	simple_function();
+	return (0);
 }

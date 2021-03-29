@@ -11,12 +11,11 @@ BOOST_AUTO_TEST_CASE( bst_init )
 
 	int v = 1;
 
-    bst.insert( v );
-    bst.find( v );
-    bst.remove( v );
-    
+	bst.insert(v);
+	bst.find(v);
+	bst.remove(v);
+
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-
 

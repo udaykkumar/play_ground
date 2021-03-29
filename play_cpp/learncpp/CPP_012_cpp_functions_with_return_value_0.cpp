@@ -1,15 +1,14 @@
 #include <iostream>
 
-
-int getSomeThing( )
+int getSomeThing()
 {
-    return 2;
+	return 2;
 }
 
 int main()
 {
-    int x;
-        x = getSomeThing();
-        std::cout << "getSomeThing returned : "  << x << std::endl;
-    return (0);
+	int x;
+	x = getSomeThing();
+	std::cout << "getSomeThing returned : " << x << std::endl;
+	return (0);
 }

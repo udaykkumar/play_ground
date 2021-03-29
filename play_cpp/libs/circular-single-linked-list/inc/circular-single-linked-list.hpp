@@ -3,33 +3,41 @@
 
 #include <iostream>
 
-namespace ds {
-    struct node {
+namespace ds
+{
+struct node
+{
 
-        node(int x) : d_(x), next_(NULL) {}
+	node(int x) :
+			d_(x), next_(NULL)
+	{
+	}
 
-        int d_;
-        struct node *next_;
-    };
+	int d_;
+	struct node *next_;
+};
 
-    struct csll {
+struct csll
+{
 
-         csll( ) : head_(NULL), sz_(0) {}
-        ~csll( ) ;
+	csll() :
+			head_(NULL), sz_(0)
+	{
+	}
+	~csll();
 
-        /* List Operations */
-        int     add( const int );
-        int     remove( );
-       
-        /* Utilities */
-        void          print( void ) const;
-        const size_t  size( ) const;
-        bool          isEmpty( void ) const;
+	/* List Operations */
+	int add(const int);
+	int remove();
 
+	/* Utilities */
+	void print(void) const;
+	const size_t size() const;
+	bool isEmpty(void) const;
 
-        /* Members */
-        struct node *head_;
-        size_t       sz_;
-    };
+	/* Members */
+	struct node *head_;
+	size_t sz_;
+};
 }
 #endif

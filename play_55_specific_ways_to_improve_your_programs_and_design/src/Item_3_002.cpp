@@ -12,20 +12,18 @@
  * 
  */
 
-
 int main(int argc, char const *argv[])
 {
-	std::vector<int> vec{1,2,3,4,5,6,7,8,9};
+	std::vector<int> vec
+	{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 	const std::vector<int>::iterator iter = vec.begin();
-		*iter = 10; // This is Okay 
+	*iter = 10; // This is Okay 
 
 	//	++iter ; // wont work
-	
-
 
 	std::vector<int>::const_iterator citer = vec.begin();
-		//*citer = 10; // Nope
-		++citer ;// Perfectly fine goes to next location
+	//*citer = 10; // Nope
+	++citer; // Perfectly fine goes to next location
 	return 0;
 }

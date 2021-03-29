@@ -4,19 +4,19 @@
 
 #include <iostream>
 
-int calcSum( int a, int b, int c )
+int calcSum(int a, int b, int c)
 {
-    return a + b + c ;
+	return a + b + c;
 }
 int main()
 {
-    int T;
-    for( std::cin >> T; T > 0; T -- )
-    {
-        int a, b, c ;
-            std::cin >> a >> b >> c ;
-            std::cout << calcSum( a, b, c ) << std::endl;
-    }
+	int T;
+	for (std::cin >> T; T > 0; T--)
+	{
+		int a, b, c;
+		std::cin >> a >> b >> c;
+		std::cout << calcSum(a, b, c) << std::endl;
+	}
 
-    return 0;
+	return 0;
 }

@@ -8,16 +8,19 @@ class Item_2_006_Logger_Example
 public:
 	Item_2_006_Logger_Example()
 	{
-		std::cout << "IN : Item_2_006_Logger_Example()\n" ;
+		std::cout << "IN : Item_2_006_Logger_Example()\n";
 	}
 
 	~Item_2_006_Logger_Example()
 	{
-		std::cout << "IN : ~Item_2_006_Logger_Example()\n" ;
+		std::cout << "IN : ~Item_2_006_Logger_Example()\n";
 	}
-	
+
 	/* Expose them */
-	int level() const { return LogLevel_; }
+	int level() const
+	{
+		return LogLevel_;
+	}
 private:
 	static const int LogLevel_;
 };

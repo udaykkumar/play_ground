@@ -6,10 +6,8 @@
 #include <algorithm>
 #include <iterator>
 
-void show_vector( const std::string &label,
-		const std::vector<int> &iv );
+void show_vector(const std::string &label, const std::vector<int> &iv);
 
-void generate_iv_ov( std::vector<int> &iv, std::vector<int> &ov);
-
+void generate_iv_ov(std::vector<int> &iv, std::vector<int> &ov);
 
 #endif // __CPHB_TEST_UTILS_H__

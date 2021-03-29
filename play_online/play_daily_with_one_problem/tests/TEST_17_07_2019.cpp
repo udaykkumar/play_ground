@@ -7,38 +7,42 @@ BOOST_AUTO_TEST_SUITE( TEST_17_07_2019 )
 
 BOOST_AUTO_TEST_CASE( Case_1 )
 {
-    std::vector<int> v = {3, 3, 2, 1, 3, 2, 1};
-    std::vector<int> r = {1, 1, 2, 2, 3, 3, 3};
+	std::vector<int> v =
+	{ 3, 3, 2, 1, 3, 2, 1 };
+	std::vector<int> r =
+	{ 1, 1, 2, 2, 3, 3, 3 };
 
-    daily_bira::dose d(v);
+	daily_bira::dose d(v);
 
-    d.sort();
+	d.sort();
 
-    std::vector<int>::iterator rIt = r.begin();
-    for( std::vector<int>::iterator it = d.get().begin() ; it != d.get().end(); it ++,  rIt ++ )
-    {
-        BOOST_CHECK( *it == *rIt );
-    }
-    
+	std::vector<int>::iterator rIt = r.begin();
+	for (std::vector<int>::iterator it = d.get().begin(); it != d.get().end();
+			it++, rIt++)
+	{
+		BOOST_CHECK(*it == *rIt);
+	}
+
 }
-
-
 
 BOOST_AUTO_TEST_CASE( Case_2 )
 {
-    std::vector<int> v = {1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 1};
-    std::vector<int> r = {1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3};
+	std::vector<int> v =
+	{ 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 1 };
+	std::vector<int> r =
+	{ 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3 };
 
-    daily_bira::dose d(v);
+	daily_bira::dose d(v);
 
-    d.sort();
+	d.sort();
 
-    std::vector<int>::iterator rIt = r.begin();
-    for( std::vector<int>::iterator it = d.get().begin() ; it != d.get().end(); it ++,  rIt ++ )
-    {
-        BOOST_CHECK( *it == *rIt );
-    }
-    
+	std::vector<int>::iterator rIt = r.begin();
+	for (std::vector<int>::iterator it = d.get().begin(); it != d.get().end();
+			it++, rIt++)
+	{
+		BOOST_CHECK(*it == *rIt);
+	}
+
 }
 BOOST_AUTO_TEST_SUITE_END()
 

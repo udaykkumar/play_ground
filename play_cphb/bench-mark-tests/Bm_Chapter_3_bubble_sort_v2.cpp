@@ -4,29 +4,30 @@
 #include <algorithm>
 #include <Chapter_3_bubble_sort.h>
 
-static void Bm_Chapter_1_bubble_sort_v2_random(benchmark::State& state) 
+static void Bm_Chapter_1_bubble_sort_v2_random(benchmark::State &state)
 {
-  // Perform setup here
-  for (auto _ : state) 
-  {
-    state.PauseTiming();
-  
-    std::vector<int>      iv;
-    
-    for ( decltype(state.range(0)) i = 0 ; i < state.range(0); i ++ )
-      iv.emplace_back(i);
+	// Perform setup here
+	for (auto _ : state)
+	{
+		state.PauseTiming();
 
-    std::vector<int>      ov(iv.size());
+		std::vector<int> iv;
 
-    std::copy( iv.begin(), iv.end(), ov.begin());
+		for (decltype(state.range(0)) i = 0; i < state.range(0); i++)
+			iv.emplace_back(i);
 
-    std::shuffle( iv.begin(), iv.end(), std::mt19937{
-            std::random_device{}()});
-  
-    state.ResumeTiming();  
+		std::vector<int> ov(iv.size());
 
-    cphb::bubble_sort_v2(iv);
-  }
+		std::copy(iv.begin(), iv.end(), ov.begin());
+
+		std::shuffle(iv.begin(), iv.end(), std::mt19937
+		{ std::random_device
+		{ }() });
+
+		state.ResumeTiming();
+
+		cphb::bubble_sort_v2(iv);
+	}
 }
 // Register the function as a benchmark
-BENCHMARK(Bm_Chapter_1_bubble_sort_v2_random)->Range(8, 8<<10);
+BENCHMARK(Bm_Chapter_1_bubble_sort_v2_random)->Range(8, 8 << 10);

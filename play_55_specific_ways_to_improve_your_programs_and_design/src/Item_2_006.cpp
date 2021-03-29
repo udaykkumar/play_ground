@@ -12,8 +12,8 @@ int main(int argc, char const *argv[])
 	 *  within main will cause error again.. hence the one above
 	 *  
 	 */
-	
+
 	Item_2_006_Logger_Example le;
-	std::cout << "LogLeve : "<< le.level() << "\n";
+	std::cout << "LogLeve : " << le.level() << "\n";
 	return 0;
 }

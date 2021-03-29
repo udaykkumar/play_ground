@@ -6,23 +6,24 @@
 
 int main()
 {
-    int T;
-    for( std::cin >> T; T > 0 ; T -- )
-    {
-        int     x;
-            std::cin >> x;
+	int T;
+	for (std::cin >> T; T > 0; T--)
+	{
+		int x;
+		std::cin >> x;
 
-        int     sum{0};
-            for( ; x > 0 ; x -- )
-            {
-                int a;
-                    std::cin >> a;
-                        sum += a;
-            }
+		int sum
+		{ 0 };
+		for (; x > 0; x--)
+		{
+			int a;
+			std::cin >> a;
+			sum += a;
+		}
 
-        std::cout << sum << std::endl;
-        
-    }
+		std::cout << sum << std::endl;
 
-    return (0);
+	}
+
+	return (0);
 }
