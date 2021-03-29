@@ -47,18 +47,18 @@ int main() {
     input = {1,3,3,5,7,8,9,9,9,15};
     target = 9;
     result = bounds(input, target);
-    std::cout <<  " " << result.first << " " << result.second << std::endl;
+    //std::cout <<  " " << result.first << " " << result.second << std::endl;
 
     input = {100, 150, 150, 153};
     target = 150;
     result = bounds(input, target);
-    std::cout <<  " " << result.first << " " << result.second << std::endl;
+    //std::cout <<  " " << result.first << " " << result.second << std::endl;
 
 
     input = {1,2,3,4,5,6,10};
     target = 9;
     result = bounds(input, target);
-    std::cout <<  " " << result.first << " " << result.second << std::endl;
+    //std::cout <<  " " << result.first << " " << result.second << std::endl;
 
     return 0;
 }

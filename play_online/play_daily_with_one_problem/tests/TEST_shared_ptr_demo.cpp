@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 		BOOST_CHECK(s1.size() == i);
 	}
 
-	std::cout << s1;
+	//std::cout << s1;
 
 	daily_interview::shared s2;
 	for (; i < 1000; i++)
@@ -24,7 +24,7 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 		BOOST_CHECK(s1.size() == i);
 	}
 
-	std::cout << s2;
+	//std::cout << s2;
 
 }
 BOOST_AUTO_TEST_SUITE_END()

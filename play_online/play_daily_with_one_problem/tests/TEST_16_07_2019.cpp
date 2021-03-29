@@ -17,13 +17,13 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 	}
 
 	/*
-	 std::cout << "Original List : " ;
+	 //std::cout << "Original List : " ;
 	 l.traverse();
 	 */
 
 	// l.reverse();
 	/*
-	 std::cout << "Reversed List : " ;
+	 //std::cout << "Reversed List : " ;
 	 l.traverse();
 	 */
 

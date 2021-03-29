@@ -12,7 +12,7 @@ BOOST_AUTO_TEST_CASE( Case_1 )
 	lc::Solution s(v);
 	for (int i = 0; i < 20; ++i)
 	{
-		std::cout << s.pickIndex() << "\n";
+		//std::cout << s.pickIndex() << "\n";
 	}
 }
 
@@ -23,7 +23,7 @@ BOOST_AUTO_TEST_CASE( Case_2 )
 	lc::Solution s(v);
 	for (int i = 0; i < 20; ++i)
 	{
-		std::cout << s.pickIndex() << "\n";
+		//std::cout << s.pickIndex() << "\n";
 	}
 
 }

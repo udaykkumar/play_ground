@@ -31,9 +31,9 @@ void list::add(const size_t data)
 
 void list::show()
 {
-	for (struct node *crawler = head_; crawler; crawler = crawler->next())
-		std::cout << crawler->get() << " ";
-	std::cout << "\n";
+	//for (struct node *crawler = head_; crawler; crawler = crawler->next())
+		//std::cout << crawler->get() << " ";
+	//std::cout << "\n";
 }
 
 size_t intersection(struct list &list1, struct list &list2)

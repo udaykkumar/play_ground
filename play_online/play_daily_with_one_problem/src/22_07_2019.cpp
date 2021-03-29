@@ -83,7 +83,7 @@ void binary_tree::show(node *r)
 	if (r != nullptr)
 	{
 		show(r->left());
-		std::cout << r->get() << " ";
+		//std::cout << r->get() << " ";
 		show(r->right());
 	}
 
@@ -91,9 +91,9 @@ void binary_tree::show(node *r)
 
 void binary_tree::show()
 {
-	std::cout << "\n";
+	//std::cout << "\n";
 	show(root());
-	std::cout << "\n";
+	//std::cout << "\n";
 }
 
 void binary_tree::invert(node *r)

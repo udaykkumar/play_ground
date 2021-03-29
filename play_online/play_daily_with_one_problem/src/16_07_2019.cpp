@@ -22,9 +22,9 @@ void list::add(const int data)
 
 void list::traverse()
 {
-	for (node *crawler = root(); crawler; crawler = crawler->next())
-		std::cout << " " << crawler->get() << " ";
-	std::cout << "\n";
+	//for (node *crawler = root(); crawler; crawler = crawler->next())
+		//std::cout << " " << crawler->get() << " ";
+	//std::cout << "\n";
 }
 
 void list::reverse()
