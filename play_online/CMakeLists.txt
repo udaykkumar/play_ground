@@ -13,5 +13,5 @@ file(GLOB ALL_TEST_INC "**/tests/")
 
 include_directories( ${ALL_PROBLEM_INC}  ${ALL_TEST_INC} )
 
-add_executable("test_play_online" ${ALL_PROBLEM_SOURCES} ${ALL_TEST_SOURCES} "./test/suite-runner.cpp") 
-target_link_libraries("test_play_online" ${Boost_LIBRARIES} )
+add_executable("play_online_test" ${ALL_PROBLEM_SOURCES} ${ALL_TEST_SOURCES} "./test/suite-runner.cpp") 
+target_link_libraries("play_online_test" ${Boost_LIBRARIES} )
