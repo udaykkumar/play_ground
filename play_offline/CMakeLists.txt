@@ -6,7 +6,6 @@ enable_testing()
 
 add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
 add_subdirectory( play_c )
-add_subdirectory( play_cphb )
 add_subdirectory( play_cpp )
 add_subdirectory( play_ping_pong )
 add_subdirectory( play_servers )
