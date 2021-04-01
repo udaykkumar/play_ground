@@ -56,14 +56,8 @@ add_definitions(-DNCURSES_NOMACROS)
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS} ")
 SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
-add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
-add_subdirectory( play_c )
-add_subdirectory( play_cphb )
-add_subdirectory( play_cpp )
-#add_subdirectory( play_ctci_6_e )
-add_subdirectory( play_daily_with_one_problem )
-add_subdirectory( play_lc )
-add_subdirectory( play_lc_once_again_top_google_questions )
-add_subdirectory( play_ping_pong )
-add_subdirectory( play_servers )
+add_subdirectory( play_offline )
+add_subdirectory( play_online )
+
+
 
