@@ -7,9 +7,7 @@ enable_testing()
 
 #Project SourceFiles
 file(GLOB ALL_PROBLEM_SOURCES "src/*.c**")
-file(GLOB ALL_PROBLEM_INC "src/")
 file(GLOB ALL_TEST_SOURCES "tests/*.c**" )
-file(GLOB ALL_TEST_INC "tests/")
 
 include_directories( "src" "tests" )
 
