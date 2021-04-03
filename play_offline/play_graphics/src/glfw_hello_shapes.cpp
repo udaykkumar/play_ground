@@ -11,8 +11,6 @@
 #include <iostream>
 #include <cstdlib>
 
-#define GL_SILENCE_DEPRECATION
-
 #ifdef __APPLE__
 #  include <OpenGL/gl3.h>
 #else /// your stuff for linux

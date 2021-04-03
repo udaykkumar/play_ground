@@ -16,8 +16,8 @@
 #include <sstream>
 using namespace std;
 
-#include <stdlib.h>
-#include <string.h>
+#include <cstdlib>
+#include <iostream>
 
 #ifdef __APPLE__
 #  include <OpenGL/gl3.h>
@@ -42,7 +42,8 @@ GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path
 		VertexShaderCode = sstr.str();
 		VertexShaderStream.close();
 	}else{
-		printf("Impossible to open %s. Are you in the right directory ? Don't forget to read the FAQ !\n", vertex_file_path);
+		std::cout << "Impossible to open " << vertex_file_path ;
+		std::cout << " Are you in the right directory ? Don't forget to read the FAQ !\n";
 		getchar();
 		return 0;
 	}
@@ -73,7 +74,7 @@ GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path
 	if ( InfoLogLength > 0 ){
 		std::vector<char> VertexShaderErrorMessage(InfoLogLength+1);
 		glGetShaderInfoLog(VertexShaderID, InfoLogLength, NULL, &VertexShaderErrorMessage[0]);
-		printf("%s\n", &VertexShaderErrorMessage[0]);
+		std::cout <<  &VertexShaderErrorMessage[0] << "\n";
 	}
 
 
@@ -90,7 +91,7 @@ GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path
 	if ( InfoLogLength > 0 ){
 		std::vector<char> FragmentShaderErrorMessage(InfoLogLength+1);
 		glGetShaderInfoLog(FragmentShaderID, InfoLogLength, NULL, &FragmentShaderErrorMessage[0]);
-		printf("%s\n", &FragmentShaderErrorMessage[0]);
+		std::cout <<  &FragmentShaderErrorMessage[0] << "\n";
 	}
 
 
@@ -108,7 +109,7 @@ GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path
 	if ( InfoLogLength > 0 ){
 		std::vector<char> ProgramErrorMessage(InfoLogLength+1);
 		glGetProgramInfoLog(ProgramID, InfoLogLength, NULL, &ProgramErrorMessage[0]);
-		printf("%s\n", &ProgramErrorMessage[0]);
+		std::cout <<  &ProgramErrorMessage[0] << "\n";
 	}
 
 
