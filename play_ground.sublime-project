@@ -1107,12 +1107,12 @@
 					"shell_cmd": "make -j8 hellow_world"
 				},
 				{
-					"name": "glfw_hello_shapes",
-					"shell_cmd": "make -j8 glfw_hello_shapes"
+					"name": "glfw_hello_shapes_triangle",
+					"shell_cmd": "make -j8 glfw_hello_shapes_triangle"
 				},
 				{
-					"name": "glfw_hello_moving_shapes",
-					"shell_cmd": "make -j8 glfw_hello_moving_shapes"
+					"name": "glfw_hello_moving_shapes_triangle",
+					"shell_cmd": "make -j8 glfw_hello_moving_shapes_triangle"
 				},
 				{
 					"name": "glfw_hello_metrices",

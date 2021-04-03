@@ -99,9 +99,9 @@ int main(void)
 	
 	GLfloat g_vertex_buffer_data[] =
 	{
-			-1.0f, -1.0f, 0.0f,
-			 1.0f, -1.0f, 0.0f,
-			 0.0f,  1.0f, 0.0f,
+			-1.0f, -1.0f, 0.1f,
+			 1.0f, -1.0f, 0.1f,
+			 0.0f,  1.0f, 0.1f,
 	};
 
 	GLuint vertexbuffer;

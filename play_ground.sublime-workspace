@@ -196,27 +196,19 @@
 	"buffers":
 	[
 		{
-			"file": "CMakeLists.txt",
+			"file": "play_offline/play_graphics/src/glfw_hello_coloured_cube.cpp",
 			"settings":
 			{
-				"buffer_size": 2055,
+				"buffer_size": 7566,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "play_ground.sublime-project",
-			"settings":
-			{
-				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".travis.yml",
+			"file": "play_offline/play_graphics/src/glfw_hello_shapes_triangle.cpp",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 3778,
 				"line_ending": "Unix"
 			}
 		}
@@ -1361,12 +1353,32 @@
 		"selected_items":
 		[
 			[
-				"change",
-				"Git: Change Branch"
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"glfw_",
+				"Build With: play_ground (Linux) - glfw_hello_shapes"
+			],
+			[
+				"comm",
+				"Git: Commit"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"change",
+				"Git: Change Branch"
 			],
 			[
 				"insta",
@@ -1389,14 +1401,6 @@
 				"CoolFormat: Selected Format"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
-				"commit",
-				"Git: Commit"
-			],
-			[
 				"git add",
 				"Git: Add All"
 			],
@@ -1417,16 +1421,8 @@
 				"Git: Commit"
 			],
 			[
-				"add",
-				"Git: Add All"
-			],
-			[
 				"unstage",
 				"Git: Reset (unstage) Current File"
-			],
-			[
-				"comm",
-				"Git: Commit"
 			],
 			[
 				"com",
@@ -1606,13 +1602,18 @@
 	"expanded_folders":
 	[
 		"/home/kk/git/play_ground",
-		"/home/kk/git/play_ground/play_online"
+		"/home/kk/git/play_ground/play_offline",
+		"/home/kk/git/play_ground/play_offline/play_graphics",
+		"/home/kk/git/play_ground/play_offline/play_graphics/src"
 	],
 	"file_history":
 	[
+		"/home/kk/git/play_ground/play_offline/play_graphics/src/CMakeLists.txt",
 		"/home/kk/git/play_ground/play_ground.sublime-project",
-		"/home/kk/git/play_ground/.gitignore",
+		"/home/kk/git/play_ground/play_offline/play_graphics/src/glfw_hello_shapes_triangle.cpp",
+		"/home/kk/git/play_ground/play_offline/play_graphics/src/glfw_hello_moving_shapes_triangle.cpp",
 		"/home/kk/git/play_ground/CMakeLists.txt",
+		"/home/kk/git/play_ground/.gitignore",
 		"/C/git/play_ground/play_ground_wsl.sublime_project",
 		"/C/git/pml-storeonce-storage/impl/src/main/java/com/hpe/storage/pml/storeonce/storage/impl/operation/model/StorageLocation.java",
 		"/C/git/pml-storeonce-storage/impl/src/test/java/com/hpe/storage/pml/storeonce/storage/impl/operation/StorageProvisioningTest.java",
@@ -1734,14 +1735,11 @@
 		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/boring/mustdo/naive/arrays/0006_maximum-sum-increasing-subsequence.cpp",
 		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_044_functions_function_overloading_ambiguous_matches_bad_example.cpp",
 		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_029_functions_return_by_value_to_const_reference.cpp",
-		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/src/29_07_2019.cpp",
-		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_026_functions_returning_values_by_reference_bad_example.cpp",
-		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/bench-mark-tests/BM_TEST_02_08_2019.cpp",
-		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/src/28_07_2019.cpp"
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/src/29_07_2019.cpp"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 49.0
 	},
 	"find_in_files":
 	{
@@ -1755,6 +1753,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"glfw_hello_shapes",
+			"glfw_hello_moving_shapes",
+			"\t\t\t",
+			"make -j8",
 			"cmake",
 			"make -"
 		],
@@ -1764,6 +1766,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"glfw_hello_shapes_triangle",
+			"glfw_hello_moving_shapes_triangle",
+			"make ",
 			"bash make -"
 		],
 		"reverse": false,
@@ -1775,75 +1780,45 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "CMakeLists.txt",
+					"file": "play_offline/play_graphics/src/glfw_hello_coloured_cube.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2055,
+						"buffer_size": 7566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								427,
-								427
+								5527,
+								5538
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CMakeEditor/CMakeEditor.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 203.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "play_ground.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"syntax": "Packages/C++/C++.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2265.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": ".travis.yml",
+					"buffer": 1,
+					"file": "play_offline/play_graphics/src/glfw_hello_shapes_triangle.cpp",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 3778,
 						"regions":
 						{
 						},
@@ -1856,10 +1831,11 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1071.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1870,7 +1846,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -1901,17 +1877,21 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 578.0
+		"height": 109.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 120.0
+	},
 	"pinned_build_system": "play_ground (Linux)",
 	"project": "play_ground.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
