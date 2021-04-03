@@ -12,6 +12,9 @@ enable_testing()
 include(cmake/GitUtils.cmake)
 include(cmake/FindGLFW3.cmake)
 
+find_package(GLEW REQUIRED)
+find_package(glfw3 REQUIRED)
+
 #Benchmark Find and other stuff
 git_clone(
     PROJECT_NAME    googletest
