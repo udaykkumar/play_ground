@@ -50,7 +50,7 @@ script:
     #- sudo ln -s /usr/local/bin/pip /usr/local/bin/pip3
   - sudo pip install meson
   - sudo pip install cmake
-  - sudo apt install libglfw3-dev freeglut3 freeglut3-dev libglew-dev
+  - sudo apt install libglfw3-dev freeglut3 freeglut3-dev libglew-dev libglm-dev
 
 
   - sudo apt install libboost-all-dev
