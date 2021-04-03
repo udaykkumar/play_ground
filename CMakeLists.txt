@@ -1,6 +1,6 @@
 
 # Minimum CMake
-cmake_minimum_required (VERSION 2.8,9)
+cmake_minimum_required (VERSION 3.8.1)
 project(play_ground)
 set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
@@ -11,6 +11,7 @@ enable_testing()
 
 include(cmake/GitUtils.cmake)
 include(cmake/FindGLFW3.cmake)
+#include(cmake/FindGLEW.cmake)
 
 find_package(GLEW REQUIRED)
 find_package(glfw3 REQUIRED)

@@ -52,10 +52,11 @@ int main(void)
 
 	glfwMakeContextCurrent(window);
 
+
 #ifndef __APPLE__
 	// Initialize GLEW
 	glewExperimental = true; // Needed in core profile
-	if (!glewInit() )
+	if (glewInit() )
 	{
 		std::cerr << "Failed to initialize GLEW\n";
 		return -1;
@@ -67,11 +68,13 @@ int main(void)
 
 	// Create and compile our GLSL program from the shaders
 
-	std::string vertexShader = playground::utils::getExecutableDir() + "/" + "SimpleVertexShader.vertexshader";
-	std::string fragmentShader = playground::utils::getExecutableDir() + "/" + "SimpleFragmentShader.fragmentshader";
 
-	std::cout << "vertexShader " << vertexShader ;
-	std::cout << "fragmentShader " << fragmentShader;
+	std::string baseDir = playground::utils::getExecutableDir();
+	std::string vertexShader = baseDir + "/" + "SimpleVertexShader.vertexshader";
+	std::string fragmentShader = baseDir + "/" + "SimpleFragmentShader.fragmentshader";
+
+	std::cout << "vertexShader " << vertexShader << "\n";
+	std::cout << "fragmentShader " << fragmentShader << "\n";
 
 	GLuint programID = LoadShaders( vertexShader.c_str(), fragmentShader.c_str() );
 

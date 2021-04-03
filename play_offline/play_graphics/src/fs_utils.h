@@ -82,9 +82,9 @@ std::string getExecutableDir() {
     std::string executablePath = getExecutablePath();
     char *executablePathStr = new char[executablePath.length() + 1];
     strcpy(executablePathStr, executablePath.c_str());
-    char* executableDir = dirname(executablePathStr);
+    std::string executableDir = std::string(dirname(executablePathStr));
     delete [] executablePathStr;
-    return std::string(executableDir);
+    return executableDir;
 }
 
 std::string mergePaths(std::string pathA, std::string pathB) {
@@ -112,9 +112,9 @@ std::string getExecutableDir()
 	std::string executablePath = getExecutablePath();
 	char *executablePathStr = new char[executablePath.length() + 1];
 	strcpy(executablePathStr, executablePath.c_str());
-	char *executableDir = dirname(executablePathStr);
+	std::string executableDir = std::string(dirname(executablePathStr));
 	delete[] executablePathStr;
-	return std::string(executableDir);
+	return executableDir;
 }
 
 std::string mergePaths(std::string pathA, std::string pathB)
