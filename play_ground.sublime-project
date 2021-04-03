@@ -1,0 +1,580 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "(.+[^:]):(\\d+):(\\d+): (?:fatal )?((?:error|warning): .+)$",
+			"name": "play_ground (OSX)",
+			"shell_cmd": "make -j4",
+			"syntax": "Packages/CMakeBuilder/Syntax/Make.sublime-syntax",
+			"variants":
+			[
+				{
+					"name": "clean",
+					"shell_cmd": "make -j4 clean"
+				},
+				{
+					"name": "install",
+					"shell_cmd": "make -j4 install"
+				},
+				{
+					"name": "install/local",
+					"shell_cmd": "make -j4 install/local"
+				},
+				{
+					"name": "install/strip",
+					"shell_cmd": "make -j4 install/strip"
+				},
+				{
+					"name": "list_install_components",
+					"shell_cmd": "make -j4 list_install_components"
+				},
+				{
+					"name": "rebuild_cache",
+					"shell_cmd": "make -j4 rebuild_cache"
+				},
+				{
+					"name": "test",
+					"shell_cmd": "make -j4 test"
+				},
+				{
+					"name": "0001_online_subarray-with-given-sum",
+					"shell_cmd": "make -j4 0001_online_subarray-with-given-sum"
+				},
+				{
+					"name": "0001_online_subarray-with-given-sum-better",
+					"shell_cmd": "make -j4 0001_online_subarray-with-given-sum-better"
+				},
+				{
+					"name": "0001_subarray-with-given-sum",
+					"shell_cmd": "make -j4 0001_subarray-with-given-sum"
+				},
+				{
+					"name": "0002_kadanes-algorithm",
+					"shell_cmd": "make -j4 0002_kadanes-algorithm"
+				},
+				{
+					"name": "0002_online_kadanes-algorithm",
+					"shell_cmd": "make -j4 0002_online_kadanes-algorithm"
+				},
+				{
+					"name": "0003_missing-number-in-array",
+					"shell_cmd": "make -j4 0003_missing-number-in-array"
+				},
+				{
+					"name": "0004_sort-an-array-of-0s-1s-and-2s",
+					"shell_cmd": "make -j4 0004_sort-an-array-of-0s-1s-and-2s"
+				},
+				{
+					"name": "0005_equilibrium-point",
+					"shell_cmd": "make -j4 0005_equilibrium-point"
+				},
+				{
+					"name": "0006_maximum-sum-increasing-subsequence",
+					"shell_cmd": "make -j4 0006_maximum-sum-increasing-subsequence"
+				},
+				{
+					"name": "0007_leaders-in-an-array",
+					"shell_cmd": "make -j4 0007_leaders-in-an-array"
+				},
+				{
+					"name": "0008_minimum-platforms",
+					"shell_cmd": "make -j4 0008_minimum-platforms"
+				},
+				{
+					"name": "0009_maximum-of-all-subarrays-of-size-k",
+					"shell_cmd": "make -j4 0009_maximum-of-all-subarrays-of-size-k"
+				},
+				{
+					"name": "001_shifting",
+					"shell_cmd": "make -j4 001_shifting"
+				},
+				{
+					"name": "002_largenos",
+					"shell_cmd": "make -j4 002_largenos"
+				},
+				{
+					"name": "CPP_001_c-hello-world_0",
+					"shell_cmd": "make -j4 CPP_001_c-hello-world_0"
+				},
+				{
+					"name": "CPP_002_c-basic-data-types_0",
+					"shell_cmd": "make -j4 CPP_002_c-basic-data-types_0"
+				},
+				{
+					"name": "CPP_003_c-operators_0",
+					"shell_cmd": "make -j4 CPP_003_c-operators_0"
+				},
+				{
+					"name": "CPP_004_c-if-else-decision-making_0",
+					"shell_cmd": "make -j4 CPP_004_c-if-else-decision-making_0"
+				},
+				{
+					"name": "CPP_005_c-switch-case-statement_0",
+					"shell_cmd": "make -j4 CPP_005_c-switch-case-statement_0"
+				},
+				{
+					"name": "CPP_005_c-switch-case-statement_0_improved",
+					"shell_cmd": "make -j4 CPP_005_c-switch-case-statement_0_improved"
+				},
+				{
+					"name": "CPP_006_c-functions-set-1introduction_1",
+					"shell_cmd": "make -j4 CPP_006_c-functions-set-1introduction_1"
+				},
+				{
+					"name": "CPP_007_c-arrays-sum-of-array-set-1_0",
+					"shell_cmd": "make -j4 CPP_007_c-arrays-sum-of-array-set-1_0"
+				},
+				{
+					"name": "CPP_008_c-strings_0",
+					"shell_cmd": "make -j4 CPP_008_c-strings_0"
+				},
+				{
+					"name": "CPP_009_c-pointers-set-1introduction_1",
+					"shell_cmd": "make -j4 CPP_009_c-pointers-set-1introduction_1"
+				},
+				{
+					"name": "CPP_010_cpp_simple_functions_0",
+					"shell_cmd": "make -j4 CPP_010_cpp_simple_functions_0"
+				},
+				{
+					"name": "CPP_011_cpp_void_functions_0",
+					"shell_cmd": "make -j4 CPP_011_cpp_void_functions_0"
+				},
+				{
+					"name": "CPP_012_cpp_functions_with_return_value_0",
+					"shell_cmd": "make -j4 CPP_012_cpp_functions_with_return_value_0"
+				},
+				{
+					"name": "CPP_013_cpp_void_functions_with_params_0",
+					"shell_cmd": "make -j4 CPP_013_cpp_void_functions_with_params_0"
+				},
+				{
+					"name": "CPP_014_functions_with_return_value_with_params",
+					"shell_cmd": "make -j4 CPP_014_functions_with_return_value_with_params"
+				},
+				{
+					"name": "CPP_015_functions_passing_arguments_by_value",
+					"shell_cmd": "make -j4 CPP_015_functions_passing_arguments_by_value"
+				},
+				{
+					"name": "CPP_016_functions_passing_arguments_by_reference",
+					"shell_cmd": "make -j4 CPP_016_functions_passing_arguments_by_reference"
+				},
+				{
+					"name": "CPP_017_functions_passing_arguments_by_const_reference",
+					"shell_cmd": "make -j4 CPP_017_functions_passing_arguments_by_const_reference"
+				},
+				{
+					"name": "CPP_018_functions_passing_arguments_by_address",
+					"shell_cmd": "make -j4 CPP_018_functions_passing_arguments_by_address"
+				},
+				{
+					"name": "CPP_019_functions_passing_arguments_by_const_address",
+					"shell_cmd": "make -j4 CPP_019_functions_passing_arguments_by_const_address"
+				},
+				{
+					"name": "CPP_020_functions_passing_arguments_by_address_address_is_actually_passed_by_value",
+					"shell_cmd": "make -j4 CPP_020_functions_passing_arguments_by_address_address_is_actually_passed_by_value"
+				},
+				{
+					"name": "CPP_021_functions_passing_arguments_by_address_as_reference_to_overcome_CPP020_issue",
+					"shell_cmd": "make -j4 CPP_021_functions_passing_arguments_by_address_as_reference_to_overcome_CPP020_issue"
+				},
+				{
+					"name": "CPP_022_functions_returning_values_by_value",
+					"shell_cmd": "make -j4 CPP_022_functions_returning_values_by_value"
+				},
+				{
+					"name": "CPP_023_functions_returning_values_by_address",
+					"shell_cmd": "make -j4 CPP_023_functions_returning_values_by_address"
+				},
+				{
+					"name": "CPP_024_functions_returning_values_by_address_bad_example",
+					"shell_cmd": "make -j4 CPP_024_functions_returning_values_by_address_bad_example"
+				},
+				{
+					"name": "CPP_025_functions_returning_values_by_reference",
+					"shell_cmd": "make -j4 CPP_025_functions_returning_values_by_reference"
+				},
+				{
+					"name": "CPP_026_functions_returning_values_by_reference_bad_example",
+					"shell_cmd": "make -j4 CPP_026_functions_returning_values_by_reference_bad_example"
+				},
+				{
+					"name": "CPP_027_functions_return_by_reference_to_value",
+					"shell_cmd": "make -j4 CPP_027_functions_return_by_reference_to_value"
+				},
+				{
+					"name": "CPP_028_functions_return_by_value_to_reference",
+					"shell_cmd": "make -j4 CPP_028_functions_return_by_value_to_reference"
+				},
+				{
+					"name": "CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example",
+					"shell_cmd": "make -j4 CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example"
+				},
+				{
+					"name": "CPP_029_functions_return_by_value_to_const_reference",
+					"shell_cmd": "make -j4 CPP_029_functions_return_by_value_to_const_reference"
+				},
+				{
+					"name": "CPP_030_functions_returning_multiple_values_0",
+					"shell_cmd": "make -j4 CPP_030_functions_returning_multiple_values_0"
+				},
+				{
+					"name": "CPP_031_functions_returning_multiple_values_cpp_11_tuple",
+					"shell_cmd": "make -j4 CPP_031_functions_returning_multiple_values_cpp_11_tuple"
+				},
+				{
+					"name": "CPP_032_functions_returning_multiple_values_cpp_11_tuple_tie",
+					"shell_cmd": "make -j4 CPP_032_functions_returning_multiple_values_cpp_11_tuple_tie"
+				},
+				{
+					"name": "CPP_033_functions_returning_multiple_values_cpp_17_tuple_auto",
+					"shell_cmd": "make -j4 CPP_033_functions_returning_multiple_values_cpp_17_tuple_auto"
+				},
+				{
+					"name": "CPP_034_functions_inline",
+					"shell_cmd": "make -j4 CPP_034_functions_inline"
+				},
+				{
+					"name": "CPP_035_functions_inline_same_code_non_inline",
+					"shell_cmd": "make -j4 CPP_035_functions_inline_same_code_non_inline"
+				},
+				{
+					"name": "CPP_036_functions_function_overloading",
+					"shell_cmd": "make -j4 CPP_036_functions_function_overloading"
+				},
+				{
+					"name": "CPP_037_functions_function_overloading_return_types_not_considered",
+					"shell_cmd": "make -j4 CPP_037_functions_function_overloading_return_types_not_considered"
+				},
+				{
+					"name": "CPP_038_functions_function_overloading_return_types_not_considered_bad_alternative",
+					"shell_cmd": "make -j4 CPP_038_functions_function_overloading_return_types_not_considered_bad_alternative"
+				},
+				{
+					"name": "CPP_039_functions_function_overloading_type_def_doesnt_make_distinct",
+					"shell_cmd": "make -j4 CPP_039_functions_function_overloading_type_def_doesnt_make_distinct"
+				},
+				{
+					"name": "CPP_040_functions_function_overloading_match_found",
+					"shell_cmd": "make -j4 CPP_040_functions_function_overloading_match_found"
+				},
+				{
+					"name": "CPP_041_functions_function_overloading_matched_by_promotion",
+					"shell_cmd": "make -j4 CPP_041_functions_function_overloading_matched_by_promotion"
+				},
+				{
+					"name": "CPP_042_functions_function_overloading_matched_by_standard_conversion",
+					"shell_cmd": "make -j4 CPP_042_functions_function_overloading_matched_by_standard_conversion"
+				},
+				{
+					"name": "CPP_043_functions_function_overloading_matched_by_user_defined_conversion",
+					"shell_cmd": "make -j4 CPP_043_functions_function_overloading_matched_by_user_defined_conversion"
+				},
+				{
+					"name": "CPP_044_functions_function_overloading_ambiguous_matches_bad_example",
+					"shell_cmd": "make -j4 CPP_044_functions_function_overloading_ambiguous_matches_bad_example"
+				},
+				{
+					"name": "CPP_045_functions_default_arguments",
+					"shell_cmd": "make -j4 CPP_045_functions_default_arguments"
+				},
+				{
+					"name": "CPP_046_functions_multiple_default_arguments",
+					"shell_cmd": "make -j4 CPP_046_functions_multiple_default_arguments"
+				},
+				{
+					"name": "CPP_047_functions_multiple_default_arguments_must_be_right_most_parameters",
+					"shell_cmd": "make -j4 CPP_047_functions_multiple_default_arguments_must_be_right_most_parameters"
+				},
+				{
+					"name": "CPP_048_functions_default_arguments_can_only_be_declared_once",
+					"shell_cmd": "make -j4 CPP_048_functions_default_arguments_can_only_be_declared_once"
+				},
+				{
+					"name": "CPP_049_functions_default_arguments_wont_be_considered_for_overloading",
+					"shell_cmd": "make -j4 CPP_049_functions_default_arguments_wont_be_considered_for_overloading"
+				},
+				{
+					"name": "CPP_050_functions_pointers_passing_functions_as_arguments_to_function",
+					"shell_cmd": "make -j4 CPP_050_functions_pointers_passing_functions_as_arguments_to_function"
+				},
+				{
+					"name": "CPP_050_functions_pointers_to_functions",
+					"shell_cmd": "make -j4 CPP_050_functions_pointers_to_functions"
+				},
+				{
+					"name": "CPP_051_functions_pointers_better_example_sorting",
+					"shell_cmd": "make -j4 CPP_051_functions_pointers_better_example_sorting"
+				},
+				{
+					"name": "CPP_052_functions_pointers_with_typedef_type_alias",
+					"shell_cmd": "make -j4 CPP_052_functions_pointers_with_typedef_type_alias"
+				},
+				{
+					"name": "CPP_053_functions_pointers_using_std_functions_cpp_11",
+					"shell_cmd": "make -j4 CPP_053_functions_pointers_using_std_functions_cpp_11"
+				},
+				{
+					"name": "CPP_054_functions_pointers_using_auto_magic_cpp_11",
+					"shell_cmd": "make -j4 CPP_054_functions_pointers_using_auto_magic_cpp_11"
+				},
+				{
+					"name": "CPP_055_functions_the_stack_and_the_headp_001",
+					"shell_cmd": "make -j4 CPP_055_functions_the_stack_and_the_headp_001"
+				},
+				{
+					"name": "CPP_056_functions_std_vector_capacity_vs_size",
+					"shell_cmd": "make -j4 CPP_056_functions_std_vector_capacity_vs_size"
+				},
+				{
+					"name": "CPP_057_functions_std_vector_array_subscripts_and_at_are_based_on_capacity_not_on_length",
+					"shell_cmd": "make -j4 CPP_057_functions_std_vector_array_subscripts_and_at_are_based_on_capacity_not_on_length"
+				},
+				{
+					"name": "CPP_058_functions_std_vector_stack_behavior",
+					"shell_cmd": "make -j4 CPP_058_functions_std_vector_stack_behavior"
+				},
+				{
+					"name": "CPP_059_functions_recursion_simple_recursion_001",
+					"shell_cmd": "make -j4 CPP_059_functions_recursion_simple_recursion_001"
+				},
+				{
+					"name": "CPP_060_functions_recursion_simple_recursion_002",
+					"shell_cmd": "make -j4 CPP_060_functions_recursion_simple_recursion_002"
+				},
+				{
+					"name": "CPP_061_functions_recursion_fibonacci",
+					"shell_cmd": "make -j4 CPP_061_functions_recursion_fibonacci"
+				},
+				{
+					"name": "CPP_062_functions_recursion_fibonacci_iterative_recursive",
+					"shell_cmd": "make -j4 CPP_062_functions_recursion_fibonacci_iterative_recursive"
+				},
+				{
+					"name": "CPP_063_functions_ellipsis",
+					"shell_cmd": "make -j4 CPP_063_functions_ellipsis"
+				},
+				{
+					"name": "CPP_064_functions_ellipsis_dangerous_001",
+					"shell_cmd": "make -j4 CPP_064_functions_ellipsis_dangerous_001"
+				},
+				{
+					"name": "Item_2_001",
+					"shell_cmd": "make -j4 Item_2_001"
+				},
+				{
+					"name": "Item_2_002",
+					"shell_cmd": "make -j4 Item_2_002"
+				},
+				{
+					"name": "Item_2_003",
+					"shell_cmd": "make -j4 Item_2_003"
+				},
+				{
+					"name": "Item_2_004",
+					"shell_cmd": "make -j4 Item_2_004"
+				},
+				{
+					"name": "Item_2_005",
+					"shell_cmd": "make -j4 Item_2_005"
+				},
+				{
+					"name": "Item_2_006",
+					"shell_cmd": "make -j4 Item_2_006"
+				},
+				{
+					"name": "Item_2_007",
+					"shell_cmd": "make -j4 Item_2_007"
+				},
+				{
+					"name": "Item_3_001",
+					"shell_cmd": "make -j4 Item_3_001"
+				},
+				{
+					"name": "Item_3_002",
+					"shell_cmd": "make -j4 Item_3_002"
+				},
+				{
+					"name": "Item_3_003",
+					"shell_cmd": "make -j4 Item_3_003"
+				},
+				{
+					"name": "Item_3_004",
+					"shell_cmd": "make -j4 Item_3_004"
+				},
+				{
+					"name": "Item_3_005",
+					"shell_cmd": "make -j4 Item_3_005"
+				},
+				{
+					"name": "Item_3_006",
+					"shell_cmd": "make -j4 Item_3_006"
+				},
+				{
+					"name": "benchmark",
+					"shell_cmd": "make -j4 benchmark"
+				},
+				{
+					"name": "benchmark_main",
+					"shell_cmd": "make -j4 benchmark_main"
+				},
+				{
+					"name": "better-double-linked-list",
+					"shell_cmd": "make -j4 better-double-linked-list"
+				},
+				{
+					"name": "better-double-linked-list-test",
+					"shell_cmd": "make -j4 better-double-linked-list-test"
+				},
+				{
+					"name": "binary-tree",
+					"shell_cmd": "make -j4 binary-tree"
+				},
+				{
+					"name": "binary-tree-test",
+					"shell_cmd": "make -j4 binary-tree-test"
+				},
+				{
+					"name": "circular-single-linked-list",
+					"shell_cmd": "make -j4 circular-single-linked-list"
+				},
+				{
+					"name": "circular-single-linked-list-test",
+					"shell_cmd": "make -j4 circular-single-linked-list-test"
+				},
+				{
+					"name": "double-linked-list",
+					"shell_cmd": "make -j4 double-linked-list"
+				},
+				{
+					"name": "double-linked-list-test",
+					"shell_cmd": "make -j4 double-linked-list-test"
+				},
+				{
+					"name": "glfw_hello_coloured_cube",
+					"shell_cmd": "make -j4 glfw_hello_coloured_cube"
+				},
+				{
+					"name": "glfw_hello_metrices",
+					"shell_cmd": "make -j4 glfw_hello_metrices"
+				},
+				{
+					"name": "glfw_hello_shapes",
+					"shell_cmd": "make -j4 glfw_hello_shapes"
+				},
+				{
+					"name": "glfw_hello_world",
+					"shell_cmd": "make -j4 glfw_hello_world"
+				},
+				{
+					"name": "gmock",
+					"shell_cmd": "make -j4 gmock"
+				},
+				{
+					"name": "gmock_main",
+					"shell_cmd": "make -j4 gmock_main"
+				},
+				{
+					"name": "graph",
+					"shell_cmd": "make -j4 graph"
+				},
+				{
+					"name": "graph-test",
+					"shell_cmd": "make -j4 graph-test"
+				},
+				{
+					"name": "gtest",
+					"shell_cmd": "make -j4 gtest"
+				},
+				{
+					"name": "gtest_main",
+					"shell_cmd": "make -j4 gtest_main"
+				},
+				{
+					"name": "hellow_world",
+					"shell_cmd": "make -j4 hellow_world"
+				},
+				{
+					"name": "list",
+					"shell_cmd": "make -j4 list"
+				},
+				{
+					"name": "list-test",
+					"shell_cmd": "make -j4 list-test"
+				},
+				{
+					"name": "play_online_test",
+					"shell_cmd": "make -j4 play_online_test"
+				},
+				{
+					"name": "play_ping_pong",
+					"shell_cmd": "make -j4 play_ping_pong"
+				},
+				{
+					"name": "play_simple_tcp_client",
+					"shell_cmd": "make -j4 play_simple_tcp_client"
+				},
+				{
+					"name": "play_simple_tcp_client_parallel_clients",
+					"shell_cmd": "make -j4 play_simple_tcp_client_parallel_clients"
+				},
+				{
+					"name": "play_simple_tcp_client_sequential_clients",
+					"shell_cmd": "make -j4 play_simple_tcp_client_sequential_clients"
+				},
+				{
+					"name": "play_simple_tcp_server",
+					"shell_cmd": "make -j4 play_simple_tcp_server"
+				},
+				{
+					"name": "queue",
+					"shell_cmd": "make -j4 queue"
+				},
+				{
+					"name": "queue-test",
+					"shell_cmd": "make -j4 queue-test"
+				},
+				{
+					"name": "single-linked-list",
+					"shell_cmd": "make -j4 single-linked-list"
+				},
+				{
+					"name": "single-linked-list-test",
+					"shell_cmd": "make -j4 single-linked-list-test"
+				},
+				{
+					"name": "stack",
+					"shell_cmd": "make -j4 stack"
+				},
+				{
+					"name": "stack-test",
+					"shell_cmd": "make -j4 stack-test"
+				},
+				{
+					"name": "tree",
+					"shell_cmd": "make -j4 tree"
+				},
+				{
+					"name": "tree-test",
+					"shell_cmd": "make -j4 tree-test"
+				}
+			],
+			"working_dir": "${project_path}/build"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"cmake":
+		{
+			"build_folder": "${project_path}/build"
+		}
+	}
+}

@@ -36,13 +36,13 @@ int romanToInt(std::string s)
 int romanToInt_Method_2(std::string s)
 {
 	int SVMap[255];
-	SVMap['I'] = 1;
-	SVMap['V'] = 5;
-	SVMap['X'] = 10;
-	SVMap['L'] = 50;
-	SVMap['C'] = 100;
-	SVMap['D'] = 500;
-	SVMap['M'] = 1000;
+	SVMap[(size_t)('I')] = 1;
+	SVMap[(size_t)'V'] = 5;
+	SVMap[(size_t)'X'] = 10;
+	SVMap[(size_t)'L'] = 50;
+	SVMap[(size_t)'C'] = 100;
+	SVMap[(size_t)'D'] = 500;
+	SVMap[(size_t)'M'] = 1000;
 
 	int res = SVMap[(size_t) s.at(0)];
 
