@@ -4,17 +4,18 @@
  *  Created on: 02-Apr-2021
  *      Author: kk
  *
- *  description :
- *  	http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/#introduction
+ *
  */
 
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 
 #ifdef __APPLE__
 #  include <OpenGL/gl3.h>
 #else /// your stuff for linux
 #	include <GL/glew.h>
+#   include <GL/glut.h>
 #endif
 
 #include <GLFW/glfw3.h>
@@ -22,6 +23,8 @@
 
 #include "shader.h"
 #include "fs_utils.h"
+
+
 
 int main(void)
 {
@@ -40,7 +43,7 @@ int main(void)
 
 	// Open a window and create its OpenGL context
 	GLFWwindow *window;
-	window = glfwCreateWindow(1024, 768, "Hello Shapes", nullptr, nullptr);
+	window = glfwCreateWindow(1024, 768, "Hello Moving Shapes", nullptr, nullptr);
 	if (window == nullptr)
 	{
 		std::cerr << "Failed to open GLFW window. ";
@@ -78,14 +81,22 @@ int main(void)
 
 	GLuint programID = LoadShaders( vertexShader.c_str(), fragmentShader.c_str() );
 
-	// BackGround colour it seems - Dark blue ?
-	glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+	
 
 	//Vertex Access Object VAO
 	GLuint VertexArrayID;
 	glGenVertexArrays(1, &VertexArrayID);
 	glBindVertexArray(VertexArrayID);
 
+/*
+	GLfloat g_vertex_buffer_data[] =
+	{
+			-1.0f, -1.0f, 0.0f,
+			 1.0f, -1.0f, 0.0f,
+			 0.0f,  1.0f, 0.0f,
+	};
+*/
+	
 	GLfloat g_vertex_buffer_data[] =
 	{
 			-1.0f, -1.0f, 0.0f,
@@ -100,8 +111,12 @@ int main(void)
 			g_vertex_buffer_data,
 			GL_STATIC_DRAW);
 
+ 
+ 	float move = 0.0001;
 	do
 	{
+		std::cout << "are we looping ? \n"; 
+
 		// Clear the screen. It's not mentioned before Tutorial 02,
 		// but it can cause flickering, so it's there nonetheless.
 		glClear( GL_COLOR_BUFFER_BIT);
@@ -111,6 +126,7 @@ int main(void)
 
 		// 1rst attribute buffer : vertices
 		glEnableVertexAttribArray(0);
+
 		//glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
 		glVertexAttribPointer(0, // attribute 0. No particular reason for 0, but must match the layout in the shader.
 				3,                  // size
@@ -125,9 +141,23 @@ int main(void)
 		glDisableVertexAttribArray(0);
 
 
+		for ( size_t i = 0 ; i < 8 ; i ++ )
+		{
+			g_vertex_buffer_data[i%3] += move;
+			if( g_vertex_buffer_data[i%3] > 2 )
+				g_vertex_buffer_data[i%3] = -1;
+
+		}
+		glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data),
+			g_vertex_buffer_data,
+			GL_STATIC_DRAW);
+
+		//glutPostRedisplay();
+		//glPopMatrix();
 		// Swap buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+
 
 	} // Check if the ESC key was pressed or the window was closed
 	while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS

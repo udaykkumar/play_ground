@@ -1107,16 +1107,20 @@
 					"shell_cmd": "make -j8 hellow_world"
 				},
 				{
+					"name": "glfw_hello_shapes",
+					"shell_cmd": "make -j8 glfw_hello_shapes"
+				},
+				{
+					"name": "glfw_hello_moving_shapes",
+					"shell_cmd": "make -j8 glfw_hello_moving_shapes"
+				},
+				{
 					"name": "glfw_hello_metrices",
 					"shell_cmd": "make -j8 glfw_hello_metrices"
 				},
 				{
 					"name": "glfw_hello_coloured_cube",
 					"shell_cmd": "make -j8 glfw_hello_coloured_cube"
-				},
-				{
-					"name": "glfw_hello_shapes",
-					"shell_cmd": "make -j8 glfw_hello_shapes"
 				},
 				{
 					"name": "play_online_test",
