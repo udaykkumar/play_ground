@@ -1,6 +1,6 @@
 
 # Minimum CMake
-cmake_minimum_required (VERSION 3.8.1)
+cmake_minimum_required (VERSION 2.8.1)
 project(play_ground)
 set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
@@ -23,7 +23,7 @@ git_clone(
     GIT_BRANCH      master
     )
 
-add_subdirectory( ${googletest_SOURCE_DIR} )
+add_subdirectory( ${googletest_SOURCE_DIR} build.googletest )
 
 git_clone(
     PROJECT_NAME    benchmark
@@ -31,7 +31,7 @@ git_clone(
     GIT_BRANCH      master
     )
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
-add_subdirectory( ${benchmark_SOURCE_DIR} )
+add_subdirectory( ${benchmark_SOURCE_DIR} build.benchmark )
 
 
 #Curses

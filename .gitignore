@@ -3,3 +3,7 @@ build
 .cproject
 .project
 .settings
+googlemock
+googletest
+benchmark
+CMAkeFiles

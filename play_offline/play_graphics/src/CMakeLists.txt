@@ -25,7 +25,7 @@ else()
 	target_link_libraries(glfw_hello_world ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
 	target_link_libraries(glfw_hello_shapes ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
 	target_link_libraries(glfw_hello_metrices ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
-	target_link_libraries(glfw_hello_coloured_cube ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-framework OpenGL" )
+	target_link_libraries(glfw_hello_coloured_cube ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
 	
 endif()
 

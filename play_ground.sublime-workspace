@@ -1,0 +1,2469 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"su",
+				"surfaceArea"
+			],
+			[
+				"direc",
+				"directorSurname"
+			],
+			[
+				"dire",
+				"directorName"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"BMB",
+				"BMBufferSize"
+			],
+			[
+				"x",
+				"xy_pair"
+			],
+			[
+				"vect",
+				"vector\tstandard header"
+			],
+			[
+				"p",
+				"random_pick_with_weight"
+			],
+			[
+				"w",
+				"wsize_"
+			],
+			[
+				"mo",
+				"moving_average"
+			],
+			[
+				"un",
+				"unordered_map\tstandard header (since c++11)"
+			],
+			[
+				"Meta",
+				"MetaDiksUpdateCalls"
+			],
+			[
+				"is",
+				"isHafnium"
+			],
+			[
+				"check",
+				"checking_for_ssd"
+			],
+			[
+				"che",
+				"checking_for_ssd"
+			],
+			[
+				"Server",
+				"ServerHpspHal"
+			],
+			[
+				"skip",
+				"skipStorageSSDClusterUUID"
+			],
+			[
+				"Serve",
+				"ServerHpspHal"
+			],
+			[
+				"ctrl",
+				"ctlrUUID"
+			],
+			[
+				"hpsp",
+				"hpspDbg"
+			],
+			[
+				"getSystemSSD",
+				"getSystemSSDVolumeUUID"
+			],
+			[
+				"systemStorage",
+				"isSystemSSDStorageCluster"
+			],
+			[
+				"get",
+				"getEUID"
+			],
+			[
+				"getSys",
+				"getSystemSSDControllerUUID"
+			],
+			[
+				"isSy",
+				"isSystemController"
+			],
+			[
+				"ctr",
+				"ctlrUUID"
+			],
+			[
+				"issystemSS",
+				"isSystemSSDController"
+			],
+			[
+				"we",
+				"we_are_done_here"
+			],
+			[
+				"getDr",
+				"getDrives"
+			],
+			[
+				"systemSSD",
+				"systemSSDControllerUUID"
+			],
+			[
+				"danS",
+				"danStorageCluster"
+			],
+			[
+				"getS",
+				"getSlotNumber"
+			],
+			[
+				"fou",
+				"foundStorageCluster"
+			],
+			[
+				"getLo",
+				"getLocationArgs"
+			],
+			[
+				"storeo",
+				"pml-storeonce-storage"
+			],
+			[
+				"STAT",
+				"STATUS_OK"
+			],
+			[
+				"Hpsp",
+				"HpspmonApi"
+			],
+			[
+				"eq",
+				"equalsIgnoreCase"
+			],
+			[
+				"Upd",
+				"UpdateDataDisk"
+			],
+			[
+				"cs",
+				"c_state"
+			],
+			[
+				"Sta",
+				"State_High"
+			],
+			[
+				"IP",
+				"IPMI_FILE_PATH"
+			],
+			[
+				"MA",
+				"MAX_TRIALS"
+			],
+			[
+				"Hi",
+				"HighSecurity"
+			],
+			[
+				"HAL",
+				"HAL_PLAT_ID_FLAG_T"
+			],
+			[
+				"fet",
+				"fetchILOAddres"
+			],
+			[
+				"STA",
+				"STATE_PRODUCTION"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 2055,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "play_ground.sublime-project",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".travis.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "play_ground (Linux)",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"play_ground (Linux)",
+					""
+				],
+				[
+					"play_ground (Linux)",
+					"clean"
+				],
+				[
+					"play_ground (Linux)",
+					"install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"test"
+				],
+				[
+					"play_ground (Linux)",
+					"install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"install"
+				],
+				[
+					"play_ground (Linux)",
+					"gmock_main"
+				],
+				[
+					"play_ground (Linux)",
+					"gmock"
+				],
+				[
+					"play_ground (Linux)",
+					"gtest_main"
+				],
+				[
+					"play_ground (Linux)",
+					"gtest"
+				],
+				[
+					"play_ground (Linux)",
+					"benchmark_main"
+				],
+				[
+					"play_ground (Linux)",
+					"benchmark"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_005"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_004"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_003"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_006"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_007"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_001"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_2_002"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_004"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_003"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_001"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_005"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_002"
+				],
+				[
+					"play_ground (Linux)",
+					"Item_3_006"
+				],
+				[
+					"play_ground (Linux)",
+					"graph"
+				],
+				[
+					"play_ground (Linux)",
+					"graph-test"
+				],
+				[
+					"play_ground (Linux)",
+					"list"
+				],
+				[
+					"play_ground (Linux)",
+					"list-test"
+				],
+				[
+					"play_ground (Linux)",
+					"queue"
+				],
+				[
+					"play_ground (Linux)",
+					"queue-test"
+				],
+				[
+					"play_ground (Linux)",
+					"stack"
+				],
+				[
+					"play_ground (Linux)",
+					"stack-test"
+				],
+				[
+					"play_ground (Linux)",
+					"tree"
+				],
+				[
+					"play_ground (Linux)",
+					"tree-test"
+				],
+				[
+					"play_ground (Linux)",
+					"0001_online_subarray-with-given-sum-better"
+				],
+				[
+					"play_ground (Linux)",
+					"0008_minimum-platforms"
+				],
+				[
+					"play_ground (Linux)",
+					"0002_online_kadanes-algorithm"
+				],
+				[
+					"play_ground (Linux)",
+					"0005_equilibrium-point"
+				],
+				[
+					"play_ground (Linux)",
+					"0009_maximum-of-all-subarrays-of-size-k"
+				],
+				[
+					"play_ground (Linux)",
+					"0003_missing-number-in-array"
+				],
+				[
+					"play_ground (Linux)",
+					"0002_kadanes-algorithm"
+				],
+				[
+					"play_ground (Linux)",
+					"0004_sort-an-array-of-0s-1s-and-2s"
+				],
+				[
+					"play_ground (Linux)",
+					"0001_online_subarray-with-given-sum"
+				],
+				[
+					"play_ground (Linux)",
+					"0001_subarray-with-given-sum"
+				],
+				[
+					"play_ground (Linux)",
+					"0006_maximum-sum-increasing-subsequence"
+				],
+				[
+					"play_ground (Linux)",
+					"0007_leaders-in-an-array"
+				],
+				[
+					"play_ground (Linux)",
+					"002_largenos"
+				],
+				[
+					"play_ground (Linux)",
+					"001_shifting"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_063_functions_ellipsis"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_062_functions_recursion_fibonacci_iterative_recursive"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_060_functions_recursion_simple_recursion_002"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_059_functions_recursion_simple_recursion_001"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_056_functions_std_vector_capacity_vs_size"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_055_functions_the_stack_and_the_headp_001"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_054_functions_pointers_using_auto_magic_cpp_11"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_053_functions_pointers_using_std_functions_cpp_11"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_052_functions_pointers_with_typedef_type_alias"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_051_functions_pointers_better_example_sorting"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_057_functions_std_vector_array_subscripts_and_at_are_based_on_capacity_not_on_length"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_050_functions_pointers_to_functions"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_058_functions_std_vector_stack_behavior"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_046_functions_multiple_default_arguments"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_047_functions_multiple_default_arguments_must_be_right_most_parameters"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_045_functions_default_arguments"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_044_functions_function_overloading_ambiguous_matches_bad_example"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_042_functions_function_overloading_matched_by_standard_conversion"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_041_functions_function_overloading_matched_by_promotion"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_038_functions_function_overloading_return_types_not_considered_bad_alternative"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_036_functions_function_overloading"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_049_functions_default_arguments_wont_be_considered_for_overloading"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_035_functions_inline_same_code_non_inline"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_014_functions_with_return_value_with_params"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_013_cpp_void_functions_with_params_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_050_functions_pointers_passing_functions_as_arguments_to_function"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_010_cpp_simple_functions_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_009_c-pointers-set-1introduction_1"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_064_functions_ellipsis_dangerous_001"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_012_cpp_functions_with_return_value_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_030_functions_returning_multiple_values_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_011_cpp_void_functions_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_003_c-operators_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_037_functions_function_overloading_return_types_not_considered"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_018_functions_passing_arguments_by_address"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_015_functions_passing_arguments_by_value"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_001_c-hello-world_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_024_functions_returning_values_by_address_bad_example"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_004_c-if-else-decision-making_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_048_functions_default_arguments_can_only_be_declared_once"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_005_c-switch-case-statement_0_improved"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_021_functions_passing_arguments_by_address_as_reference_to_overcome_CPP020_issue"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_031_functions_returning_multiple_values_cpp_11_tuple"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_019_functions_passing_arguments_by_const_address"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_040_functions_function_overloading_match_found"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_006_c-functions-set-1introduction_1"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_005_c-switch-case-statement_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_022_functions_returning_values_by_value"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_016_functions_passing_arguments_by_reference"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_043_functions_function_overloading_matched_by_user_defined_conversion"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_020_functions_passing_arguments_by_address_address_is_actually_passed_by_value"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_002_c-basic-data-types_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_023_functions_returning_values_by_address"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_007_c-arrays-sum-of-array-set-1_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_025_functions_returning_values_by_reference"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_017_functions_passing_arguments_by_const_reference"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_026_functions_returning_values_by_reference_bad_example"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_039_functions_function_overloading_type_def_doesnt_make_distinct"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_027_functions_return_by_reference_to_value"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_029_functions_return_by_value_to_const_reference"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_032_functions_returning_multiple_values_cpp_11_tuple_tie"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_061_functions_recursion_fibonacci"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_028_functions_return_by_value_to_reference"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_008_c-strings_0"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_033_functions_returning_multiple_values_cpp_17_tuple_auto"
+				],
+				[
+					"play_ground (Linux)",
+					"CPP_034_functions_inline"
+				],
+				[
+					"play_ground (Linux)",
+					"better-double-linked-list"
+				],
+				[
+					"play_ground (Linux)",
+					"better-double-linked-list-test"
+				],
+				[
+					"play_ground (Linux)",
+					"circular-single-linked-list"
+				],
+				[
+					"play_ground (Linux)",
+					"circular-single-linked-list-test"
+				],
+				[
+					"play_ground (Linux)",
+					"binary-tree"
+				],
+				[
+					"play_ground (Linux)",
+					"binary-tree-test"
+				],
+				[
+					"play_ground (Linux)",
+					"single-linked-list"
+				],
+				[
+					"play_ground (Linux)",
+					"single-linked-list-test"
+				],
+				[
+					"play_ground (Linux)",
+					"double-linked-list"
+				],
+				[
+					"play_ground (Linux)",
+					"double-linked-list-test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_ping_pong"
+				],
+				[
+					"play_ground (Linux)",
+					"play_simple_tcp_server"
+				],
+				[
+					"play_ground (Linux)",
+					"play_simple_tcp_client_parallel_clients"
+				],
+				[
+					"play_ground (Linux)",
+					"play_simple_tcp_client"
+				],
+				[
+					"play_ground (Linux)",
+					"play_simple_tcp_client_sequential_clients"
+				],
+				[
+					"play_ground (Linux)",
+					"glfw_hello_world"
+				],
+				[
+					"play_ground (Linux)",
+					"hellow_world"
+				],
+				[
+					"play_ground (Linux)",
+					"glfw_hello_metrices"
+				],
+				[
+					"play_ground (Linux)",
+					"glfw_hello_coloured_cube"
+				],
+				[
+					"play_ground (Linux)",
+					"glfw_hello_shapes"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online_test"
+				]
+			],
+			[
+				"play_ground (Linux)",
+				""
+			]
+		],
+		[
+			[
+				[
+					"play_ground (OSX)",
+					""
+				],
+				[
+					"play_ground (OSX)",
+					"clean"
+				],
+				[
+					"play_ground (OSX)",
+					"install"
+				],
+				[
+					"play_ground (OSX)",
+					"install/local"
+				],
+				[
+					"play_ground (OSX)",
+					"install/strip"
+				],
+				[
+					"play_ground (OSX)",
+					"list_install_components"
+				],
+				[
+					"play_ground (OSX)",
+					"rebuild_cache"
+				],
+				[
+					"play_ground (OSX)",
+					"test"
+				],
+				[
+					"play_ground (OSX)",
+					"0001_online_subarray-with-given-sum"
+				],
+				[
+					"play_ground (OSX)",
+					"0001_online_subarray-with-given-sum-better"
+				],
+				[
+					"play_ground (OSX)",
+					"0001_subarray-with-given-sum"
+				],
+				[
+					"play_ground (OSX)",
+					"0002_kadanes-algorithm"
+				],
+				[
+					"play_ground (OSX)",
+					"0002_online_kadanes-algorithm"
+				],
+				[
+					"play_ground (OSX)",
+					"0003_missing-number-in-array"
+				],
+				[
+					"play_ground (OSX)",
+					"0004_sort-an-array-of-0s-1s-and-2s"
+				],
+				[
+					"play_ground (OSX)",
+					"0005_equilibrium-point"
+				],
+				[
+					"play_ground (OSX)",
+					"0006_maximum-sum-increasing-subsequence"
+				],
+				[
+					"play_ground (OSX)",
+					"0007_leaders-in-an-array"
+				],
+				[
+					"play_ground (OSX)",
+					"0008_minimum-platforms"
+				],
+				[
+					"play_ground (OSX)",
+					"0009_maximum-of-all-subarrays-of-size-k"
+				],
+				[
+					"play_ground (OSX)",
+					"001_shifting"
+				],
+				[
+					"play_ground (OSX)",
+					"002_largenos"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_001_c-hello-world_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_002_c-basic-data-types_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_003_c-operators_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_004_c-if-else-decision-making_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_005_c-switch-case-statement_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_005_c-switch-case-statement_0_improved"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_006_c-functions-set-1introduction_1"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_007_c-arrays-sum-of-array-set-1_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_008_c-strings_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_009_c-pointers-set-1introduction_1"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_010_cpp_simple_functions_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_011_cpp_void_functions_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_012_cpp_functions_with_return_value_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_013_cpp_void_functions_with_params_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_014_functions_with_return_value_with_params"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_015_functions_passing_arguments_by_value"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_016_functions_passing_arguments_by_reference"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_017_functions_passing_arguments_by_const_reference"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_018_functions_passing_arguments_by_address"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_019_functions_passing_arguments_by_const_address"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_020_functions_passing_arguments_by_address_address_is_actually_passed_by_value"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_021_functions_passing_arguments_by_address_as_reference_to_overcome_CPP020_issue"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_022_functions_returning_values_by_value"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_023_functions_returning_values_by_address"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_024_functions_returning_values_by_address_bad_example"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_025_functions_returning_values_by_reference"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_026_functions_returning_values_by_reference_bad_example"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_027_functions_return_by_reference_to_value"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_028_functions_return_by_value_to_reference"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_029_functions_return_by_value_to_const_reference"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_030_functions_returning_multiple_values_0"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_031_functions_returning_multiple_values_cpp_11_tuple"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_032_functions_returning_multiple_values_cpp_11_tuple_tie"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_033_functions_returning_multiple_values_cpp_17_tuple_auto"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_034_functions_inline"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_035_functions_inline_same_code_non_inline"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_036_functions_function_overloading"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_037_functions_function_overloading_return_types_not_considered"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_038_functions_function_overloading_return_types_not_considered_bad_alternative"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_039_functions_function_overloading_type_def_doesnt_make_distinct"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_040_functions_function_overloading_match_found"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_041_functions_function_overloading_matched_by_promotion"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_042_functions_function_overloading_matched_by_standard_conversion"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_043_functions_function_overloading_matched_by_user_defined_conversion"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_044_functions_function_overloading_ambiguous_matches_bad_example"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_045_functions_default_arguments"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_046_functions_multiple_default_arguments"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_047_functions_multiple_default_arguments_must_be_right_most_parameters"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_048_functions_default_arguments_can_only_be_declared_once"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_049_functions_default_arguments_wont_be_considered_for_overloading"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_050_functions_pointers_passing_functions_as_arguments_to_function"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_050_functions_pointers_to_functions"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_051_functions_pointers_better_example_sorting"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_052_functions_pointers_with_typedef_type_alias"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_053_functions_pointers_using_std_functions_cpp_11"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_054_functions_pointers_using_auto_magic_cpp_11"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_055_functions_the_stack_and_the_headp_001"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_056_functions_std_vector_capacity_vs_size"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_057_functions_std_vector_array_subscripts_and_at_are_based_on_capacity_not_on_length"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_058_functions_std_vector_stack_behavior"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_059_functions_recursion_simple_recursion_001"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_060_functions_recursion_simple_recursion_002"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_061_functions_recursion_fibonacci"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_062_functions_recursion_fibonacci_iterative_recursive"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_063_functions_ellipsis"
+				],
+				[
+					"play_ground (OSX)",
+					"CPP_064_functions_ellipsis_dangerous_001"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_001"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_002"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_003"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_004"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_005"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_006"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_2_007"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_001"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_002"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_003"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_004"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_005"
+				],
+				[
+					"play_ground (OSX)",
+					"Item_3_006"
+				],
+				[
+					"play_ground (OSX)",
+					"benchmark"
+				],
+				[
+					"play_ground (OSX)",
+					"benchmark_main"
+				],
+				[
+					"play_ground (OSX)",
+					"better-double-linked-list"
+				],
+				[
+					"play_ground (OSX)",
+					"better-double-linked-list-test"
+				],
+				[
+					"play_ground (OSX)",
+					"binary-tree"
+				],
+				[
+					"play_ground (OSX)",
+					"binary-tree-test"
+				],
+				[
+					"play_ground (OSX)",
+					"circular-single-linked-list"
+				],
+				[
+					"play_ground (OSX)",
+					"circular-single-linked-list-test"
+				],
+				[
+					"play_ground (OSX)",
+					"double-linked-list"
+				],
+				[
+					"play_ground (OSX)",
+					"double-linked-list-test"
+				],
+				[
+					"play_ground (OSX)",
+					"glfw_hello_coloured_cube"
+				],
+				[
+					"play_ground (OSX)",
+					"glfw_hello_metrices"
+				],
+				[
+					"play_ground (OSX)",
+					"glfw_hello_shapes"
+				],
+				[
+					"play_ground (OSX)",
+					"glfw_hello_world"
+				],
+				[
+					"play_ground (OSX)",
+					"gmock"
+				],
+				[
+					"play_ground (OSX)",
+					"gmock_main"
+				],
+				[
+					"play_ground (OSX)",
+					"graph"
+				],
+				[
+					"play_ground (OSX)",
+					"graph-test"
+				],
+				[
+					"play_ground (OSX)",
+					"gtest"
+				],
+				[
+					"play_ground (OSX)",
+					"gtest_main"
+				],
+				[
+					"play_ground (OSX)",
+					"hellow_world"
+				],
+				[
+					"play_ground (OSX)",
+					"list"
+				],
+				[
+					"play_ground (OSX)",
+					"list-test"
+				],
+				[
+					"play_ground (OSX)",
+					"play_online_test"
+				],
+				[
+					"play_ground (OSX)",
+					"play_ping_pong"
+				],
+				[
+					"play_ground (OSX)",
+					"play_simple_tcp_client"
+				],
+				[
+					"play_ground (OSX)",
+					"play_simple_tcp_client_parallel_clients"
+				],
+				[
+					"play_ground (OSX)",
+					"play_simple_tcp_client_sequential_clients"
+				],
+				[
+					"play_ground (OSX)",
+					"play_simple_tcp_server"
+				],
+				[
+					"play_ground (OSX)",
+					"queue"
+				],
+				[
+					"play_ground (OSX)",
+					"queue-test"
+				],
+				[
+					"play_ground (OSX)",
+					"single-linked-list"
+				],
+				[
+					"play_ground (OSX)",
+					"single-linked-list-test"
+				],
+				[
+					"play_ground (OSX)",
+					"stack"
+				],
+				[
+					"play_ground (OSX)",
+					"stack-test"
+				],
+				[
+					"play_ground (OSX)",
+					"tree"
+				],
+				[
+					"play_ground (OSX)",
+					"tree-test"
+				]
+			],
+			[
+				"play_ground (OSX)",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"coo",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"c",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"qui",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"cool",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git: status",
+				"Git: Status"
+			],
+			[
+				"git: diff",
+				"Git: Diff All Files"
+			],
+			[
+				"git:diff",
+				"Git: Diff All Files"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"unstage",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"form",
+				"CMake Format: Format Selection"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"commt",
+				"Git: Commit"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"p",
+				"Git: Push"
+			],
+			[
+				"add cu",
+				"Git: Add Current File"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"gitad",
+				"Git: Add All"
+			],
+			[
+				"coolfor",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"format",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"graph",
+				"Git: Graph All"
+			],
+			[
+				"git:pull",
+				"Git: Pull"
+			],
+			[
+				"git:chan",
+				"Git: Change Branch"
+			],
+			[
+				"gitch",
+				"Git: Commit history"
+			],
+			[
+				"git: change",
+				"Git: Change Branch"
+			],
+			[
+				"git:",
+				"Git: Graph All"
+			],
+			[
+				"git: log",
+				"Git: Log All"
+			],
+			[
+				"git: blame",
+				"Git: Blame"
+			],
+			[
+				"a",
+				"Git: Add All"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"git:cu",
+				"Git: Custom Command"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"git merge",
+				"Git: Merge Branch"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"git: r",
+				"Git: Graph All"
+			],
+			[
+				"remote",
+				"Git: Track Remote Branch"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"git:remote",
+				"Git: Track Remote Branch"
+			],
+			[
+				"q",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"qu",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"package control:insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Q",
+				"CoolFormat: Quick Format"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/kk/git/play_ground",
+		"/home/kk/git/play_ground/play_online"
+	],
+	"file_history":
+	[
+		"/home/kk/git/play_ground/play_ground.sublime-project",
+		"/home/kk/git/play_ground/.gitignore",
+		"/home/kk/git/play_ground/CMakeLists.txt",
+		"/C/git/play_ground/play_ground_wsl.sublime_project",
+		"/C/git/pml-storeonce-storage/impl/src/main/java/com/hpe/storage/pml/storeonce/storage/impl/operation/model/StorageLocation.java",
+		"/C/git/pml-storeonce-storage/impl/src/test/java/com/hpe/storage/pml/storeonce/storage/impl/operation/StorageProvisioningTest.java",
+		"/C/git/hpspmon/test/boostregx.cpp",
+		"/C/git/hpspmon/healthChecks/StorageHpspHal.cpp",
+		"/C/Users/kumarkud/git/pml-storeonce-storage/impl/src/main/java/com/hpe/storage/pml/storeonce/storage/impl/operation/StorageDevices.java",
+		"/C/Users/kumarkud/git/pml-storeonce-storage/impl/src/test/java/com/hpe/storage/pml/storeonce/storage/impl/operation/StorageCapacityTest.java",
+		"/C/Users/kumarkud/git/network-services/rpm/test",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/HwInfoImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/NetworkModel.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/PhysicalPortModel.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/HpspNetworkComponent.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/netlib/NtpConfig.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/HwInfoPort.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/HwInfoPorts.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/HwInfoData.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/PmlUtils.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/nmo/NetworkServiceImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/LogicalNetworkInterfaceImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/utils/CommandResult.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/ApiHandle.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/cli/src/main/java/com/hp/storage/pml/hpsp/network/cli/CmdPhysPort.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/cli/src/main/java/com/hp/storage/pml/hpsp/network/cli/CLICommand.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/jaxrs/ClusterDefaultGatewayConfigureSubResource.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/rest/NetworkInterface_RestApi.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/ClusterStaticRouteConfigureImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/utils/NsUtils.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/utils/NamedConfigurationStore.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/netlib/LinuxNetworkConfig.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/ProductConfigurationData.java",
+		"/C/Users/kumarkud/git/network-services/bin/src/pml/hpsp-network-template-config/src/main/dist/conf/productconfiguration/network-services.properties",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/netlib/LinuxPropFile.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/netlib/InterfaceFile.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/ethtool/EthtoolLibraryNative.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/external/ForeignNodeProxyApi.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/IpSecHandler.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/DhcpConfigurationAndStatusImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/NetworkConfigureImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/service/NetConfigHelperImpl.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/utils/PlatformIdHelper.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/test/java/com/hp/storage/pml/hpsp/network/impl/ethtool/EthtoolLibraryNativeTest.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/ethtool/EthtoolLibraryHandle.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/InterfaceAddressMatcher.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/impl/src/main/java/com/hp/storage/pml/hpsp/network/impl/nmo/DhcpConfigurationRuntime.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/BaseNetworkInterfaceModel.java",
+		"/C/Users/kumarkud/git/network-services/src/pml/api/src/main/java/com/hp/storage/pml/hpsp/network/api/data/CommonNetworkPortModel.java",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/Write.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/write.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/monitor.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/wipFiles.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/nas/src/NAS_IOWrappers.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/nas/src/NAS_Profile.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/bm.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/flush.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/dfs.c",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Schedulable/Job/Factory/NAS/SCB/WriteAndVerify.pm",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Adapter/NAS/Gen3.pm",
+		"/C/Users/kumarkud/git/framework/tests/02-unit/00-modules/ALT/Schedulable/Batch/Command.t",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Schedulable/Batch/Command.pm",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Schedule.pm",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Adapter/NAS/Gen4.pm",
+		"/C/Users/kumarkud/git/framework/lib/ALT/Schedulable/Job/Factory/VTL/SCB/WriteAndVerify.pm",
+		"/C/Users/kumarkud/git/framework/tests/04-functional/03-nas.t",
+		"/C/Users/kumarkud/git/framework/tests/00-compile.t",
+		"/C/Users/kumarkud/git/framework/tests/04-functional/03-catalyst.t",
+		"/C/Users/kumarkud/git/framework/tests/04-functional/03-nas-resume-and-pause.t",
+		"/C/Users/kumarkud/git/hpspmon/include/healthCheck.h",
+		"/C/Users/kumarkud/git/hpspmon/healthMonitors/storageHealthMonitor.cpp",
+		"/C/Users/kumarkud/git/hpspmon/healthChecks/StorageClusterHealthCheck.cpp",
+		"/C/Users/kumarkud/git/hpspmon/include/configManager.h",
+		"/C/Users/kumarkud/git/hpspmon/include/config.h",
+		"/C/Users/kumarkud/git/hpspmon/config.cpp",
+		"/C/Users/kumarkud/git/hpspmon/configManager.cpp",
+		"/C/Users/kumarkud/git/hpspmon/include/asyncEventMonitor.h",
+		"/C/Users/kumarkud/git/hpspmon/healthChecks/asyncEventMonitor.cpp",
+		"/C/Users/kumarkud/git/hpspmon/healthChecks/healthCheckTimer.cpp",
+		"/C/Users/kumarkud/git/hpspmon/hpspmon.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_servers/play_simple_tcp_client_server/client/src/CMakeLists.txt",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_servers/play_simple_tcp_client_server/server/src/play_simple_tcp_server.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/.gitignore",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/xdat/src/xdat.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/lib/src/dfs2bm.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/bm/public/inc/NAS_BM_WIP_FileFormat.h",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/nas/public/inc/NAS_IOWrappers.h",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/bm/src/BMlib.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/OpenFile.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/Read.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/file.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/SendGenericCSRequest.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/RcvMsg.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_codes/trace_codes/TraceCodes.def",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/Flush.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/SyncRead.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/CloseFile.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/bm/src/SendGenericFuseRsp.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/vtl/vtl_codes/trace_codes/ids/Trace_StrId.23.def",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/Database/database/lib/src/Exit.c",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/Database/database/lib/src/Memory.c",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/Database/database/lib/inc/StaticTubeFunctionPrototypes.h",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/Database/database/lib/src/DatabaseFDs.c",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/Database/database/lib/src/Connect.c",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/d2dplatform/database/lib/src/Tube_Platform_DB_Context.c",
+		"/C/Users/kumarkud/git/D2D-Stack/tube_framework/d2dplatform/d2dplatform/lib/src/Tube_Platform.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_lib/dfsmeta/src/dfsmeta.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_db/database/lib/src/context.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/extent.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/extentthread.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_process/dfs/src/metrics.c",
+		"/C/Users/kumarkud/git/D2D-Stack/datapath/nas/nas_db/database/lib/src/shareconfig.c",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_lc_once_again_top_google_questions/src/accounts_merge.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/useful.commands",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_024_functions_returning_values_by_address_bad_example.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/build/googletest/docs/advanced.md",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/bench-mark-tests/BM_TEST_15_07_2019.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_55_specific_ways_to_improve_your_programs_and_design/src/Item_3_001.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cphb/src/Chapter_3_merge_sort.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/boring/mustdo/naive/arrays/0005_equilibrium-point.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/boring/mustdo/naive/arrays/0006_maximum-sum-increasing-subsequence.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_044_functions_function_overloading_ambiguous_matches_bad_example.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_029_functions_return_by_value_to_const_reference.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/src/29_07_2019.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_cpp/learncpp/CPP_026_functions_returning_values_by_reference_bad_example.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/bench-mark-tests/BM_TEST_02_08_2019.cpp",
+		"/C/Users/kumarkud/Documents/sources/play_ground/play_daily_with_one_problem/src/28_07_2019.cpp"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 244.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cmake",
+			"make -"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"bash make -"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMakeEditor/CMakeEditor.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "play_ground.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".travis.yml",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 578.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "play_ground (Linux)",
+	"project": "play_ground.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"StorageLocation.java",
+				"pml-storeonce-storage\\impl\\src\\main\\java\\com\\hpe\\storage\\pml\\storeonce\\storage\\impl\\operation\\model\\StorageLocation.java"
+			],
+			[
+				"StorageProvisioningTest",
+				"pml-storeonce-storage\\impl\\src\\test\\java\\com\\hpe\\storage\\pml\\storeonce\\storage\\impl\\operation\\StorageProvisioningTest.java"
+			],
+			[
+				"StorageHpspha",
+				"hpspmon\\healthChecks\\StorageHpspHal.cpp"
+			],
+			[
+				"StorageDevices.java",
+				"impl\\src\\main\\java\\com\\hpe\\storage\\pml\\storeonce\\storage\\impl\\operation\\StorageDevices.java"
+			],
+			[
+				"StorageCpap",
+				"impl\\src\\main\\java\\com\\hpe\\storage\\pml\\storeonce\\storage\\impl\\operation\\StorageCapacity.java"
+			],
+			[
+				"StoreOnceDevice",
+				"impl\\src\\main\\java\\com\\hpe\\storage\\pml\\storeonce\\storage\\impl\\operation\\StorageDevices.java"
+			],
+			[
+				"Da",
+				"datastore.cpp"
+			],
+			[
+				"event",
+				"include\\eventDefinitions.h"
+			],
+			[
+				"StorageHpsphal.cpp",
+				"healthChecks\\StorageHpspHal.cpp"
+			],
+			[
+				"first",
+				"tube_framework\\d2d4-systemd-base\\scripts\\firstboot"
+			],
+			[
+				"firstb",
+				"tube_framework\\d2d4-systemd-base\\scripts\\firstboot"
+			],
+			[
+				"hwComponent",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\HpspNetworkComponent.java"
+			],
+			[
+				"HwInfoImpl",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\service\\HwInfoImpl.java"
+			],
+			[
+				"Pmu",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\PmlUtils.java"
+			],
+			[
+				"hpspneetworkComonnet",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\HpspNetworkComponent.java"
+			],
+			[
+				"NetworkService",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\nmo\\NetworkServiceImpl.java"
+			],
+			[
+				"HWPorts",
+				"src\\pml\\api\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\api\\data\\HwInfoPorts.java"
+			],
+			[
+				"HwPort",
+				"src\\pml\\api\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\api\\data\\HwInfoPort.java"
+			],
+			[
+				"HWInfoIm",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\service\\HwInfoImpl.java"
+			],
+			[
+				"Linux",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\netlib\\LinuxNetworkConfig.java"
+			],
+			[
+				"Platform",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\utils\\PlatformIdHelper.java"
+			],
+			[
+				"LinuxNetworkConfig.java",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\netlib\\LinuxNetworkConfig.java"
+			],
+			[
+				"Ethtool",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\ethtool\\EthtoolLibraryNative.java"
+			],
+			[
+				"hpspnetwork",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\HpspNetworkComponent.java"
+			],
+			[
+				"ethtool",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\ethtool\\EthtoolLibraryHandle.java"
+			],
+			[
+				"hpspnetworkCom",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\HpspNetworkComponent.java"
+			],
+			[
+				"ethtool.java",
+				"src\\pml\\impl\\src\\main\\java\\com\\hp\\storage\\pml\\hpsp\\network\\impl\\ethtool\\EthtoolLibraryNative.java"
+			],
+			[
+				"write.c",
+				"datapath\\nas\\nas_process\\bm\\src\\Write.c"
+			],
+			[
+				"testDBSafeCall",
+				"datapath\\nas\\nas_atf\\STs\\dfs\\testDBSafeCall.c"
+			],
+			[
+				"Wrapper",
+				"datapath\\nas\\nas_lib\\nas\\src\\NAS_IOWrappers.c"
+			],
+			[
+				"monitor",
+				"datapath\\nas\\nas_process\\dfs\\src\\monitor.c"
+			],
+			[
+				"file.c",
+				"datapath\\nas\\nas_process\\dfs\\src\\file.c"
+			],
+			[
+				"Write.c",
+				"datapath\\nas\\nas_process\\dfs\\src\\write.c"
+			],
+			[
+				"IOWrapp",
+				"datapath\\nas\\nas_lib\\nas\\src\\NAS_IOWrappers.c"
+			],
+			[
+				"File.c",
+				"datapath\\nas\\nas_process\\dfs\\src\\file.c"
+			],
+			[
+				"NAS_Ver",
+				"dmcore\\src\\NAS\\Nas_Verify.cpp"
+			],
+			[
+				"NAS_Write",
+				"dmcore\\src\\NAS\\Nas_Write.cpp"
+			],
+			[
+				"Write.pm",
+				"lib\\ALT\\Schedulable\\Job\\NAS\\Write.pm"
+			],
+			[
+				"WriteAndVerify",
+				"lib\\ALT\\Schedulable\\Job\\Factory\\NAS\\SCB\\WriteAndVerify.pm"
+			],
+			[
+				"healthCheck",
+				"include\\healthCheck.h"
+			],
+			[
+				"write",
+				"datapath\\nas\\nas_process\\bm\\src\\Write.c"
+			],
+			[
+				"cli.cpp",
+				"main\\src\\cli.cpp"
+			],
+			[
+				"Port_Sma",
+				"compute-lib\\src\\SasPort_SmartArray.cpp"
+			],
+			[
+				"CLuster_Smart",
+				"compute-lib\\inc\\StorageCluster_SmartArray.hpp"
+			],
+			[
+				"SASPo",
+				"storage-lib\\inc\\SasPort_Rcim.hpp"
+			],
+			[
+				"SASPor",
+				"shared\\inc\\SasPort.hpp"
+			],
+			[
+				"ManagedCab",
+				"storage-lib\\src\\ManagedCableEprom_Rcim.cpp"
+			],
+			[
+				"managedCa",
+				"storage-lib\\inc\\ManagedCableEprom.hpp"
+			],
+			[
+				"Exapnder_Smart",
+				"compute-lib\\inc\\Expander_SmartArray.hpp"
+			],
+			[
+				"Expander_Rc",
+				"storage-lib\\src\\Expander_Rcim.cpp"
+			],
+			[
+				"SasPort_S",
+				"compute-lib\\src\\SasPort_SmartArray.cpp"
+			],
+			[
+				"dfs2bm.c",
+				"datapath\\nas\\nas_process\\bm\\lib\\src\\dfs2bm.c"
+			],
+			[
+				"NAS_IO",
+				"datapath\\nas\\nas_lib\\nas\\src\\NAS_IOWrappers.c"
+			],
+			[
+				"OpenFile.c",
+				"datapath\\nas\\nas_process\\bm\\src\\OpenFile.c"
+			],
+			[
+				"flush.c",
+				"datapath\\nas\\nas_process\\dfs\\src\\flush.c"
+			],
+			[
+				"Connect.c",
+				"tube_framework\\Database\\database\\lib\\src\\Connect.c"
+			],
+			[
+				"Platform_",
+				"tube_framework\\d2dplatform\\database\\lib\\src\\Tube_Platform_DB_Context.c"
+			],
+			[
+				"Tube_Platform_DB_Context.c",
+				"tube_framework\\d2dplatform\\database\\lib\\src\\Tube_Platform_DB_Context.c"
+			],
+			[
+				"Voluem_Smart",
+				"compute-lib\\src\\Volume_SmartArray.cpp"
+			],
+			[
+				"Pool_smart",
+				"compute-lib\\src\\Pool_SmartArray.cpp"
+			],
+			[
+				"Volume_rcp",
+				"storage-lib\\src\\Volume_Rcim.cpp"
+			],
+			[
+				"Volume_Smart",
+				"compute-lib\\src\\Volume_SmartArray.cpp"
+			],
+			[
+				"Enclosure_SmartArray.cpp",
+				"compute-lib\\src\\Enclosure_SmartArray.cpp"
+			],
+			[
+				"ComputeNode_Proliant_Local.cpp",
+				"compute-lib\\src\\ComputeNode_Proliant_Local.cpp"
+			],
+			[
+				"Raptor.cpp",
+				"storage-lib\\src\\Raptor.cpp"
+			],
+			[
+				"ad",
+				"build\\googletest\\docs\\advanced.md"
+			],
+			[
+				"CPP_026_functions_returning_values_by_reference_bad_example.cpp",
+				"play_cpp\\learncpp\\CPP_026_functions_returning_values_by_reference_bad_example.cpp"
+			],
+			[
+				"29_07_2019.cpp",
+				"play_daily_with_one_problem\\src\\29_07_2019.cpp"
+			],
+			[
+				"CPP_029_functions_return_by_value_to_const_reference.cpp",
+				"play_cpp\\learncpp\\CPP_029_functions_return_by_value_to_const_reference.cpp"
+			],
+			[
+				"CPP_024_functions_returning_values_by_address_bad_example.cpp",
+				"play_cpp\\learncpp\\CPP_024_functions_returning_values_by_address_bad_example.cpp"
+			],
+			[
+				"0006_maximum-sum-increasing-subsequence.cpp",
+				"play_cpp\\boring\\mustdo\\naive\\arrays\\0006_maximum-sum-increasing-subsequence.cpp"
+			],
+			[
+				"CPP_044_functions_function_overloading_ambiguous_matches_bad_example.cpp",
+				"play_cpp\\learncpp\\CPP_044_functions_function_overloading_ambiguous_matches_bad_example.cpp"
+			],
+			[
+				"CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example.cpp",
+				"play_cpp\\learncpp\\CPP_029_functions_return_by_dangling_reference_to_const_reference_bad_example.cpp"
+			],
+			[
+				"Item_3_001.cpp",
+				"play_55_specific_ways_to_improve_your_programs_and_design\\src\\Item_3_001.cpp"
+			],
+			[
+				"0005_equilibrium-point.cpp",
+				"play_cpp\\boring\\mustdo\\naive\\arrays\\0005_equilibrium-point.cpp"
+			],
+			[
+				"Chapter_3_merge_sort.cpp",
+				"play_cphb\\src\\Chapter_3_merge_sort.cpp"
+			],
+			[
+				"/Item_3_001.cpp",
+				"play_55_specific_ways_to_improve_your_programs_and_design\\src\\Item_3_001.cpp"
+			],
+			[
+				"BM_TEST_15_07_2019",
+				"play_daily_with_one_problem\\bench-mark-tests\\BM_TEST_15_07_2019.cpp"
+			],
+			[
+				"28_07_2019.cpp",
+				"play_daily_with_one_problem\\src\\28_07_2019.cpp"
+			],
+			[
+				"30_07_2019.cpp",
+				"play_daily_with_one_problem\\src\\30_07_2019.cpp"
+			],
+			[
+				"BM_TEST_25_07_2019.cpp",
+				"play_daily_with_one_problem\\bench-mark-tests\\BM_TEST_25_07_2019.cpp"
+			],
+			[
+				"CPP_061_functions_recursion_fibonacci.cpp",
+				"play_cpp\\learncpp\\CPP_061_functions_recursion_fibonacci.cpp"
+			],
+			[
+				"LC_E_0006.cpp",
+				"play_lc\\src\\LC_E_0006.cpp"
+			],
+			[
+				"/LC_E_0011.cpp",
+				"play_lc\\src\\LC_E_0011.cpp"
+			],
+			[
+				"LC_E_0012.cpp",
+				"play_lc\\src\\LC_E_0012.cpp"
+			],
+			[
+				"LC_E_0010.cpp",
+				"play_lc\\src\\LC_E_0010.cpp"
+			],
+			[
+				"01_08_2019.cpp",
+				"play_daily_with_one_problem\\src\\01_08_2019.cpp"
+			],
+			[
+				"chapter_3",
+				"play_cphb\\src\\Chapter_3_insertion_sort.cpp"
+			],
+			[
+				"chapter_3_",
+				"play_cphb\\src\\Chapter_3_bubble_sort.cpp"
+			],
+			[
+				"Chapter_3_selection_sort.cpp",
+				"play_cphb\\src\\Chapter_3_selection_sort.cpp"
+			],
+			[
+				"LC_E_0004.cpp",
+				"play_lc\\src\\LC_E_0004.cpp"
+			],
+			[
+				"accounts_merge.cpp",
+				"play_lc_once_again_top_google_questions\\src\\accounts_merge.cpp"
+			],
+			[
+				"LC_E_0001.cpp",
+				"play_lc\\src\\LC_E_0001.cpp"
+			],
+			[
+				"TEST_LC_E_0011.cpp",
+				"play_lc\\tests\\TEST_LC_E_0011.cpp"
+			],
+			[
+				"TEST_LC_E_0012.cpp",
+				"play_lc\\tests\\TEST_LC_E_0012.cpp"
+			],
+			[
+				"/LC_E_0009.cpp",
+				"play_lc\\src\\LC_E_0009.cpp"
+			],
+			[
+				"LC_E_0008.cpp",
+				"play_lc\\src\\LC_E_0008.cpp"
+			],
+			[
+				"Chapter_3_insertion_sort.cpp",
+				"play_cphb\\src\\Chapter_3_insertion_sort.cpp"
+			],
+			[
+				"/LC_E_0001.cpp",
+				"play_lc\\src\\LC_E_0001.cpp"
+			],
+			[
+				"moving_average.hpp",
+				"play_lc_once_again_top_google_questions\\src\\moving_average.hpp"
+			],
+			[
+				"moving_average.cpp",
+				"play_lc_once_again_top_google_questions\\src\\moving_average.cpp"
+			],
+			[
+				"random_pick_with_weight.cpp",
+				"play_lc_once_again_top_google_questions\\src\\random_pick_with_weight.cpp"
+			],
+			[
+				"merge_intervals.cpp",
+				"play_lc_once_again_top_google_questions\\src\\merge_intervals.cpp"
+			],
+			[
+				"TEST_merge_intervals.cp",
+				"play_lc_once_again_top_google_questions\\tests\\TEST_merge_intervals.cpp"
+			],
+			[
+				"rando",
+				"play_lc_once_again_top_google_questions\\src\\random_pick_with_weight.hpp"
+			],
+			[
+				"TEST_random_pick_with_weight.cpp",
+				"play_lc_once_again_top_google_questions\\tests\\TEST_random_pick_with_weight.cpp"
+			],
+			[
+				"system_im",
+				"shared\\src\\System_Impl.cpp"
+			],
+			[
+				"System_Impl",
+				"shared\\inc\\System_Impl.hpp"
+			],
+			[
+				"healthMoni",
+				"healthMonitors\\healthMonitor.cpp"
+			],
+			[
+				"healthCheck.h",
+				"include\\healthCheck.h"
+			],
+			[
+				"asyncEventMonitor",
+				"healthChecks\\asyncEventMonitor.cpp"
+			],
+			[
+				"StorageClusterHealthCheck",
+				"healthChecks\\StorageClusterHealthCheck.cpp"
+			],
+			[
+				"utils.cpp",
+				"healthChecks\\UtilsHpspHal.cpp"
+			],
+			[
+				"serverhpsp",
+				"healthChecks\\ServerHpspHal.cpp"
+			],
+			[
+				"StorageCluster.hpp",
+				"storage-lib\\inc\\StorageCluster.hpp"
+			],
+			[
+				"Volume_Rcim.cpp",
+				"storage-lib\\src\\Volume_Rcim.cpp"
+			],
+			[
+				"smarta",
+				"compute-lib\\inc\\Drive_SmartArray.hpp"
+			],
+			[
+				"Volume_Smar",
+				"compute-lib\\src\\Volume_SmartArray.cpp"
+			],
+			[
+				"StorageCLuster_Sma",
+				"compute-lib\\inc\\StorageCluster_SmartArray.hpp"
+			],
+			[
+				"StorageCluster_Smart",
+				"compute-lib\\src\\StorageCluster_SmartArray.cpp"
+			],
+			[
+				"StorageCluster.cpp",
+				"storage-lib\\src\\StorageCluster.cpp"
+			],
+			[
+				"ComputeNode_",
+				"compute-lib\\inc\\ComputeNode_Proliant.hpp"
+			],
+			[
+				"ComputeNode_Pro",
+				"compute-lib\\inc\\ComputeNode_Proliant_Local.hpp"
+			],
+			[
+				"ComputeNode.cpp",
+				"compute-lib\\src\\ComputeNode.cpp"
+			],
+			[
+				"StorageCluster_ri",
+				"storage-lib\\src\\StorageCluster_Rcim.cpp"
+			],
+			[
+				"Controller_Smart",
+				"compute-lib\\src\\Controller_SmartArray.cpp"
+			],
+			[
+				"smartA",
+				"compute-lib\\inc\\SmartArrayBase.hpp"
+			],
+			[
+				"volume_smart",
+				"compute-lib\\src\\Volume_SmartArray.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 37.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 788.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 534.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
