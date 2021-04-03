@@ -87,7 +87,11 @@ int main(void)
 	glBindVertexArray(VertexArrayID);
 
 	static const GLfloat g_vertex_buffer_data[] =
-	{ -1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f, };
+	{
+			-1.0f, -1.0f, 0.0f,
+			 1.0f, -1.0f, 0.0f,
+			 1.0f,  1.0f, 0.0f,
+	};
 
 	GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
@@ -118,7 +122,6 @@ int main(void)
 
 		// Draw the triangle !
 		glDrawArrays(GL_TRIANGLES, 0, 3); // 3 indices starting at 0 -> 1 triangle
-
 		glDisableVertexAttribArray(0);
 
 		// Swap buffers
