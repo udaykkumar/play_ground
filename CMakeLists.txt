@@ -10,6 +10,7 @@ enable_testing()
 
 
 include(cmake/GitUtils.cmake)
+include(cmake/FindGLFW3.cmake)
 
 #Benchmark Find and other stuff
 git_clone(
@@ -31,9 +32,16 @@ add_subdirectory( ${benchmark_SOURCE_DIR} )
 
 #Curses
 find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
+include_directories(${CURSES_INCLUDE_DIR} )
 
 
+if( APPLE )
+  message( "-- Detected Apple/MacOS ( include graphics Support ) "  )
+  include_directories(${GLFW3_INCLUDE_DIR})
+else()
+  message( "-- As long as it Ubuntu ( include graphics Support )  "  )
+  include_directories(${GLFW3_INCLUDE_DIR})
+endif()
 
 #Boost and Family
 set(Boost_USE_STATIC_LIBS ON)
