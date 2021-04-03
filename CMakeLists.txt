@@ -1,6 +1,6 @@
 
 # Minimum CMake
-cmake_minimum_required (VERSION 2.8,9)
+cmake_minimum_required (VERSION 3.8.1)
 project(play_ground)
 set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
@@ -11,6 +11,10 @@ enable_testing()
 
 include(cmake/GitUtils.cmake)
 include(cmake/FindGLFW3.cmake)
+#include(cmake/FindGLEW.cmake)
+
+find_package(GLEW REQUIRED)
+find_package(glfw3 REQUIRED)
 
 #Benchmark Find and other stuff
 git_clone(
@@ -38,6 +42,7 @@ include_directories(${CURSES_INCLUDE_DIR} )
 if( APPLE )
   message( "-- Detected Apple/MacOS ( include graphics Support ) "  )
   include_directories(${GLFW3_INCLUDE_DIR})
+  add_definitions(-DGL_SILENCE_DEPRECATION)
 else()
   message( "-- As long as it Ubuntu ( include graphics Support )  "  )
   include_directories(${GLFW3_INCLUDE_DIR})

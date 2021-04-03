@@ -4,13 +4,23 @@ cmake_minimum_required(VERSION 2.8,9)
 project( play_graphics )
 enable_testing()
 
-file(GLOB APP_SOURCES *.c**)
-foreach(testsourcefile ${APP_SOURCES})
-  get_filename_component(testname ${testsourcefile} NAME_WE)
-  add_executable(${testname} ${testsourcefile} )
-  if(APPLE)
-    target_link_libraries(${testname} ${GLFW3_LIBRARY} ${GLWE_LIBRARY} "-framework OpenGL" )
-  else()
-    target_link_libraries(${testname} ${GLFW3_LIBRARY} ${GLWE_LIBRARY} "-lGL -lGLU -lglut" )
-  endif()
-endforeach(testsourcefile ${APP_SOURCES})
+
+add_executable( hellow_world         hellow_world.cpp )
+add_executable( glfw_hello_world   glfw_hello_world.cpp )
+add_executable( glfw_hello_shapes glfw_hello_shapes.cpp shader.cpp )
+
+
+
+if(APPLE)
+	target_link_libraries(hellow_world ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-framework OpenGL" )
+	target_link_libraries(glfw_hello_world ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-framework OpenGL" )
+	target_link_libraries(glfw_hello_shapes ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-framework OpenGL" )
+else()
+	target_link_libraries(hellow_world ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
+	target_link_libraries(glfw_hello_world ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
+	target_link_libraries(glfw_hello_shapes ${GLFW3_LIBRARY} ${GLEW_LIBRARY} "-lGL -lGLU -lglut" )
+endif()
+
+configure_file(SimpleVertexShader.vertexshader SimpleVertexShader.vertexshader COPYONLY)
+configure_file(SimpleFragmentShader.fragmentshader SimpleFragmentShader.fragmentshader COPYONLY)
+
