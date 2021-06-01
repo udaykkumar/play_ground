@@ -1,6 +1,6 @@
 
 # Minimum CMake
-cmake_minimum_required (VERSION 2.8,9)
+cmake_minimum_required (VERSION 3.8.1)
 project(play_ground)
 set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
@@ -10,6 +10,11 @@ enable_testing()
 
 
 include(cmake/GitUtils.cmake)
+include(cmake/FindGLFW3.cmake)
+#include(cmake/FindGLEW.cmake)
+
+find_package(GLEW REQUIRED)
+find_package(glfw3 REQUIRED)
 
 #Benchmark Find and other stuff
 git_clone(
@@ -31,9 +36,17 @@ add_subdirectory( ${benchmark_SOURCE_DIR} )
 
 #Curses
 find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
+include_directories(${CURSES_INCLUDE_DIR} )
 
 
+if( APPLE )
+  message( "-- Detected Apple/MacOS ( include graphics Support ) "  )
+  include_directories(${GLFW3_INCLUDE_DIR})
+  add_definitions(-DGL_SILENCE_DEPRECATION)
+else()
+  message( "-- As long as it Ubuntu ( include graphics Support )  "  )
+  include_directories(${GLFW3_INCLUDE_DIR})
+endif()
 
 #Boost and Family
 set(Boost_USE_STATIC_LIBS ON)
@@ -56,14 +69,8 @@ add_definitions(-DNCURSES_NOMACROS)
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS} ")
 SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
-add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
-add_subdirectory( play_c )
-add_subdirectory( play_cphb )
-add_subdirectory( play_cpp )
-#add_subdirectory( play_ctci_6_e )
-add_subdirectory( play_daily_with_one_problem )
-add_subdirectory( play_lc )
-add_subdirectory( play_lc_once_again_top_google_questions )
-add_subdirectory( play_ping_pong )
-add_subdirectory( play_servers )
+add_subdirectory( play_offline )
+add_subdirectory( play_online )
+
+
 
