@@ -1,20 +1,19 @@
-'''
+"""
 Created on Jun 5, 2021
 
 @author: kumarkud
-'''
+"""
 
 
 class longest_line_of_consecutive_one_in_matrix:
-    '''
+    """
     classdocs
-    '''
+    """
 
     ROW = 0
     COL = 0
-    
-        
-    def __get_hsum(self, mat: list[ list[int]], row:int, col:int) -> int:
+
+    def __get_hsum(self, mat: list[list[int]], row: int, col: int) -> int:
         s = 0
         for i in range(col, self.COL):
             if not mat[row][i]:
@@ -22,7 +21,7 @@ class longest_line_of_consecutive_one_in_matrix:
             s += mat[row][i]
         return s
 
-    def __get_vsum(self, mat: list[ list[int]], row:int, col:int) -> int:
+    def __get_vsum(self, mat: list[list[int]], row: int, col: int) -> int:
         s = 0
         for i in range(row, self.ROW):
             if not mat[i][col]:
@@ -30,11 +29,11 @@ class longest_line_of_consecutive_one_in_matrix:
             s += mat[i][col]
         return s
 
-    def __get_dsum(self, mat: list[ list[int]], row:int, col:int) -> int:
+    def __get_dsum(self, mat: list[list[int]], row: int, col: int) -> int:
         s = 0
         i = row
         j = col
-        while i < self.ROW and j < self.COL :
+        while i < self.ROW and j < self.COL:
             if not mat[i][j]:
                 break
             s += mat[i][j]
@@ -50,14 +49,14 @@ class longest_line_of_consecutive_one_in_matrix:
             i -= 1
             j -= 1
 
-        s -= mat[row][col]   
+        s -= mat[row][col]
         return s
-    
-    def __get_anti_dsum(self, mat: list[ list[int]], row:int, col:int) -> int:
+
+    def __get_anti_dsum(self, mat: list[list[int]], row: int, col: int) -> int:
         s = 0
         i = row
         j = col
-        while i >= 0 and j < self.COL :
+        while i >= 0 and j < self.COL:
             if not mat[i][j]:
                 break
             s += mat[i][j]
@@ -73,43 +72,49 @@ class longest_line_of_consecutive_one_in_matrix:
             i += 1
             j -= 1
 
-        s -= mat[row][col]   
+        s -= mat[row][col]
         return s
-        
+
     def __init__(self):
-        '''
+        """
         Constructor
-        '''
+        """
+
     def longestLine(self, mat: list[list[int]]) -> int:
-        self.ROW = len( mat )
-        self.COL = len( mat[0] )
+        self.ROW = len(mat)
+        self.COL = len(mat[0])
         memo = {}
         maxline = 0
         for row in range(self.ROW):
             for col in range(self.COL):
-                mx   = 0
-                
+                mx = 0
+
                 k = "vsum-{}-{}".format(row, col)
                 if k not in memo:
                     memo[k] = self.__get_vsum(mat, row, col)
-                mx   = max( memo[k], mx )
-                
+                mx = max(memo[k], mx)
+
                 k = "hsum-{}-{}".format(row, col)
                 if k not in memo:
                     memo[k] = self.__get_hsum(mat, row, col)
-                mx   = max( memo[k], mx )
-                
+                mx = max(memo[k], mx)
+
                 k = "dsum-{}-{}".format(row, col)
                 if k not in memo:
                     memo[k] = self.__get_dsum(mat, row, col)
-                mx   = max( memo[k], mx )
-                
+                mx = max(memo[k], mx)
+
                 k = "antidsum-{}-{}".format(row, col)
                 if k not in memo:
                     memo[k] = self.__get_anti_dsum(mat, row, col)
-                mx   = max( memo[k], mx )
-                
-                maxline = max( mx, maxline)
+                mx = max(memo[k], mx)
+
+                maxline = max(mx, maxline)
         return maxline
 
-print( longest_line_of_consecutive_one_in_matrix().longestLine(mat = [[0,1,1,0],[0,1,1,0],[0,0,0,1]]))
+
+print(
+    longest_line_of_consecutive_one_in_matrix().longestLine(
+        mat=[[0, 1, 1, 0], [0, 1, 1, 0], [0, 0, 0, 1]]
+    )
+)
