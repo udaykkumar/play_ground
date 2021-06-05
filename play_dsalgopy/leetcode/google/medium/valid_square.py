@@ -13,7 +13,7 @@ class valid_square():
     
     def __init__(self):
         '''
-        Constructor
+        Constructor https://leetcode.com/problems/valid-square/submissions/
         '''
     
     def __distance(self, p1:list[int], p2:list[int]):
