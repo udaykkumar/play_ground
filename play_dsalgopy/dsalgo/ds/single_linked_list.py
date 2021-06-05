@@ -1,8 +1,8 @@
-'''
+"""
 Created on Apr 20, 2021
 
 @author: Uday
-'''
+"""
 
 # A simple Python program to introduce a linked list
 
@@ -11,8 +11,8 @@ class Node:
 
     # Function to initialise the node object
     def __init__(self, data):
-        self.data = data # Assign data
-        self.next = None # Initialize next as null
+        self.data = data  # Assign data
+        self.next = None  # Initialize next as null
 
 
 # Linked List class contains a Node object
@@ -24,7 +24,7 @@ class LinkedList:
 
 
 # Code execution starts here
-if __name__=='__main__':
+if __name__ == "__main__":
 
     # Start with the empty list
     llist = LinkedList()
@@ -33,7 +33,7 @@ if __name__=='__main__':
     second = Node(2)
     third = Node(3)
 
-    '''
+    """
     Three nodes have been created.
     We have references to these three blocks as head,
     second and third
@@ -44,11 +44,12 @@ if __name__=='__main__':
     +----+------+     +----+------+     +----+------+
     | 1 | None |     | 2 | None |     | 3 | None |
     +----+------+     +----+------+     +----+------+
-    '''
+    """
 
-    llist.head.next = second; # Link first node with second
+    llist.head.next = second
+    # Link first node with second
 
-    '''
+    """
     Now next of first Node refers to second. So they
     both are linked.
 
@@ -58,11 +59,12 @@ if __name__=='__main__':
     +----+------+     +----+------+     +----+------+
     | 1 | o-------->| 2 | null |     | 3 | null |
     +----+------+     +----+------+     +----+------+
-    '''
+    """
 
-    second.next = third; # Link second node with the third node
+    second.next = third
+    # Link second node with the third node
 
-    '''
+    """
     Now next of second Node refers to third. So all three
     nodes are linked.
 
@@ -72,4 +74,4 @@ if __name__=='__main__':
     +----+------+     +----+------+     +----+------+
     | 1 | o-------->| 2 | o-------->| 3 | null |
     +----+------+     +----+------+     +----+------+
-    '''
+    """

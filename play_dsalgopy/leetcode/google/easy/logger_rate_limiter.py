@@ -1,18 +1,18 @@
-'''
+"""
 Created on Jun 1, 2021
 
 @author: kumarkud
-'''
+"""
+
 
 class Logger:
 
-    #tracker = {}
+    # tracker = {}
     def __init__(self):
         """
         Initialize your data structure here.
         """
         self.tracker = {}
-        
 
     def shouldPrintMessage(self, timestamp: int, message: str) -> bool:
         """
@@ -23,13 +23,11 @@ class Logger:
         if message in self.tracker.keys():
             if timestamp < self.tracker[message]:
                 return False
-            
-        self.tracker[message] = (timestamp+10)
+
+        self.tracker[message] = timestamp + 10
         return True
-        
 
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()
 # param_1 = obj.shouldPrintMessage(timestamp,message)
-        
