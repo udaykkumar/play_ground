@@ -83,32 +83,14 @@ class longest_line_of_consecutive_one_in_matrix:
     def longestLine(self, mat: list[list[int]]) -> int:
         self.ROW = len(mat)
         self.COL = len(mat[0])
-        memo = {}
         maxline = 0
         for row in range(self.ROW):
             for col in range(self.COL):
                 mx = 0
-
-                k = "vsum-{}-{}".format(row, col)
-                if k not in memo:
-                    memo[k] = self.__get_vsum(mat, row, col)
-                mx = max(memo[k], mx)
-
-                k = "hsum-{}-{}".format(row, col)
-                if k not in memo:
-                    memo[k] = self.__get_hsum(mat, row, col)
-                mx = max(memo[k], mx)
-
-                k = "dsum-{}-{}".format(row, col)
-                if k not in memo:
-                    memo[k] = self.__get_dsum(mat, row, col)
-                mx = max(memo[k], mx)
-
-                k = "antidsum-{}-{}".format(row, col)
-                if k not in memo:
-                    memo[k] = self.__get_anti_dsum(mat, row, col)
-                mx = max(memo[k], mx)
-
+                mx = max(self.__get_vsum(mat, row, col), mx)
+                mx = max(self.__get_hsum(mat, row, col), mx)
+                mx = max(self.__get_dsum(mat, row, col), mx)
+                mx = max(self.__get_anti_dsum(mat, row, col), mx)
                 maxline = max(mx, maxline)
         return maxline
 
