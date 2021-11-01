@@ -865,12 +865,12 @@
 					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/list_install_components",
 				},
 				{
-					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/test",
-					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/test",
-				},
-				{
 					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
 					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
+				},
+				{
+					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/test",
+					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/test",
 				},
 				{
 					"name": "play_online/install/strip",
@@ -1011,10 +1011,6 @@
 				{
 					"name": "015_Array_As_Pointer",
 					"shell_cmd": "cmake --build . --target 015_Array_As_Pointer",
-				},
-				{
-					"name": "016_List",
-					"shell_cmd": "cmake --build . --target 016_List",
 				},
 				{
 					"name": "017_Node_chain",
@@ -1559,7 +1555,7 @@
 				{
 					"name": "clean",
 					"shell_cmd": "cmake --build . --target clean",
-				}
+				},
 			],
 			"working_dir": "${project_path}/build",
 		},
