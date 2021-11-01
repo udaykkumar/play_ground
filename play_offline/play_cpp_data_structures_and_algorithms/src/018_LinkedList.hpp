@@ -3,12 +3,13 @@
 
 namespace ds {
 
-	
+	template <typename T>
+	class Node;
+			
 	template <typename T>
 	class linked_list
 	{
-		class Node<T>;
-		
+
 		private:
 		    int count_;
 

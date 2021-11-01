@@ -10,11 +10,11 @@ enable_testing()
 
 
 include(cmake/GitUtils.cmake)
-include(cmake/FindGLFW3.cmake)
+#include(cmake/FindGLFW3.cmake)
 #include(cmake/FindGLEW.cmake)
 
-find_package(GLEW REQUIRED)
-find_package(glfw3 REQUIRED)
+#find_package(GLEW REQUIRED)
+#find_package(glfw3 REQUIRED)
 
 #Benchmark Find and other stuff
 git_clone(

@@ -2,13 +2,13 @@
 
 namespace ds
 {
-	
+	template < typename T >
+	class DoubleNode;
 
-
-	template <typename T>
+	template < typename T > 
 	class DoublyLinkedList
 	{
-		class DoubleNode<T> ;
+		
 		
 	    private:
 	        int m_count;
