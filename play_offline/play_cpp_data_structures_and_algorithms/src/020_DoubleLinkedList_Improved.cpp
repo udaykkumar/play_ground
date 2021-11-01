@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "019_DoubleLinkedList.hpp"
+#include "020_DoubleLinkedList_Improved.hpp"
 
 namespace ds
 {
@@ -9,20 +9,19 @@ namespace ds
 	{
 		private:
 			T 		value_;
-			DoubleNode<T> *next_;
-			DoubleNode<T> *prev_;
+			std::shared_ptr<DoubleNode<T>> next_;
+			std::shared_ptr<DoubleNode<T>> prev_;
 
 		public:
 			DoubleNode( T v ) :
-				value_(v),
-				next_(nullptr)
+				value_(v)
 			{ }
 
 			~DoubleNode( )
 			{ }
 
-			DoubleNode<T>* & next() { return next_; }
-			DoubleNode<T>* & prev() { return prev_; }
+			std::shared_ptr<DoubleNode<T>> & next() { return next_; }
+			std::shared_ptr<DoubleNode<T>> & prev() { return prev_; }
 			T 				value() { return value_; }
 	};
 
@@ -38,12 +37,12 @@ namespace ds
 
 	// get() operation
 	template < typename T >
-	DoubleNode<T> * doubly_linked_list<T>::get(int index)
+	std::shared_ptr<DoubleNode<T>> doubly_linked_list<T>::get(int index)
 	{
 		if ( index < 0 )
 			return nullptr;
 		int c = 0;
-		for ( auto *p = head_; p ; p = p->next() )
+		for ( auto p = head_; p ; p = p->next() )
 		{
 			if ( c == index )
 				return p;
@@ -65,7 +64,7 @@ namespace ds
 				return;
 
 			default:
-				auto *p = new DoubleNode(val);
+				auto p = std::make_shared< DoubleNode<T> >(val);
 				p->next() = head_;
 				head_     = p;
 				head_->next()->prev() = head_; 
@@ -85,7 +84,7 @@ namespace ds
 				return;
 
 			default:
-				auto *p = new DoubleNode(val);
+				auto p = std::make_shared<DoubleNode<T>>(val);
 				    
 				tail_->next() = p;
 				tail_->next()->prev() = tail_;
@@ -98,9 +97,9 @@ namespace ds
 	template < typename T >
 	void doubly_linked_list<T>::insert(int index, T val)
 	{
-		if ( auto *p = get(index) )
+		if ( auto p = get(index) )
 		{
-			auto *n = new DoubleNode(val);
+			auto n = std::make_shared<DoubleNode<T>>(val);
 
 			/// attach links of n to p and p->next()
 			n->prev() = p;
@@ -120,7 +119,7 @@ namespace ds
 	int doubly_linked_list<T>::search(T val)
 	{
 		int index = -1;
-		for ( auto *p = head_; p ; p = p->next() ) {
+		for ( auto p = head_; p ; p = p->next() ) {
 			if ( val == p->value() )
 				return index;
 			index += 1;
@@ -146,11 +145,10 @@ namespace ds
 
 			default:
 				/// move head by one and remove prev pointer
-				auto *p = head_;
+				auto p = head_;
 				head_ = head_->next();
 				head_->prev() = nullptr;
-				delete p;
-
+				
 				/// update counter
 				count_ -= 1;
 
@@ -169,10 +167,9 @@ namespace ds
 				remove_head();
 				return;
 			default:
-				auto *p = tail_;
+				auto p = tail_;
 				tail_   = tail_->prev();
 				tail_->next() = nullptr;
-				delete p;
 				count_ -= 1;
 
 		}
@@ -181,14 +178,13 @@ namespace ds
 	template < typename T >
 	void doubly_linked_list<T>::remove(int index)
 	{
-		if ( auto *p = get(index) )
+		if ( auto p = get(index) )
 		{
 			p->prev()->next() = p->next();
 			p->next()->prev() = p->prev();
 			p->next() = nullptr;
 			p->prev() = nullptr;
-			delete p;
-
+			
 			count_ -= 1;
 		}
 	}
@@ -208,7 +204,7 @@ namespace ds
 			return;
 		}
 
-		for ( auto *p = head_; p ; p = p->next() )
+		for ( auto p = head_; p ; p = p->next() )
 			std::cout << p->value() << " ";
 		std::cout << std::endl;
 		return;
@@ -223,7 +219,7 @@ namespace ds
 		}
 
 
-		for ( auto *p = tail_; p ; p = p->prev() )
+		for ( auto p = tail_; p ; p = p->prev() )
 			std::cout << p->value() << " ";
 		std::cout << std::endl;
 		return;
@@ -235,7 +231,7 @@ namespace ds
 	template < typename T >
 	void doubly_linked_list<T>::make_first_node(T val)
 	{
-		auto *p = new DoubleNode(val);
+		auto p = std::make_shared<DoubleNode<T>>(val);
 		head_ = p;
 		tail_ = p;
 
@@ -245,7 +241,6 @@ namespace ds
 	template < typename T >
 	void doubly_linked_list<T>::remove_first_node()
 	{
-		delete head_;
 		tail_ = nullptr;
 		head_ = nullptr;
 

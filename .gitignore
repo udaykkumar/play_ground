@@ -1,4 +1,6 @@
 build
+googletest
+benchmark
 .vscode
 .cproject
 .project
