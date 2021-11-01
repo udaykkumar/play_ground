@@ -8,7 +8,6 @@ namespace ds
 		private :
 			T value_;
 			std::shared_ptr< Node > next_;
-			std::shared_ptr< Node > prev_;
 		
 		public :
 			Node( T val ) :
@@ -23,7 +22,6 @@ namespace ds
 			}
 			
 			std::shared_ptr< Node<T> > &next() { return next_; }
-			std::shared_ptr< Node<T> > &prev() { return prev_; }
 			T 						   value() { return value_;}
 	};
 
@@ -76,9 +74,11 @@ namespace ds
 		}
 		else
 		{
-			n->next() = back_;
-			back_->prev() = n;
-			back_ = n;
+			//n->next() = back_;
+			//back_->prev() = n;
+			//back_ = n;
+			back_->next() = n;
+			back_ = back_->next();
 		}
 		
 		count_ += 1;
@@ -97,8 +97,7 @@ namespace ds
 		}
 		else
 		{
-			front_ = front_->prev();
-			front_->next() = nullptr;
+			front_ = front_->next();
 		}
 		
 		count_ -= 1;
