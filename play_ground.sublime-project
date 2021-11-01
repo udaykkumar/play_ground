@@ -865,12 +865,12 @@
 					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/list_install_components",
 				},
 				{
-					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
-					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
-				},
-				{
 					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/test",
 					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/test",
+				},
+				{
+					"name": "play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
+					"shell_cmd": "cmake --build . --target play_offline/play_cpp_data_structures_and_algorithms/src/rebuild_cache",
 				},
 				{
 					"name": "play_online/install/strip",
@@ -1035,6 +1035,10 @@
 				{
 					"name": "022_Queue",
 					"shell_cmd": "cmake --build . --target 022_Queue",
+				},
+				{
+					"name": "023_Queue_pimpl",
+					"shell_cmd": "cmake --build . --target 023_Queue_pimpl",
 				},
 				{
 					"name": "CPP_001_c-hello-world_0",
@@ -1554,7 +1558,7 @@
 				},
 				{
 					"name": "clean",
-					"shell_cmd": "cmake --build . --target clean",
+					"shell_cmd": "cmake --build . --target clean"
 				},
 			],
 			"working_dir": "${project_path}/build",
