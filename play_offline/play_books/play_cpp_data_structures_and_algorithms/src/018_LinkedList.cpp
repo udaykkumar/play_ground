@@ -36,7 +36,9 @@ namespace ds
 	/// Constructor
 	template < typename T >
 		linked_list<T>::linked_list():
-			count_(0)
+			count_(0),
+			head_(nullptr),
+			tail_(nullptr)
 		{
 
 		}
