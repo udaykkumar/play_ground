@@ -57,7 +57,7 @@ namespace ds
 			/// repeat till we process the largest element width times
 		}
 
-		for ( auto v : in digarr )
+		for ( auto v : digarr )
 			delete v;
 	}
 }
