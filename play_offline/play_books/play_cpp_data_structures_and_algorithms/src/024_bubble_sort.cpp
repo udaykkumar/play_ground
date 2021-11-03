@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "utils.hpp"
 namespace ds
 {
 	void bubble_sort( int array[], int size )
@@ -39,85 +39,26 @@ namespace ds
 
 int main(int argc, char const *argv[])
 {
-	std::cout << "bubble sort " << std::endl;
 	{
-		int array[] = {10, 4, 6, 2, 19, 21, 45, 7};
-		size_t size = sizeof(array)/sizeof(*array) ;
-		
-		ds::bubble_sort(array, size);
-		for (size_t i = 0; i < size; ++i)
-		{
-			std::cout << array[i] << "  ";
-		}
+		std::cout << "bubble sort " << std::endl;
+		std::function< void(int [], int ) > f = ds::bubble_sort;
+			
+		utils::just_a_simple_sort(f);
+		utils::just_a_simple_sort_multiple(f);
+		utils::huge_sort_ascending(f);
+		utils::huge_sort_descending(f);
+	}
 	
-		std::cout << std::endl;
+	{
+		std::cout << "better_bubble_sort sort " << std::endl;
+		std::function< void(int [], int ) > f = ds::better_bubble_sort;
+			
+		utils::just_a_simple_sort(f);
+		utils::just_a_simple_sort_multiple(f);
+		utils::huge_sort_ascending(f);
+		utils::huge_sort_descending(f);
 	}
 
-	{
-		int array[] = {10, 4, 6, 2, 19, 21, 45, 7};
-		size_t size = sizeof(array)/sizeof(*array) ;
-		
-		ds::better_bubble_sort(array, size);
-		for (size_t i = 0; i < size; ++i)
-		{
-			std::cout << array[i] << "  ";
-		}
-	
-		std::cout << std::endl;
-	}
-
-	{
-		size_t size = 100000;
-		{
-			int *array = new int[size];
-			for (size_t i = 0; i < size; ++i)
-			{
-				array[i] = i;
-			}
-			std::cout << "bubble_sort perf sorted from 1 -> " << " " << size << std::endl;
-			ds::bubble_sort(array, size);
-			std::cout << std::endl;
-		}
-	
-		{
-			int *array = new int[size];
-			for (size_t i = 0; i < size; ++i)
-			{
-				array[i] = i;
-			}
-			std::cout << "better_bubble_sort perf sorted from 1 -> " << " " << size << std::endl;
-			ds::better_bubble_sort(array, size);
-			std::cout << std::endl;
-		}
-	
-	}
-
-
-	{
-		size_t size = 100000;
-		{
-			int *array = new int[size];
-			for (size_t i = size-1; i > 0; --i )
-			{
-				array[i] = i;
-			}
-			std::cout << "bubble_sort perf sorted from " << size << " -> 1 " << std::endl;
-			ds::bubble_sort(array, size);
-			std::cout << std::endl;
-		}
-	
-		{
-			int *array = new int[size];
-			for (size_t i = size-1; i > 0; --i )
-			{
-				array[i] = i;
-			}
-			std::cout << "better_bubble_sort perf sorted from " << size << " -> 1 " << std::endl;
-			ds::better_bubble_sort(array, size);
-			std::cout << std::endl;
-		}
-	
-	}
 
 	return 0;
 }
