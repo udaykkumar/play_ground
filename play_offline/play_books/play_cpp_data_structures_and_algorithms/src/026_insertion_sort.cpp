@@ -27,8 +27,8 @@ int main(int argc, char const *argv[])
 	
 	utils::just_a_simple_sort(f);
 	utils::just_a_simple_sort_multiple(f);
-	utils::huge_sort_ascending(f);
-	utils::huge_sort_descending(f);
+	utils::huge_sort_ascending(f,1000);
+	utils::huge_sort_descending(f,1000);
 	
 	return 0;
 }

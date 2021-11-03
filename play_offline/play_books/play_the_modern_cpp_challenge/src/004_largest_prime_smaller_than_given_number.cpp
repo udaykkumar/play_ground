@@ -38,8 +38,8 @@ int largest_prime(int x)
 
 int main(int argc, char const *argv[])
 {
-	int x;
-	std::cin >> x;
+	int x = 1000;
+	//std::cin >> x;
 	std::cout << "largest prime smaller than " << x << " is : "
 				<< largest_prime(x) << std::endl;
 	return 0;

@@ -61,10 +61,9 @@ namespace utils
 		}
 	}
 
-	void huge_sort_ascending( std::function<void(int[], int)> &f )
+	void huge_sort_ascending( std::function<void(int[], int)> &f, size_t size = 100000 )
 	{
 		std::cout << "huge sort ascending" ;
-		size_t size = 100000;
 		{
 			int *array = new int[size];
 			for (size_t i = 0; i < size; ++i)
@@ -74,13 +73,13 @@ namespace utils
 			std::cout << " perf sorted from 1 -> " << " " << size << std::endl;
 			f(array, size);
 			std::cout << "done " << std::endl;
+			delete []array;
 		}
 	}
 
-	void huge_sort_descending( std::function<void(int[], int)> &f )
+	void huge_sort_descending( std::function<void(int[], int)> &f, size_t size = 100000 )
 	{
 		std::cout << "huge sort descending" ;
-		size_t size = 100000;
 		{
 			int *array = new int[size];
 			for (size_t i = size-1; i > 0; --i )
@@ -90,6 +89,7 @@ namespace utils
 			std::cout << " perf sorted from " << size << " -> 1 " << std::endl;
 			f(array, size);
 			std::cout << "done " << std::endl;
+			delete []array;
 		}
 	}
 
