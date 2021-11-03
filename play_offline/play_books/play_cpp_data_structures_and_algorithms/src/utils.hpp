@@ -93,4 +93,12 @@ namespace utils
 		}
 	}
 
+	int *generate_random_array( int size, int min, int max )
+	{
+		int *array = new int[size];
+		for (int i = 0; i < size; ++i)
+			array[i] = get_random_int(min, max);
+		return array;
+	}	
+
 }
