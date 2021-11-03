@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 
+#include "utils.hpp"
+
 enum CardSuite {  Club, Diamond, Heart, Spade };
 
 enum CardElement  { One, Two, Three, Four,
@@ -41,26 +43,13 @@ std::string ElementString( CardElement  s )
 	return "None";
 }
 
-int GenerateRandomNumber(int min, int max)
-{
-    /// static used for efficiency,
-    /// so we only calculate this value once
-    static const double fraction =
-        1.0 / (static_cast<double>(RAND_MAX) + 1.0);
 
-    /// evenly distribute the random number
-    /// across our range
-    return min + static_cast<int>(
-        (max - min + 1) * (std::rand() * fraction));
-}
 
 int main()
 {
-	// set initial seed value to system clock
-    srand(static_cast<unsigned int>(time(0)));
 
-	CardSuite cs = static_cast<CardSuite>(GenerateRandomNumber(0,3));
-	CardElement ce = static_cast<CardElement>(GenerateRandomNumber(0,12));
+	CardSuite cs = static_cast<CardSuite>(utils::get_random_int(0,3));
+	CardElement ce = static_cast<CardElement>(utils::get_random_int(0,12));
 
 	std::cout << " Chosen Card is " 
 			  << ElementString(ce) << " of " 

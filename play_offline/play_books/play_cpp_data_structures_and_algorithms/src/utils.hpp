@@ -15,7 +15,7 @@ namespace utils
 		}
 	}
 
-	int GenerateRandomNumber(int min, int max)
+	int get_random_int(int min, int max)
 	{
 		/// set initial seed value to system clock
 		Once();
@@ -51,7 +51,7 @@ namespace utils
 		{
 			int array[size];
 			for (size_t i = 0; i < size; ++i)
-				array[i] = utils::GenerateRandomNumber(1, 100);
+				array[i] = utils::get_random_int(1, 100);
 			
 			f(array, size);
 
