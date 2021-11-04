@@ -53,3 +53,5 @@ namespace ds
 	        void print_list_backwards();
 	};
 }
+
+#include "impl/020_DoubleLinkedList_Improved_impl.hpp"

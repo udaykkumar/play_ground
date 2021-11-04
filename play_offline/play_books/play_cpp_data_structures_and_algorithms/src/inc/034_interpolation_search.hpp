@@ -29,6 +29,6 @@ namespace ds
 
 	int interpolation_search( int array[], int size , int val )
 	{
-		interpolation_search( array, 0, size -1 , val);
+		return interpolation_search( array, 0, size -1 , val);
 	}
 }

@@ -25,3 +25,6 @@ namespace ds
 			void pop();
 	};
 }
+
+
+#include "impl/021_Stack_impl.hpp"

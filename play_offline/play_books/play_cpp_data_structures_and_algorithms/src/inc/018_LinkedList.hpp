@@ -47,3 +47,6 @@ namespace ds {
 	};
 
 }
+
+
+#include "impl/018_LinkedList_impl.hpp"

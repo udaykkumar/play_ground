@@ -26,13 +26,11 @@ namespace ds
 				end_i   = mid_right_i - 1;
 			}
 		}
-
-
 		return -1;
 	}
 
 	int ternary_search( int array[], int size, int val )
 	{
-		ternary_search( array, 0, size-1, val );
+		return ternary_search( array, 0, size-1, val );
 	}
 }

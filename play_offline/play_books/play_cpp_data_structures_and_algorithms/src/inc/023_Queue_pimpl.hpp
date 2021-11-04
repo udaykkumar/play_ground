@@ -25,3 +25,5 @@ namespace ds
 		    void 	dequeue() 		{  pimpl_->dequeue(); 			}
 	};
 }
+
+#include "impl/023_Queue_pimpl_impl.hpp"

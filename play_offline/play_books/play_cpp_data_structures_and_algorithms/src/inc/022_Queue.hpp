@@ -24,3 +24,5 @@ namespace ds
 		    void 	dequeue();
 	};
 }
+
+#include "impl/022_Queue_impl.hpp"
