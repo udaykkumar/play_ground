@@ -1217,6 +1217,10 @@
 					"shell_cmd": "cmake --build . --target 038_sublist_search",
 				},
 				{
+					"name": "039_is_anagram",
+					"shell_cmd": "cmake --build . --target 039_is_anagram",
+				},
+				{
 					"name": "CPP_001_c-hello-world_0",
 					"shell_cmd": "cmake --build . --target CPP_001_c-hello-world_0",
 				},
@@ -1562,171 +1566,171 @@
 				},
 				{
 					"name": "circular-single-linked-list",
-					"shell_cmd": "cmake --build . --target circular-single-linked-list"
+					"shell_cmd": "cmake --build . --target circular-single-linked-list",
 				},
 				{
 					"name": "circular-single-linked-list-test",
-					"shell_cmd": "cmake --build . --target circular-single-linked-list-test"
+					"shell_cmd": "cmake --build . --target circular-single-linked-list-test",
 				},
 				{
 					"name": "double-linked-list",
-					"shell_cmd": "cmake --build . --target double-linked-list"
+					"shell_cmd": "cmake --build . --target double-linked-list",
 				},
 				{
 					"name": "double-linked-list-test",
-					"shell_cmd": "cmake --build . --target double-linked-list-test"
+					"shell_cmd": "cmake --build . --target double-linked-list-test",
 				},
 				{
 					"name": "gmock",
-					"shell_cmd": "cmake --build . --target gmock"
+					"shell_cmd": "cmake --build . --target gmock",
 				},
 				{
 					"name": "gmock_main",
-					"shell_cmd": "cmake --build . --target gmock_main"
+					"shell_cmd": "cmake --build . --target gmock_main",
 				},
 				{
 					"name": "graph",
-					"shell_cmd": "cmake --build . --target graph"
+					"shell_cmd": "cmake --build . --target graph",
 				},
 				{
 					"name": "graph-test",
-					"shell_cmd": "cmake --build . --target graph-test"
+					"shell_cmd": "cmake --build . --target graph-test",
 				},
 				{
 					"name": "gtest",
-					"shell_cmd": "cmake --build . --target gtest"
+					"shell_cmd": "cmake --build . --target gtest",
 				},
 				{
 					"name": "gtest_main",
-					"shell_cmd": "cmake --build . --target gtest_main"
+					"shell_cmd": "cmake --build . --target gtest_main",
 				},
 				{
 					"name": "libbenchmark.a",
-					"shell_cmd": "cmake --build . --target libbenchmark.a"
+					"shell_cmd": "cmake --build . --target libbenchmark.a",
 				},
 				{
 					"name": "libbenchmark_main.a",
-					"shell_cmd": "cmake --build . --target libbenchmark_main.a"
+					"shell_cmd": "cmake --build . --target libbenchmark_main.a",
 				},
 				{
 					"name": "libbetter-double-linked-list.a",
-					"shell_cmd": "cmake --build . --target libbetter-double-linked-list.a"
+					"shell_cmd": "cmake --build . --target libbetter-double-linked-list.a",
 				},
 				{
 					"name": "libbinary-tree.a",
-					"shell_cmd": "cmake --build . --target libbinary-tree.a"
+					"shell_cmd": "cmake --build . --target libbinary-tree.a",
 				},
 				{
 					"name": "libcircular-single-linked-list.a",
-					"shell_cmd": "cmake --build . --target libcircular-single-linked-list.a"
+					"shell_cmd": "cmake --build . --target libcircular-single-linked-list.a",
 				},
 				{
 					"name": "libdouble-linked-list.a",
-					"shell_cmd": "cmake --build . --target libdouble-linked-list.a"
+					"shell_cmd": "cmake --build . --target libdouble-linked-list.a",
 				},
 				{
 					"name": "libgmock.a",
-					"shell_cmd": "cmake --build . --target libgmock.a"
+					"shell_cmd": "cmake --build . --target libgmock.a",
 				},
 				{
 					"name": "libgmock_main.a",
-					"shell_cmd": "cmake --build . --target libgmock_main.a"
+					"shell_cmd": "cmake --build . --target libgmock_main.a",
 				},
 				{
 					"name": "libgraph.a",
-					"shell_cmd": "cmake --build . --target libgraph.a"
+					"shell_cmd": "cmake --build . --target libgraph.a",
 				},
 				{
 					"name": "libgtest.a",
-					"shell_cmd": "cmake --build . --target libgtest.a"
+					"shell_cmd": "cmake --build . --target libgtest.a",
 				},
 				{
 					"name": "libgtest_main.a",
-					"shell_cmd": "cmake --build . --target libgtest_main.a"
+					"shell_cmd": "cmake --build . --target libgtest_main.a",
 				},
 				{
 					"name": "liblist.a",
-					"shell_cmd": "cmake --build . --target liblist.a"
+					"shell_cmd": "cmake --build . --target liblist.a",
 				},
 				{
 					"name": "libqueue.a",
-					"shell_cmd": "cmake --build . --target libqueue.a"
+					"shell_cmd": "cmake --build . --target libqueue.a",
 				},
 				{
 					"name": "libsingle-linked-list.a",
-					"shell_cmd": "cmake --build . --target libsingle-linked-list.a"
+					"shell_cmd": "cmake --build . --target libsingle-linked-list.a",
 				},
 				{
 					"name": "libstack.a",
-					"shell_cmd": "cmake --build . --target libstack.a"
+					"shell_cmd": "cmake --build . --target libstack.a",
 				},
 				{
 					"name": "libtree.a",
-					"shell_cmd": "cmake --build . --target libtree.a"
+					"shell_cmd": "cmake --build . --target libtree.a",
 				},
 				{
 					"name": "list",
-					"shell_cmd": "cmake --build . --target list"
+					"shell_cmd": "cmake --build . --target list",
 				},
 				{
 					"name": "list-test",
-					"shell_cmd": "cmake --build . --target list-test"
+					"shell_cmd": "cmake --build . --target list-test",
 				},
 				{
 					"name": "play_online_test",
-					"shell_cmd": "cmake --build . --target play_online_test"
+					"shell_cmd": "cmake --build . --target play_online_test",
 				},
 				{
 					"name": "play_ping_pong",
-					"shell_cmd": "cmake --build . --target play_ping_pong"
+					"shell_cmd": "cmake --build . --target play_ping_pong",
 				},
 				{
 					"name": "play_simple_tcp_client",
-					"shell_cmd": "cmake --build . --target play_simple_tcp_client"
+					"shell_cmd": "cmake --build . --target play_simple_tcp_client",
 				},
 				{
 					"name": "play_simple_tcp_client_parallel_clients",
-					"shell_cmd": "cmake --build . --target play_simple_tcp_client_parallel_clients"
+					"shell_cmd": "cmake --build . --target play_simple_tcp_client_parallel_clients",
 				},
 				{
 					"name": "play_simple_tcp_client_sequential_clients",
-					"shell_cmd": "cmake --build . --target play_simple_tcp_client_sequential_clients"
+					"shell_cmd": "cmake --build . --target play_simple_tcp_client_sequential_clients",
 				},
 				{
 					"name": "play_simple_tcp_server",
-					"shell_cmd": "cmake --build . --target play_simple_tcp_server"
+					"shell_cmd": "cmake --build . --target play_simple_tcp_server",
 				},
 				{
 					"name": "queue",
-					"shell_cmd": "cmake --build . --target queue"
+					"shell_cmd": "cmake --build . --target queue",
 				},
 				{
 					"name": "queue-test",
-					"shell_cmd": "cmake --build . --target queue-test"
+					"shell_cmd": "cmake --build . --target queue-test",
 				},
 				{
 					"name": "single-linked-list",
-					"shell_cmd": "cmake --build . --target single-linked-list"
+					"shell_cmd": "cmake --build . --target single-linked-list",
 				},
 				{
 					"name": "single-linked-list-test",
-					"shell_cmd": "cmake --build . --target single-linked-list-test"
+					"shell_cmd": "cmake --build . --target single-linked-list-test",
 				},
 				{
 					"name": "stack",
-					"shell_cmd": "cmake --build . --target stack"
+					"shell_cmd": "cmake --build . --target stack",
 				},
 				{
 					"name": "stack-test",
-					"shell_cmd": "cmake --build . --target stack-test"
+					"shell_cmd": "cmake --build . --target stack-test",
 				},
 				{
 					"name": "tree",
-					"shell_cmd": "cmake --build . --target tree"
+					"shell_cmd": "cmake --build . --target tree",
 				},
 				{
 					"name": "tree-test",
-					"shell_cmd": "cmake --build . --target tree-test"
+					"shell_cmd": "cmake --build . --target tree-test",
 				},
 				{
 					"name": "clean",
