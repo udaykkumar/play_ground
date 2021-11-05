@@ -2,9 +2,9 @@
 #include <iostream>
 #include <functional>
 
+
 namespace utils
 {
-
 	static void Once()
 	{
 		static bool done = false;
