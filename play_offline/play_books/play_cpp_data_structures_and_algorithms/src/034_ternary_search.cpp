@@ -1,6 +1,6 @@
 #include <iostream>
 #include "utils.hpp"
-#include "033_ternary_search.hpp"
+#include "034_ternary_search.hpp"
 
 int main(int argc, char const *argv[])
 {

@@ -2,7 +2,7 @@
 #include <cmath>
 
 #include "utils.hpp"
-#include "036_exponential_search.hpp"
+#include "037_exponential_search.hpp"
 
 int main(int argc, char const *argv[])
 {

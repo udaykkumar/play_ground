@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "032_binary_search.hpp"
+#include "033_binary_search.hpp"
 namespace ds
 {
 	int exponential_search( int array[], int size, int val )

@@ -2,7 +2,7 @@
 #include <cmath>
 
 #include "utils.hpp"
-#include "035_jump_search.hpp"
+#include "036_jump_search.hpp"
 
 int main(int argc, char const *argv[])
 {

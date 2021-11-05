@@ -1,6 +1,6 @@
 #include <iostream>
 #include "utils.hpp"
-#include "031_linear_search.hpp"
+#include "032_linear_search.hpp"
 
 
 int main(int argc, char const *argv[])

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "utils.hpp"
-#include "024_bubble_sort.hpp"
+#include "025_bubble_sort.hpp"
 
 int main(int argc, char const *argv[])
 {

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "023_Queue_pimpl.hpp"
+#include "024_Queue_pimpl.hpp"
 
 int main(int argc, char const *argv[])
 {
-	ds::queue<int> q;
+	ds::queue_pimpl<int> q;
 
 	for (int i = 0; i < 10; ++i)
 	{

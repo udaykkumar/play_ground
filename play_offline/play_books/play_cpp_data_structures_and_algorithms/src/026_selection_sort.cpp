@@ -1,6 +1,6 @@
 #include <iostream>
 #include "utils.hpp"
-#include "025_selection_sort.hpp"
+#include "026_selection_sort.hpp"
 
 int main(int argc, char const *argv[])
 {

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 namespace ds
 {
 	template < typename T >
@@ -8,14 +10,15 @@ namespace ds
 	template < typename T > 
 	class doubly_linked_list
 	{
+		
 		private:
 			// The first DoubleNode in the list
 	        // or null if empty
-	        DoubleNode<T> * head_;
+	        std::shared_ptr< DoubleNode<T>>  head_;
 
 	        // The last DoubleNode in the list
 	        // or null if empty
-	        DoubleNode<T> * tail_;
+	        std::shared_ptr< DoubleNode<T>> tail_;
 	    
 	        int count_;
 
@@ -29,7 +32,7 @@ namespace ds
 	        doubly_linked_list();
 
 	        // get() operation
-	        DoubleNode<T> * get(int index);
+	        std::shared_ptr< DoubleNode<T>> get(int index);
 
 	        // Insert() operation
 	        void insert_head(T val);
@@ -51,4 +54,4 @@ namespace ds
 	};
 }
 
-#include "impl/019_DoubleLinkedList_impl.hpp"
+#include "impl/021_DoubleLinkedList_Improved_impl.hpp"
