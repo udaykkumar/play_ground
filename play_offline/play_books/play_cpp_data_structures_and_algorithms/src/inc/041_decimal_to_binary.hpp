@@ -1,5 +1,5 @@
 #pragma once
-
+#include <iostream>
 namespace ds
 {
 	std::string decimal_to_binary( int d )
