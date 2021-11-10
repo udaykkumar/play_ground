@@ -7,7 +7,7 @@ enable_testing()
 include_directories(inc)
 
 file(GLOB APP_SOURCES *.c** main/*.c**  )
-#file(GLOB APP_LIB_SOURCES "libs/*.c**" )
+
 
 foreach(testsourcefile ${APP_SOURCES})
   get_filename_component(testname ${testsourcefile} NAME_WE)
