@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"ep",
+				"emplace_back"
+			],
+			[
+				"g",
+				"graph"
+			],
+			[
+				"graph",
+				"graph_impl"
+			],
+			[
+				"un",
+				"unordered_map\tstandard header (since c++11)"
+			],
+			[
+				"ve",
+				"vertex"
+			],
+			[
+				"gra",
+				"graph_impl"
+			],
+			[
 				"que",
 				"queue_pimpl"
 			],
@@ -207,10 +231,1153 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "play_online/src/14_11_2021.cpp",
+			"settings":
+			{
+				"buffer_size": 836,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "14_11_2011.cpp"
+			}
+		},
+		{
+			"file": "play_online/tests/14_11_2021.cpp",
+			"settings":
+			{
+				"buffer_size": 498,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "14_11_2021.cpp"
+			}
+		},
+		{
+			"contents": "Searching 2334 files for \"BOOST_PRINT\"\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/14_11_2021.cpp:\n   10  \tstd::vector < int > v { 1, 2, 3, 4 ,5 ,6 };\n   11  \tauto res = daily_interview::find_pair(v, 11);\n   12: \tBOOST_PRINT();\n   13  \tBOOST_CHECK(res[0] == 5);\n   14  \tBOOST_CHECK(res[1] == 6);\n\n1 match in 1 file\n\n\nSearching 2332 files for \"BOOST_TEST_MESSAGE\"\n\n/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_cpp/libs/double-linked-list/test/double-linked-list-test-suite-remove.cpp:\n   76  {\n   77  \tds::dll list;\n   78: \tBOOST_TEST_MESSAGE(list.removeTail());\n   79  \tBOOST_CHECK(list.removeTail() == -1);\n   80  }\n   ..\n   83  {\n   84  \tds::dll list;\n   85: \tBOOST_TEST_MESSAGE(list.removeHead());\n   86  \tBOOST_CHECK(list.removeHead() == -1);\n   87  }\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/14_11_2021.cpp:\n   14  \tint l2 = res[1];\n   15  \n   16: \tBOOST_TEST_MESSAGE( \" res[0] \" << l1 << \" res[1 \" << l2 );\n   17  \tBOOST_CHECK(res[0] == 5);\n   18  \tBOOST_CHECK(res[1] == 6);\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_bubble_sort_v1.cpp:\n   24  \n   25  \t// sort\n   26: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));\n   27  \n   28  \t// Check\n   ..\n   38  \n   39  \t// Call\n   40: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));\n   41  \n   42  \t// Check\n   ..\n   55  \n   56  \t// Call\n   57: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));\n   58  \n   59  \t// Check\n   ..\n   71  \n   72  \t// Call\n   73: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));\n   74  \n   75  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_bubble_sort_v2.cpp:\n   24  \n   25  \t// sort\n   26: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v2(iv));\n   27  \n   28  \t// Check\n   ..\n   38  \n   39  \t// Call\n   40: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v2(iv));\n   41  \n   42  \t// Check\n   ..\n   55  \n   56  \t// Call\n   57: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v2(iv));\n   58  \n   59  \t// Check\n   ..\n   71  \n   72  \t// Call\n   73: \tBOOST_TEST_MESSAGE(cphb::bubble_sort_v2(iv));\n   74  \n   75  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_insertion_sort_v1.cpp:\n   24  \n   25  \t// sort\n   26: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v1(iv));\n   27  \n   28  \t// Check\n   ..\n   38  \n   39  \t// Call\n   40: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v1(iv));\n   41  \n   42  \t// Check\n   ..\n   55  \n   56  \t// Call\n   57: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v1(iv));\n   58  \n   59  \t// Check\n   ..\n   71  \n   72  \t// Call\n   73: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v1(iv));\n   74  \n   75  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_insertion_sort_v2.cpp:\n   24  \n   25  \t// sort\n   26: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v2(iv));\n   27  \n   28  \t// Check\n   ..\n   38  \n   39  \t// Call\n   40: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v2(iv));\n   41  \n   42  \t// Check\n   ..\n   55  \n   56  \t// Call\n   57: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v2(iv));\n   58  \n   59  \t// Check\n   ..\n   71  \n   72  \t// Call\n   73: \tBOOST_TEST_MESSAGE(cphb::insertion_sort_v2(iv));\n   74  \n   75  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_merge_sort.cpp:\n   23  \t// sort\n   24  \tshow_vector(\"Input \", iv);\n   25: \tBOOST_TEST_MESSAGE(cphb::merge_sort_v1(iv));\n   26  \n   27  \t// Check\n   ..\n   40  \t// Call\n   41  \tshow_vector(\"Input \", iv);\n   42: \tBOOST_TEST_MESSAGE(cphb::merge_sort_v1(iv));\n   43  \n   44  \t// Check\n   ..\n   59  \t// Call\n   60  \tshow_vector(\"Input \", iv);\n   61: \tBOOST_TEST_MESSAGE(cphb::merge_sort_v1(iv));\n   62  \n   63  \t// Check\n   ..\n   78  \t// Call\n   79  \tshow_vector(\"Input \", iv);\n   80: \tBOOST_TEST_MESSAGE(cphb::merge_sort_v1(iv));\n   81  \n   82  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Chapter_3_selection_sort_v1.cpp:\n   24  \n   25  \t// sort\n   26: \tBOOST_TEST_MESSAGE(cphb::selection_sort_v1(iv));\n   27  \n   28  \t// Check\n   ..\n   38  \n   39  \t// Call\n   40: \tBOOST_TEST_MESSAGE(cphb::selection_sort_v1(iv));\n   41  \n   42  \t// Check\n   ..\n   55  \n   56  \t// Call\n   57: \tBOOST_TEST_MESSAGE(cphb::selection_sort_v1(iv));\n   58  \n   59  \t// Check\n   ..\n   71  \n   72  \t// Call\n   73: \tBOOST_TEST_MESSAGE(cphb::selection_sort_v1(iv));\n   74  \n   75  \t// Check\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/TEST_LC_E_0007.cpp:\n   23  \t\tc->next = new lc::ListNode(i);\n   24  \n   25: \tBOOST_TEST_MESSAGE(\"List1 \\n\");\n   26  \tfor (c = l1; c; c = c->next)\n   27: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   28  \n   29: \tBOOST_TEST_MESSAGE(\"List2 \\n\");\n   30  \tfor (c = l2; c; c = c->next)\n   31: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   32  \n   33  \tlc::ListNode *l = lc::mergeTwoLists(l1, l2);\n   34  \n   35: \tBOOST_TEST_MESSAGE(\"List \\n\");\n   36  \tfor (c = l; c; c = c->next)\n   37: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   38  \n   39  \ti = 0;\n   ..\n   41  \t\tBOOST_CHECK(c->val == outarray[i++]);\n   42  \n   43: \tBOOST_TEST_MESSAGE(\"\\n\");\n   44  \n   45  }\n   ..\n   58  \t\tc->next = new lc::ListNode(i);\n   59  \n   60: \tBOOST_TEST_MESSAGE(\"List1 \\n\");\n   61  \tfor (c = l1; c; c = c->next)\n   62: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   63  \n   64: \tBOOST_TEST_MESSAGE(\"List2 \\n\");\n   65  \tfor (c = l2; c; c = c->next)\n   66: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   67  \n   68  \tlc::ListNode *l = lc::mergeTwoLists(l1, l2);\n   69  \n   70: \tBOOST_TEST_MESSAGE(\"List \\n\");\n   71  \tfor (c = l; c; c = c->next)\n   72: \t\tBOOST_TEST_MESSAGE(\" \" << c->val);\n   73  \n   74  \ti = 0;\n   ..\n   76  \t\tBOOST_CHECK(c->val == outarray[i++]);\n   77  \n   78: \tBOOST_TEST_MESSAGE(\"\\n\");\n   79  }\n   80  BOOST_AUTO_TEST_SUITE_END()\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/TEST_LC_E_0013.cpp:\n   12  \tint res = 6;\n   13  \n   14: \tBOOST_TEST_MESSAGE(lc::maxSubArray(v));\n   15  \tBOOST_CHECK(lc::maxSubArray(v) == res);\n   16  }\n   ..\n   22  \tint res = 6;\n   23  \n   24: \tBOOST_TEST_MESSAGE(lc::maxSubArray(v));\n   25  \tBOOST_CHECK(lc::maxSubArray(v) == res);\n   26  }\n   ..\n   31  \t{ 1, 2, 3, 4, -10, 25, 5, 10, -324, 1 };\n   32  \tint res = 40;\n   33: \tBOOST_TEST_MESSAGE(lc::maxSubArray(v));\n   34  \tBOOST_CHECK(lc::maxSubArray(v) == res);\n   35  }\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/TEST_LC_E_0016.cpp:\n   12  \tstd::string s3 = \"110\";\n   13  \n   14: \tBOOST_TEST_MESSAGE(s1);\n   15: \tBOOST_TEST_MESSAGE(s2);\n   16: \tBOOST_TEST_MESSAGE(s3);\n   17: \tBOOST_TEST_MESSAGE(lc::addBinary(s1, s2));\n   18  \tBOOST_CHECK(lc::addBinary(s1, s2) == s3);\n   19  }\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/TEST_LC_E_0016_Method_2.cpp:\n   12  \tstd::string s3 = \"110\";\n   13  \n   14: \tBOOST_TEST_MESSAGE(s1);\n   15: \tBOOST_TEST_MESSAGE(s2);\n   16: \tBOOST_TEST_MESSAGE(s3);\n   17: \tBOOST_TEST_MESSAGE(lc::addBinary_Method_2(s1, s2));\n   18  \tBOOST_CHECK(lc::addBinary_Method_2(s1, s2) == s3);\n   19  }\n\n/mnt/c/Users/kumarkud/git/play_ground/play_online/tests/Test_Utils.cpp:\n   13  \tstd::ostringstream vts;\n   14  \tstd::copy(iv.begin(), iv.end(), std::ostream_iterator<int>(vts, \", \"));\n   15: \tBOOST_TEST_MESSAGE(label);\n   16: \tBOOST_TEST_MESSAGE(vts.str());\n   17  }\n   18  \n\n54 matches across 13 files\n",
+			"settings":
+			{
+				"buffer_size": 7160,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "play_online/src/14_11_2021.hpp",
+			"settings":
+			{
+				"buffer_size": 131,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
-	"build_system": "play_ground (OSX)",
+	"build_system": "play_ground (Linux)",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"play_ground (Linux)",
+					""
+				],
+				[
+					"play_ground (Linux)",
+					"install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"test"
+				],
+				[
+					"play_ground (Linux)",
+					"install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/test"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/test"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googlemock/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/test"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"build/googletest/googletest/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/test"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"build/benchmark/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/graph/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/list/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/queue/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/stack/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_c/tree/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/better/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/mustdo/naive/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/boring/naive/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/learncpp/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/better-double-linked-list/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/circular-single-linked-list/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/binary-tree/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/single-linked-list/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_cpp/libs/double-linked-list/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_ping_pong/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/server/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_servers/play_simple_tcp_client_server/client/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_55_specific_ways_to_improve_your_programs_and_design/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_cpp_data_structures_and_algorithms/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_books/play_the_modern_cpp_challenge/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_offline/play_with_graphs/src/install"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/install/strip"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/install/local"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/test"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/list_install_components"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/rebuild_cache"
+				],
+				[
+					"play_ground (Linux)",
+					"play_online/install"
+				],
+				[
+					"play_ground (Linux)",
+					"libbenchmark.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libbenchmark_main.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libbetter-double-linked-list.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libbinary-tree.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libcircular-single-linked-list.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libdouble-linked-list.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libgmock.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libgmock_main.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libgraph.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libgtest.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libgtest_main.a"
+				],
+				[
+					"play_ground (Linux)",
+					"liblist.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libqueue.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libsingle-linked-list.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libstack.a"
+				],
+				[
+					"play_ground (Linux)",
+					"libtree.a"
+				],
+				[
+					"play_ground (Linux)",
+					"clean"
+				]
+			],
+			[
+				"play_ground (Linux)",
+				""
+			]
+		],
 		[
 			[
 				[
@@ -1784,8 +2951,80 @@
 		"selected_items":
 		[
 			[
+				"qu",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"q",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"preference: package",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"vim",
+				"View: Toggle Minimap"
+			],
+			[
 				"qui",
 				"CoolFormat: Quick Format"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package c",
+				"Package Control: Enable Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
 			],
 			[
 				"push",
@@ -1820,10 +3059,6 @@
 				"Git: Checkout Tag"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"python",
 				"Set Syntax: Python3"
 			],
@@ -1832,20 +3067,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"ins",
@@ -1858,10 +3081,6 @@
 			[
 				"cool",
 				"CoolFormat: Selected Format"
-			],
-			[
-				"settings",
-				"Go: settings"
 			],
 			[
 				"setting",
@@ -1882,10 +3101,6 @@
 			[
 				"go:",
 				"Go: test"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"gitcom",
@@ -2072,10 +3287,6 @@
 				"Git: Commit"
 			],
 			[
-				"q",
-				"CoolFormat: Quick Format"
-			],
-			[
 				"mar",
 				"MarkdownLivePreview: Open Preview"
 			],
@@ -2116,13 +3327,23 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/kk/git/play_ground",
-		"/Users/kk/git/play_ground/play_offline",
-		"/Users/kk/git/play_ground/play_offline/play_cpp",
-		"/Users/kk/git/play_ground/play_offline/play_cpp/libs"
+		"/mnt/c/Users/kumarkud/git/play_ground",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_online",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_online/tests"
 	],
 	"file_history":
 	[
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/inc/graph.hpp",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/inc/impl/graph_impl.hpp",
+		"/mnt/c/Users/kumarkud/git/untitled",
+		"/mnt/c/Users/kumarkud/git/test.c",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/inc/impl/graph_impl.cpp",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/inc/impl/test.cpp",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/main/001_graph.cpp",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/src/CMakeLists.txt",
+		"/usr/include/c++/7/ext/aligned_buffer.h",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_with_graphs/CMakeLists.txt",
+		"/mnt/c/Users/kumarkud/git/play_ground/play_offline/play_books/play_cpp_data_structures_and_algorithms/src/CMakeLists.txt",
 		"/Users/kk/git/play_ground/play_offline/play_cpp_data_structures_and_algorithms/src/022_Queue.cpp",
 		"/Users/kk/git/play_ground/play_offline/play_cpp_data_structures_and_algorithms/src/022_Queue.hpp",
 		"/Users/kk/git/play_ground/play_offline/play_cpp_data_structures_and_algorithms/src/023_Queue_pimpl.hpp",
@@ -2239,28 +3460,18 @@
 		"/Users/kk/sources/play_ground/C/graph/Makefile",
 		"/Users/kk/sources/play_ground/cphb/CMakeLists.txt",
 		"/Users/kk/sources/play_ground/C/queue/Makefile",
-		"/Users/kk/sources/play_ground/C/stack/Makefile",
-		"/Users/kk/sources/play_ground/C/tree/Makefile",
-		"/Users/kk/sources/play_ground/daily-problem/CMakeLists.txt",
-		"/Users/kk/sources/play_ground/daily-problem/tests/TEST_31_07_2019.cpp",
-		"/Users/kk/sources/play_ground/daily-problem/tests/TEST_queens.cpp",
-		"/Users/kk/sources/play_ground/daily-problem/tests/TEST_sudoku.cpp",
-		"/Users/kk/sources/play_ground/daily-problem/README.md",
-		"/Users/kk/Downloads/temp/nas/nas_utils/fixmeta/src/fixmeta.c",
-		"/Users/kk/Downloads/temp/nas/nas_lib/dfsmeta/public/inc/dfsmeta.h",
-		"/Users/kk/Downloads/temp/nas/nas_lib/dfs/public/inc/NAS_DFSDefns.h",
-		"/Users/kk/Downloads/temp/nas/nas_process/dfs/src/dfs.c",
-		"/Users/kk/Downloads/temp/nas/nas_process/bm/src/SendGenericCSRequest.c"
+		"/Users/kk/sources/play_ground/C/stack/Makefile"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
 		"height": 387.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -2268,6 +3479,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BOOST_TEST_MESSAGE",
+			"BOOST_PRINT",
+			"bash",
+			"system(cmd);",
+			"make_shared",
+			"graph_impl"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -2275,26 +3492,374 @@
 		"regex": false,
 		"replace_history":
 		[
+			"//system(cmd);"
 		],
 		"reverse": false,
-		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
-		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "play_online/src/14_11_2021.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								743,
+								743
+							]
+						],
+						"settings":
+						{
+							"auto_name": "14_11_2011.cpp",
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 187.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "play_online/tests/14_11_2021.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"auto_name": "14_11_2021.cpp",
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7160,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										226,
+										237
+									],
+									[
+										547,
+										565
+									],
+									[
+										686,
+										704
+									],
+									[
+										894,
+										912
+									],
+									[
+										1145,
+										1163
+									],
+									[
+										1254,
+										1272
+									],
+									[
+										1363,
+										1381
+									],
+									[
+										1472,
+										1490
+									],
+									[
+										1667,
+										1685
+									],
+									[
+										1776,
+										1794
+									],
+									[
+										1885,
+										1903
+									],
+									[
+										1994,
+										2012
+									],
+									[
+										2192,
+										2210
+									],
+									[
+										2304,
+										2322
+									],
+									[
+										2416,
+										2434
+									],
+									[
+										2528,
+										2546
+									],
+									[
+										2729,
+										2747
+									],
+									[
+										2841,
+										2859
+									],
+									[
+										2953,
+										2971
+									],
+									[
+										3065,
+										3083
+									],
+									[
+										3286,
+										3304
+									],
+									[
+										3421,
+										3439
+									],
+									[
+										3556,
+										3574
+									],
+									[
+										3691,
+										3709
+									],
+									[
+										3888,
+										3906
+									],
+									[
+										4000,
+										4018
+									],
+									[
+										4112,
+										4130
+									],
+									[
+										4224,
+										4242
+									],
+									[
+										4431,
+										4449
+									],
+									[
+										4509,
+										4527
+									],
+									[
+										4560,
+										4578
+									],
+									[
+										4638,
+										4656
+									],
+									[
+										4750,
+										4768
+									],
+									[
+										4826,
+										4844
+									],
+									[
+										4953,
+										4971
+									],
+									[
+										5058,
+										5076
+									],
+									[
+										5136,
+										5154
+									],
+									[
+										5187,
+										5205
+									],
+									[
+										5265,
+										5283
+									],
+									[
+										5377,
+										5395
+									],
+									[
+										5453,
+										5471
+									],
+									[
+										5580,
+										5598
+									],
+									[
+										5764,
+										5782
+									],
+									[
+										5904,
+										5922
+									],
+									[
+										6086,
+										6104
+									],
+									[
+										6308,
+										6326
+									],
+									[
+										6340,
+										6358
+									],
+									[
+										6372,
+										6390
+									],
+									[
+										6404,
+										6422
+									],
+									[
+										6640,
+										6658
+									],
+									[
+										6672,
+										6690
+									],
+									[
+										6704,
+										6722
+									],
+									[
+										6736,
+										6754
+									],
+									[
+										7049,
+										7067
+									],
+									[
+										7084,
+										7102
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 187.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "play_online/src/14_11_2021.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -2323,9 +3888,13 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.exec":
 	{
-		"height": 126.0
+		"height": 323.0
 	},
 	"output.find_results":
 	{
@@ -2335,13 +3904,13 @@
 	{
 		"height": 126.0
 	},
-	"pinned_build_system": "play_ground (OSX)",
+	"pinned_build_system": "play_ground (Linux)",
 	"project": "play_ground.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
-	"save_all_on_build": false,
+	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
@@ -2561,7 +4130,7 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,

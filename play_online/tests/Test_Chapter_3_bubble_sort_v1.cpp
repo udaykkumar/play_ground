@@ -23,7 +23,7 @@ BOOST_AUTO_TEST_CASE( bubble_sort_random_vector )
 	show_vector("if after shuffle", ov);
 
 	// sort
-	BOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));
+	BOOST_TEST_MESSAGE("number of inversions " << cphb::bubble_sort_v1(iv));
 
 	// Check
 	BOOST_CHECK(std::equal(iv.begin(), iv.end(), ov.begin()));
@@ -37,7 +37,7 @@ BOOST_AUTO_TEST_CASE( bubble_sort_sorted_vector )
 	generate_iv_ov(iv, ov);
 
 	// Call
-	BOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));
+	BOOST_TEST_MESSAGE("number of inversions " << cphb::bubble_sort_v1(iv));
 
 	// Check
 	BOOST_CHECK(std::equal(iv.begin(), iv.end(), ov.begin()));
@@ -54,7 +54,7 @@ BOOST_AUTO_TEST_CASE( bubble_sort_reverse_sorted_vector )
 	show_vector("iv after greater sort", iv);
 
 	// Call
-	BOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));
+	BOOST_TEST_MESSAGE("number of inversions " << cphb::bubble_sort_v1(iv));
 
 	// Check
 	BOOST_CHECK(std::equal(iv.begin(), iv.end(), ov.begin()));
@@ -70,7 +70,7 @@ BOOST_AUTO_TEST_CASE( bubble_sort_all_n_vector )
 	std::fill(ov.begin(), ov.end(), 0);
 
 	// Call
-	BOOST_TEST_MESSAGE(cphb::bubble_sort_v1(iv));
+	BOOST_TEST_MESSAGE("number of inversions " << cphb::bubble_sort_v1(iv));
 
 	// Check
 	BOOST_CHECK(std::equal(iv.begin(), iv.end(), ov.begin()));

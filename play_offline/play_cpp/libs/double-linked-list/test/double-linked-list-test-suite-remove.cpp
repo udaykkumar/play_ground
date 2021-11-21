@@ -75,14 +75,14 @@ BOOST_AUTO_TEST_CASE( dll_removeTail_multiple_elements )
 BOOST_AUTO_TEST_CASE( dll_removeTail_empty_list_returns_minus_1 )
 {
 	ds::dll list;
-	BOOST_TEST_MESSAGE(list.removeTail());
+	BOOST_TEST_MESSAGE("Remove tail " << list.removeTail());
 	BOOST_CHECK(list.removeTail() == -1);
 }
 
 BOOST_AUTO_TEST_CASE( dll_removeHead_empty_list_returns_minus_1 )
 {
 	ds::dll list;
-	BOOST_TEST_MESSAGE(list.removeHead());
+	BOOST_TEST_MESSAGE("Remove head " << list.removeHead());
 	BOOST_CHECK(list.removeHead() == -1);
 }
 
