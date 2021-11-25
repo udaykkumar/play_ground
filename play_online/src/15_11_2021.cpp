@@ -12,6 +12,7 @@ Follow-up: what if you can't use division?
 #include <15_11_2021.hpp>
 
 #include <unordered_map>
+#include <iostream>
 
 namespace daily_interview
 {
@@ -32,6 +33,45 @@ namespace daily_interview
         return nums;
     }
 
-   
+
+    /// Suffix and Prefix Product Array
+    /// Some sort of Traversal from
+    /// left to right and
+    /// right to left
+    std::vector<int> prefix_product_array( std::vector<int> nums )
+    {
+
+        std::vector<int> output(nums.size());
+
+        output[0] = 1;
+
+        std::cout << " nums ";
+        for ( auto n : nums ) std::cout << " " << n;
+        std::cout << std::endl;
+
+        // left prefix product
+        for(int i = 1; i < nums.size(); i++)
+            output[i] = output[i - 1] * nums[i - 1];
+        
+        std::cout << " output ";
+        for ( auto n : output ) std::cout << " " << n;
+        std::cout << std::endl;
+
+        int product = 1;
+
+        for(int i = nums.size() - 1; i >= 0; i--)
+        {
+
+
+            output[i] = output[i] * product;
+		    product *= nums[i];
+		    std::cout << " output ";
+	        for ( auto n : output ) std::cout << " " << n << "(" << product << ")";
+	        std::cout << std::endl;
+        }
+
+        return output;
+
+    }
 }
 
