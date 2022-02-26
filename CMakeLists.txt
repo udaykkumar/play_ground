@@ -1,6 +1,6 @@
 
 # Minimum CMake
-cmake_minimum_required (VERSION 3.8.1)
+cmake_minimum_required (VERSION 2.8...3.22)
 project(play_ground)
 set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
@@ -17,19 +17,30 @@ include(cmake/GitUtils.cmake)
 #find_package(glfw3 REQUIRED)
 
 #Benchmark Find and other stuff
-git_clone(
-    PROJECT_NAME    googletest
-    GIT_URL         https://github.com/google/googletest.git
-    GIT_BRANCH      master
-    )
 
+if ( NOT EXISTS ${googletest_SOURCE_DIR} ) 
+    git_clone(
+        PROJECT_NAME    googletest
+        GIT_URL         https://github.com/google/googletest.git
+        GIT_BRANCH      master
+        #DIRECTORY       googletest
+        #QUIET
+        )
+endif()
+
+message( "-- Google test ${googletest_SOURCE_DIR}")
 add_subdirectory( ${googletest_SOURCE_DIR} )
 
-git_clone(
-    PROJECT_NAME    benchmark
-    GIT_URL         https://github.com/google/benchmark.git
-    GIT_BRANCH      master
-    )
+if ( NOT EXISTS ${benchmark_SOURCE_DIR} )
+    git_clone(
+        PROJECT_NAME    benchmark
+        GIT_URL         https://github.com/google/benchmark.git
+        GIT_BRANCH      master
+        #DIRECTORY       benchmark
+        #QUIET
+        )
+endif()
+
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
 add_subdirectory( ${benchmark_SOURCE_DIR} )
 
