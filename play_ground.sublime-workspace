@@ -239,7 +239,10 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "14_11_2011.cpp"
-			}
+			},
+			"undo_stack":
+			[
+			]
 		},
 		{
 			"file": "play_online/tests/14_11_2021.cpp",
@@ -258,6 +261,17 @@
 				"buffer_size": 7160,
 				"line_ending": "Unix",
 				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n  SublimeLinter 4.17.0\n\n  Mostly shipping maintenance, we have two notable changes for plugins:\n\n  - Beside the obvious `line` and `col` you can now capture `end_line` and\n    `end_col` in the regexes.  The low level `LintMatch` usually used with JSON\n    formats also understands these keys of course.\n\n  - If a plugin wants to log something, no need to `import logging; ...` anymore,\n    as there is a configured `self.logger` now.\n\n    As a reminder:\n\n    * `self.logger.info(\"message\")` only emits in debug mode\n    * `self.logger.warning(\"message\")` always emits to Sublime's builtin console\n    * `self.logger.error(\"message\")` popups a panel (usually don't!)\n\n\n\n  https://github.com/SublimeLinter/SublimeLinter/compare/4.16.3...4.17.0",
+			"settings":
+			{
+				"buffer_size": 821,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
 				"scratch": true
 			}
 		},
@@ -3327,9 +3341,7 @@
 	},
 	"expanded_folders":
 	[
-		"/mnt/c/Users/kumarkud/git/play_ground",
-		"/mnt/c/Users/kumarkud/git/play_ground/play_online",
-		"/mnt/c/Users/kumarkud/git/play_ground/play_online/tests"
+		"/C/Users/kumarkud/git/play_ground"
 	],
 	"file_history":
 	[
@@ -3464,7 +3476,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -3495,20 +3507,22 @@
 			"//system(cmd);"
 		],
 		"reverse": false,
+		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
+		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "play_online/src/14_11_2021.cpp",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
@@ -3519,20 +3533,23 @@
 						"selection":
 						[
 							[
-								743,
-								743
+								345,
+								345
 							]
 						],
 						"settings":
 						{
 							"auto_name": "14_11_2011.cpp",
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 187.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -3555,13 +3572,16 @@
 						"settings":
 						{
 							"auto_name": "14_11_2021.cpp",
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
@@ -3823,11 +3843,45 @@
 						"translation.y": 187.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								821,
+								821
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"tab_width": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "play_online/src/14_11_2021.hpp",
 					"semi_transient": false,
 					"settings":
@@ -3845,13 +3899,16 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++11/C++11.tmLanguage"
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]
@@ -3859,7 +3916,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -3908,7 +3965,7 @@
 	"project": "play_ground.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

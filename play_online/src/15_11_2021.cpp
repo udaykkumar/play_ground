@@ -50,7 +50,7 @@ namespace daily_interview
         std::cout << std::endl;
 
         // left prefix product
-        for(int i = 1; i < nums.size(); i++)
+        for(size_t i = 1; i < nums.size(); i++)
             output[i] = output[i - 1] * nums[i - 1];
         
         std::cout << " output ";
