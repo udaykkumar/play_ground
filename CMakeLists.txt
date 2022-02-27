@@ -6,7 +6,7 @@ set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
 set(CMAKE_PROJECT_VERSION_MINOR "0")
 set(CMAKE_PROJECT_VERSION_PATCH "0")
-enable_testing()
+#enable_testing()
 
 
 include(cmake/GitUtils.cmake)
@@ -113,12 +113,11 @@ add_subdirectory( projects_play_servers )
 add_subdirectory( projects_play_cms )
 
 # Online Programs
-add_subdirectory( online_code_play_lc )
+add_subdirectory( online_play_lc )
 
 # Miscellaneous programs
 add_subdirectory( misc_play_programs )
 
-# I just got bored
-add_subdirectory( play_boring )
+
 
 

@@ -28,7 +28,7 @@ public:
 	}
 
 private:
-	char *text_;
+	//char *text_;
 	std::size_t txtLength_;
 	bool lengthIsValid_;
 

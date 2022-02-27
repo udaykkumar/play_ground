@@ -31,6 +31,6 @@ namespace ds
 				array[ arr_idx ++ ] = i;
 		}
 
-		delete count_array;  
+		delete[] count_array;  
 	}
 }

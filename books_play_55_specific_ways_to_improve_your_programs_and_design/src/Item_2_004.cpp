@@ -12,7 +12,7 @@ public:
 
 private:
 	static const int NumTurns = 5;
-	int scores[NumTurns];
+	//int scores[NumTurns];
 };
 
 int main()

@@ -24,7 +24,7 @@ list_sexy_pair_t primes( uint32_t x )
 				seive[j] = true;
 		}
 
-		delete seive;
+		delete[] seive;
 	}
 	return sexypairs;
 }

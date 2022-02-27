@@ -40,7 +40,7 @@ struct player {
 
     // move constructor
     player(player &&p) {
-        name_ = std::move(p.name());
+        name_ = p.name();
         score_ = std::move(p.score());
         run_ = std::move(p.run());
     }

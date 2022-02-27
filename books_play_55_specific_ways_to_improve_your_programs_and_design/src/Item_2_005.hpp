@@ -42,7 +42,7 @@ private:
 	 * 	"Enum Hack" technique
 	 */
 	static const int Turns_ = 5;
-	int scores_[Turns_];
+	//int scores_[Turns_];
 };
 
 #endif

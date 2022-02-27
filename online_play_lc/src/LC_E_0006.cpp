@@ -8,9 +8,9 @@ bool isValid(std::string s)
 	bool isOpen[255] =
 	{ false, };
 
-	isOpen['['] = true;
-	isOpen['{'] = true;
-	isOpen['('] = true;
+	isOpen[(size_t)'['] = true;
+	isOpen[(size_t)'{'] = true;
+	isOpen[(size_t)'('] = true;
 
 	for (auto c : s)
 	{
