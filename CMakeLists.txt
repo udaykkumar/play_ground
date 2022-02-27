@@ -87,9 +87,16 @@ add_subdirectory( play_cqueue )
 add_subdirectory( play_cstack )
 add_subdirectory( play_ctree  )
 
+add_subdirectory(play_better-double-linked-list)
+add_subdirectory(play_circular-single-linked-list)
+add_subdirectory(play_binary-tree)
+add_subdirectory(play_single-linked-list)
+add_subdirectory(play_double-linked-list)
+#add_subdirectory(play_binary-search-tree)
+
 add_subdirectory( play_boring )
 add_subdirectory( play_learncpp )
-add_subdirectory( play_libs  )
+
 
 add_subdirectory( play_ping_pong )
 add_subdirectory( play_servers )
