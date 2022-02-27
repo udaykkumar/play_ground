@@ -87,7 +87,10 @@ add_subdirectory( play_cqueue )
 add_subdirectory( play_cstack )
 add_subdirectory( play_ctree  )
 
-add_subdirectory( play_cpp )
+add_subdirectory( play_boring )
+add_subdirectory( play_learncpp )
+add_subdirectory( play_libs  )
+
 add_subdirectory( play_ping_pong )
 add_subdirectory( play_servers )
 add_subdirectory( play_books )
