@@ -95,8 +95,8 @@ add_subdirectory(dsalgo_play_cpp_single-linked-list)
 add_subdirectory(dsalgo_play_cpp_double-linked-list)
 #add_subdirectory(dsalgo_play_cpp_binary-search-tree)
 
-add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
-add_subdirectory( play_the_modern_cpp_challenge )
+add_subdirectory( books_play_55_specific_ways_to_improve_your_programs_and_design )
+add_subdirectory( books_play_the_modern_cpp_challenge )
 add_subdirectory( play_misc )
 
 add_subdirectory( play_boring )
