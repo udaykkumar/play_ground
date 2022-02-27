@@ -5,6 +5,7 @@
 #include <iostream>
 #include <istream>
 #include <string_view>
+#include <unordered_map>
 
 static std::string filename;
 
