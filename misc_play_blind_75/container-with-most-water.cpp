@@ -38,11 +38,22 @@ class Solution {
 
 public:
     int maxArea(std::vector<int>& height) {
-        
+        /// the key to answering this question is reading carefully
+        ///
+        /// Find two lines that together with the x-axis form a container, -- this line is the key
+        ///
+        /// essentially we have to find two lines and distance between that form maximum area
+        /// nothing facny .. water , container is a distraction .. 
+        ///
+
         int max_area    = 0;
         int left_index  = 0;
         int right_index = height.size()-1;
 
+        /// we start from left and right .. 
+        /// calculate the area and converge slowly based on the hight 
+        /// keeping track of max in every iteration ..
+        /// at the end we are left with max 
         while( left_index <= right_index ) {
 
         	int left_line  = height[left_index];
