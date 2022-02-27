@@ -80,7 +80,14 @@ add_definitions(-DNCURSES_NOMACROS)
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS} ")
 SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
-add_subdirectory( play_offline )
+add_subdirectory( play_c )
+add_subdirectory( play_cpp )
+add_subdirectory( play_ping_pong )
+add_subdirectory( play_servers )
+add_subdirectory( play_books )
+add_subdirectory( play_with_graphs )
+add_subdirectory( play_cms )
+
 add_subdirectory( play_online )
 
 
