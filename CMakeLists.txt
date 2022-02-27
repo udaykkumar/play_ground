@@ -94,13 +94,18 @@ add_subdirectory(play_single-linked-list)
 add_subdirectory(play_double-linked-list)
 #add_subdirectory(play_binary-search-tree)
 
+add_subdirectory( play_55_specific_ways_to_improve_your_programs_and_design )
+add_subdirectory( play_cpp_data_structures_and_algorithms)
+add_subdirectory( play_the_modern_cpp_challenge )
+add_subdirectory( play_misc )
+
 add_subdirectory( play_boring )
 add_subdirectory( play_learncpp )
 
 
 add_subdirectory( play_ping_pong )
 add_subdirectory( play_servers )
-add_subdirectory( play_books )
+
 add_subdirectory( play_with_graphs )
 add_subdirectory( play_cms )
 
