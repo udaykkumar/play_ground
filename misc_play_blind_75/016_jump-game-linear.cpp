@@ -38,11 +38,11 @@ class Solution {
 public:
     bool canJump(std::vector<int>& nums) {
     	int i = 0;
-    	for ( int done = 0; i < nums.size() and i <= done; ++i ) {
+    	for ( int done = 0; i < int(nums.size()) and i <= done; ++i ) {
     		done = std::max( i + nums.at(i) , done );
     	}
 
-        return nums.size() == i;
+        return int(nums.size()) == i;
     }
 };
 
