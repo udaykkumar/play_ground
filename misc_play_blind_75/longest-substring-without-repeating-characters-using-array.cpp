@@ -39,19 +39,19 @@ class Solution {
 	int vtoi_[256];
 
 	void see( char k , int v) {
-		vtoi_[k] = v; 
+		vtoi_[size_t(k)] = v; 
 	}
 
 	bool seen( const char k ) const {
-		return vtoi_[k] != -1;
+		return vtoi_[size_t(k)] != -1;
 	}
 
 	int  last_seen_index( char k )   {
-		return vtoi_[k];
+		return vtoi_[size_t(k)];
 	}
 
     void forget()  {
-        for ( int i = 0 ; i < 256; ++i ) {
+        for ( size_t i = 0 ; i < 256; ++i ) {
         	vtoi_[i] = -1;
         }
     }
