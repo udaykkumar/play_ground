@@ -76,7 +76,7 @@ struct Trie {
 
     int to_index( const char c ) const {
     	int index =  (int)c - (int)'a';
-    	if ( index < 0 or index >= Max_AlphaBets ) 
+    	if ( index < 0 or index >= int(Max_AlphaBets) ) 
     		new std::runtime_error("Index oor");
     	return index;
     }

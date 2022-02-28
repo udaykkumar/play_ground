@@ -13,7 +13,7 @@ int findKthLargest( std::vector<int> &nums, int k) {
 
     std::priority_queue<int, std::vector<int>, std::greater<> > pq;
     for ( auto n : nums ) {
-        if ( pq.size() < k ) {
+        if ( int(pq.size()) < k ) {
             pq.push(n);
         } else {
             if ( n > pq.top() ) {
