@@ -58,12 +58,13 @@ class Solution {
 		for ( int i = 0 ; i < 128 ; ++i ) 
 			index_map_[i] = 0;
 		
+
 		for ( auto c : t ) {
 			index_map_[size_t(c)] += 1;
 		}
 	}
 
-	bool seen(char c) {
+	bool target_char(char c) {
 		return (index_map_[size_t(c)] > 0);
 	}
 
@@ -79,29 +80,31 @@ class Solution {
 public:
     std::string minWindow(std::string s, std::string t) {
     	
+    	/// This acts as INT_MAX for us
+    	const int LargeVal = int(s.size()+1);
+
     	/// Lets fist Create a map of every character in t 
     	/// and index
     	make_index_map(t);
     	
-    	//ADOBECODEBANC , ABC
-
-    	int target_size = t.size();
-    	int min_start = 0, min_length = int(s.size());
+    	
+    	int target_size = int(t.size());
+    	int min_start = 0, min_length = LargeVal;
 
     	for ( int start = 0, end = 0 ; end < int(s.size()) ; ) {
     		auto ec = s.at(end);
 
-    		if ( seen(ec) ) {
+    		if ( target_char(ec) ) {
     			target_size --; /// We found one so target size reduces 
-    			unsee(ec);
     		}
 
-
+    		unsee(ec);
     		// Move on to next 
     		end += 1;
 
     		/// if target_size == 0 means we found some window
     		while (target_size == 0) {
+
     			int len = end - start;
     			if( len < min_length ) {
     				min_length = len;
@@ -109,18 +112,19 @@ public:
     			}
 
     			auto sc = s.at(start);
+
     			/// Now that the map is clean .. because we did unsee
     			/// see it again .. must find that character again to complete the se
-
     			see(sc);
 
-    			/// restart again because the target is reset again
-    			target_size++;
-    			start ++;
+    			if ( target_char(sc) )
+    				target_size++;
+
+    			start++;
     		}
      	}
 
-     	if( min_length != int(s.size()) )
+     	if( min_length != LargeVal )
      		return s.substr(min_start, min_length);
 
         return "";
@@ -130,18 +134,27 @@ public:
 int main(int argc, char const *argv[]) {
     
     {
-        Solution s;
-	    std::cout << s.minWindow( "ADOBECODEBANC" , "ABC") << "\n";
+        Solution so;
+        std::string s = "ADOBECODEBANC";
+        std::string t = "ABC";
+
+	    std::cout << s << " " << t << " " << so.minWindow(s,t) << "\n";
     }
 
     {
-        Solution s;
-	    std::cout << s.minWindow( "a" , "a") << "\n";
+        Solution so;
+	    std::string s = "a";
+        std::string t = "a";
+
+	    std::cout << s << " " << t << " " << so.minWindow(s,t) << "\n";
     }
 
     {
-        Solution s;
-	    std::cout << s.minWindow( "a" , "aa") << "\n";
+        Solution so;
+	    std::string s = "a";
+        std::string t = "aa";
+
+	    std::cout << s << " " << t << " " << so.minWindow(s,t) << "\n";
     }
 
     return 0;
