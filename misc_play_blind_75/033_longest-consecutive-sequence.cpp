@@ -33,7 +33,7 @@ Submissions
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <unordered_map>
+#include <unordered_set>
 class Solution {
 public:
     int longestConsecutive(std::vector<int>& nums) {
@@ -65,14 +65,14 @@ int main(int argc, char const *argv[]) {
     
     {
         Solution so;
-        std::vector<int> nums{100,4,200,1,3,2}
-         std::cout << " " << so.longestConsecutive(nums) << "\n";
+        std::vector<int> nums{100,4,200,1,3,2};
+        std::cout << " " << so.longestConsecutive(nums) << "\n";
     }
   
   	{
         Solution so;
-        std::vector<int> nums{0,3,7,2,5,8,4,6,0,1}
-         std::cout << " " << so.longestConsecutive(num) << "\n";
+        std::vector<int> nums{0,3,7,2,5,8,4,6,0,1};
+        std::cout << " " << so.longestConsecutive(nums) << "\n";
     }
 
     return 0;
