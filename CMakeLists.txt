@@ -118,7 +118,3 @@ add_subdirectory( online_play_lc )
 # Miscellaneous programs
 add_subdirectory( misc_play_programs )
 add_subdirectory( misc_play_blind_75 )
-
-
-
-
