@@ -111,7 +111,7 @@ add_subdirectory( books_play_learncpp )
 add_subdirectory( projects_play_ping_pong )
 add_subdirectory( projects_play_servers )
 add_subdirectory( projects_play_cms )
-add_subdirectory( projects_play_left_justified_logging )
+#add_subdirectory( projects_play_left_justified_logging )
 add_subdirectory( projects_play_btree )
 
 # Online Programs
