@@ -47,6 +47,13 @@ spendsdictionary = {}
 dipositsdictionary = {}
 balanceDictionary = {}
 
+excluded_strings = { "XXX", "YYY", "ZZZ" }
+def excluded_string_in_row( row : str ) -> bool:
+    for s in excluded_strings:
+        if s in row:
+            return True
+    return False
+
 def updateSpends(key : str, value : float ) :
     if key not in spendsdictionary:
         spendsdictionary[key] = float(0)
@@ -81,13 +88,9 @@ def process(files: list) :
                             val = row[2].split(".")[0]
                         else:
                             val = row[2]
-                        if "UDAY KUMAR" in row[1]:
-                            continue
-                        if "KALYANI" in row[1]:
-                            continue
-                        if "Fixed Deposit" in row[1]:
-                            continue
-                        
+
+                        if excluded_string_in_row(row[i]):
+                            continue    
                         
                         val = float(row[2])
                         if int(val) > 100000:
@@ -105,13 +108,9 @@ def process(files: list) :
                             val = row[3].split(".")[0]
                         else:
                             val = row[3]
-                        if "UDAY KUMAR" in row[1]:
+
+                        if excluded_string_in_row(row[i]):
                             continue
-                        if "KALYANI" in row[1]:
-                            continue
-                        if "Fixed Deposit" in row[1]:
-                            continue
-                        
                         
                         val = float(row[3])
                         #if int(val) > 100000:
