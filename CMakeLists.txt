@@ -18,7 +18,7 @@ include(cmake/GitUtils.cmake)
 
 #Benchmark Find and other stuff
 
-if ( NOT EXISTS ${googletest_SOURCE_DIR} ) 
+if ( NOT EXISTS ${googletest_SOURCE_DIR} )
     git_clone(
         PROJECT_NAME    googletest
         GIT_URL         https://github.com/google/googletest.git
