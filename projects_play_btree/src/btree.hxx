@@ -1,25 +1,24 @@
 #pragma once
 #include <memory>
 
-namespace ds
-{
-    template <typename KeyType = int, typename ValueType = int >
-    class BTreeNode;
+namespace ds {
 
-    template <typename KeyType = int, typename ValueType = int >
-    class BTree
-    {
-    private:
-        int count_;
-        std::unique_ptr<BTreeNode<KeyType, ValueType> > m_root;
+template <typename KeyType = int, typename ValueType = int>
+class BTreeNode;
 
-    public:
-        BTree();
-        ~BTree();
+template <typename KeyType = int, typename ValueType = int>
+class BTree {
+private:
+    int count_;
+    std::unique_ptr<BTreeNode<KeyType, ValueType>> m_root;
 
-        void put(const KeyType &t, const ValueType &v) ;
-        ValueType&& get(const KeyType &t ) ;
-    };
+public:
+    BTree(){}
+    ~BTree(){}
+
+    void put(const KeyType& t, const ValueType& v);
+    ValueType&& get(const KeyType& t);
+};
 } // namespace ds
 
 #include "btree_impl.hxx"
