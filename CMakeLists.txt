@@ -61,8 +61,9 @@ endif()
 
 #Boost and Family
 set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost  COMPONENTS unit_test_framework  REQUIRED )
+find_package(Boost  COMPONENTS unit_test_framework REQUIRED )
 add_definitions(-DNCURSES_NOMACROS)
+#add_definitions(-DBOOST_LOG_DYN_LINK)
 #find_package(Boost  COMPONENTS program_options filesystem system log thread log_setup  REQUIRED )
 
 

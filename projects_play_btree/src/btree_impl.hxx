@@ -1,6 +1,7 @@
 #include <iostream>
 #include <memory>
 #include <vector>
+#include <tuple>
 
 #define ENTRY                                     \
     do {                                          \
@@ -9,7 +10,7 @@
 
 namespace ds {
 
-const size_t BTree_Order { 8 };
+const size_t BTree_Order { 3 };
 const size_t Max_Children { BTree_Order };
 const size_t Max_Keys_Per_Node { Max_Children - 1 };
 
@@ -42,6 +43,12 @@ public:
             m_next = std::make_shared<BTreeNodeList<KeyType, ValueType>>(k, v);
             return;
         }
+        auto crawl = m_next;
+        while (crawl->next()) {
+            crawl = crawl->next();
+        }
+        crawl->next() = std::make_shared<BTreeNodeList<KeyType, ValueType>>(k, v);
+        return;
     }
 
     ValueType&& get(const KeyType& k)
@@ -58,6 +65,21 @@ public:
     const ValueType& value() const
     {
         return m_val;
+    }
+
+    const KeyType& median(const KeyType& k) const
+    {
+        std::tuple< KeyType, KeyType, KeyType > lmr;
+        auto slow = m_next;
+        if (slow->next()) {
+            auto fast = slow->next();
+            while (fast->next()) {
+                slow = slow->next();
+                fast = fast->next()->next();
+            }
+        }
+
+        return slow->key();
     }
 
     std::shared_ptr<BTreeNodeList<KeyType, ValueType>>& next()
@@ -100,16 +122,23 @@ public:
             std::cout << " This is not even initialized and we should not be here\n";
             return;
         }
-
         /// There is room for this node to accomodate keys
         if (m_no_of_keys < Max_Keys_Per_Node) {
             m_btree_nodes->put(k, v);
+            m_btree_nodes->show();
         } else {
-            std::cout << " We may need some magic here !!";
+            std::cout << " We may need some magic here !!\n";
+            int m = m_btree_nodes->median(k);
+            m_btree_nodes->show();
+            std::cout << " Median " << m << "\n";
+
+
+            auto ln = std::make_unique<BTreeNodeList<KeyType, ValueType>>(k, v);
+            auto rn = std::make_unique<BTreeNodeList<KeyType, ValueType>>(k, v);
+
         }
 
         ++m_no_of_keys;
-        m_btree_nodes->show();
     }
 
     ValueType&& get(const KeyType& k)
