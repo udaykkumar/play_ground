@@ -13,8 +13,8 @@ private:
     std::unique_ptr<BTreeNode<KeyType, ValueType>> m_root;
 
 public:
-    BTree(){}
-    ~BTree(){}
+    BTree() { }
+    ~BTree() { }
 
     void put(const KeyType& t, const ValueType& v);
     ValueType&& get(const KeyType& t);
