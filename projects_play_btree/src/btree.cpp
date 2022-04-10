@@ -6,6 +6,7 @@ void test_put_1()
     ENTRY;
     ds::BTree t;
     t.put(1, 1);
+    t.show();
     EXIT;
 }
 
@@ -15,6 +16,7 @@ void test_put_1_twice()
     ds::BTree t;
     t.put(1, 1);
     t.put(1, 1);
+    t.show();
     EXIT;
 }
 
@@ -24,27 +26,31 @@ void test_put_2_keys()
     ds::BTree t;
     t.put(1, 1);
     t.put(2, 2);
+    t.show();
     EXIT;
 }
 
-void test_put_10_keys()
+void test_put_x_keys(int x)
 {
     ENTRY;
+    std::cout << "X  =  " << x << "\n";
     ds::BTree t;
-    t.put(1, 1);
-    t.put(2, 2);
-    t.put(3, 2);
-    t.put(4, 2);
+    for (int i = 1; i <= x; ++i) {
+        t.put(i, i);
+        t.put(i, i);
+    }
+    t.show();
     EXIT;
 }
 
 int main(int argc, const char* argv[])
 {
-#if 1
+#if 0
     test_put_1();
     test_put_1_twice();
     test_put_2_keys();
 #endif
-    test_put_10_keys();
+    test_put_x_keys(10);
+
     return 0;
 }

@@ -22,6 +22,7 @@ public:
     void put(const KeyType& k, const ValueType& v);
     ValueType&& get(const KeyType& t);
     bool exists(const KeyType& k);
+    void show();
 };
 } // namespace ds
 
