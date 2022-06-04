@@ -3,27 +3,12 @@
 
 namespace ds {
 
-template <typename KeyType = int, typename ValueType = int>
-struct BTreeNode;
+  struct btree_node {
 
-template <typename KeyType = int, typename ValueType = int>
-class BTree {
-private:
-    int count_;
-    std::shared_ptr<BTreeNode<KeyType, ValueType>> m_root;
+  };
 
-public:
-    BTree()
-        : m_root(std::make_shared<BTreeNode<KeyType, ValueType>>())
-    {
-    }
-    ~BTree() { }
+  struct btree {
 
-    void put(const KeyType& k, const ValueType& v);
-    ValueType&& get(const KeyType& t);
-    bool exists(const KeyType& k);
-    void show();
-};
+  };
+
 } // namespace ds
-
-#include "btree_impl.hxx"

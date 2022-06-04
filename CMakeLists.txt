@@ -104,6 +104,7 @@ add_subdirectory( dsalgo_play_general_graphs )
 add_subdirectory( books_play_55_specific_ways_to_improve_your_programs_and_design )
 add_subdirectory( books_play_the_modern_cpp_challenge )
 add_subdirectory( books_play_learncpp )
+add_subdirectory( books_play_lectures )
 
 
 
@@ -115,6 +116,7 @@ add_subdirectory( projects_play_cms )
 #add_subdirectory( projects_play_left_justified_logging )
 add_subdirectory( projects_play_btree_not_working )
 add_subdirectory( projects_play_btree )
+add_subdirectory( projects_play_scheduler )
 
 # Online Programs
 add_subdirectory( online_play_lc )
