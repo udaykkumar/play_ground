@@ -7,12 +7,12 @@ private:
 int m;
 
 public:
-	X(int i = 0) : m{i} {
+	X(int i = 0) : m(i) {
 
 	}
 
 	int mf(int i) {
-		int old = m; m = i; 
+		int old = m; m = i;
 		return old;
 	}
 
@@ -28,6 +28,6 @@ int user(X var, X *ptr)
 
 int main(int argc, char const *argv[])
 {
-	X var{7}; // a variable of type X, initialized to 7
+	X var(7); // a variable of type X, initialized to 7
 	return 0;
 }

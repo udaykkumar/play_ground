@@ -38,7 +38,7 @@ void f()
     today.peek("today");
     today.init(16, 10, 1996);
     today.peek("today");
-    
+
     my_birthday.init(30, 12, 1950);
     today.peek("my_birthday");
 
@@ -55,7 +55,7 @@ int main(int argc, char const* argv[])
 
     Date d1 = my_birthday; // initialization by copy
       d1.peek("d1");
-    Date d2 { my_birthday }; // initialization by copy
-    d2.peek("d2");
+    //Date d2{ my_birthday }; // initialization by copy
+    //d2.peek("d2");
     return 0;
 }
