@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8...3.22)
 project(lectures)
 #enable_testing()
 
-SET(PROJECT_COMPILER_FLAGS "-Wall -fprofile-arcs -ftest-coverage -std=c++17 ")
+SET(PROJECT_COMPILER_FLAGS "-Wall -fprofile-arcs -ftest-coverage -std=c++11 ")
 file(GLOB APP_SOURCES *.c**)
 foreach(testsourcefile ${APP_SOURCES})
   get_filename_component(testname ${testsourcefile} NAME_WE)
