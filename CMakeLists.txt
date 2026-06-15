@@ -6,7 +6,7 @@ set(CMAKE_PROJECT_VERSION       "0")
 set(CMAKE_PROJECT_VERSION_MAJOR "0")
 set(CMAKE_PROJECT_VERSION_MINOR "0")
 set(CMAKE_PROJECT_VERSION_PATCH "0")
-#enable_testing()
+enable_testing()
 
 
 include(cmake/GitUtils.cmake)
