@@ -55,13 +55,15 @@ public:
     	std::function < TreeNode *(int ,int ) > make_tree = [&make_tree, &preorder, &inorder, &ri]
     			( int si, int ei ) -> TreeNode * {
 		    		/// Break recursion
-					if ( si > ei ) return nullptr;
-					
+					if ( si > ei || ri >= (int)preorder.size() ) return nullptr;
 					/// by default the start is pivot
 					int p = si;
 
-					/// unless we find where the pivior is .. 
-					while ( inorder[p] != preorder[ri] ) p++;
+					/// unless we find where the pivot is .. 
+					while ( p <= ei && inorder[p] != preorder[ri] ) p++;
+
+					/// if not found, bail out
+					if ( p > ei ) return nullptr;
 
 					/// we move our root ... this is the root of preorder array
 					/// every recusrive call increments the root index

@@ -83,10 +83,8 @@ void exec_test(int index)
 	//std::cout << " " << minimum_platforms( arrivals, departures ) << std::endl;
 }
 
-int main(int ac, char **av)
+int main()
 {
-	std::cout << " Skipping " << av[0] << "\n";
-	return 0;
 	int t;
 	std::cin >> t;
 

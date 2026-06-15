@@ -47,10 +47,8 @@ void exec_test(int index)
 	std::cout << std::endl;
 }
 
-int main(int ac, char **av)
+int main()
 {
-	std::cout << "Skipping  " << av[0] << "\n";
-	return 0;
 	int t;
 	std::cin >> t;
 

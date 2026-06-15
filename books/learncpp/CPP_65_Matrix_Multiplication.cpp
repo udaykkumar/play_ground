@@ -43,7 +43,7 @@ struct matrix
 				
 				for ( int i = 0 ; i < n ; ++i ) 
 				{
-					prod.get()[r][c] += this->get()[r][n] * m1.get()[n][c];
+					prod.get()[r][c] += this->get()[r][i] * m1.get()[i][c];
 				}
 			}
 		}

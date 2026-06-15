@@ -4,10 +4,8 @@
 
 #include <iostream>
 
-int main(int ac, char **av)
+int main()
 {
-	std::cout << "Skipping " << av[0] << "\n";
-	return 0;
 	int T;
 	for (std::cin >> T; T > 0; T--)
 	{

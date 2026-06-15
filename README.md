@@ -51,31 +51,49 @@ Google Test and Google Benchmark are fetched automatically at configure time via
 ## Project Layout
 
 ```
-├── dsalgo_play_c_*          # C data structures (graph, list, queue, stack, tree)
-├── dsalgo_play_cpp_*        # C++ data structures (linked lists, binary tree, BST)
-├── dsalgo_play_general_graphs  # Graph algorithms
-├── dsalgo_play_python       # Python algorithm implementations
+├── ds/                              # Data structures & algorithms
+│   ├── c/                           #   C implementations
+│   │   ├── graph/
+│   │   ├── list/
+│   │   ├── queue/
+│   │   ├── stack/
+│   │   └── tree/
+│   ├── cpp/                         #   C++ implementations
+│   │   ├── binary-tree/
+│   │   ├── binary-search-tree/
+│   │   ├── sll/                     #   Single linked list
+│   │   ├── dll/                     #   Double linked list
+│   │   ├── improved-dll/
+│   │   ├── circular-sll/
+│   │   ├── red-black-tree/
+│   │   └── misc/
+│   ├── graphs/                      #   Graph algorithms
+│   └── python/                      #   Python implementations
 │
-├── books_play_learncpp      # Exercises from learncpp.com
-├── books_play_lectures      # Lecture code samples
-├── books_play_the_modern_cpp_challenge  # "The Modern C++ Challenge" solutions
-├── books_play_55_specific_ways_to_improve_your_programs_and_design
+├── books/                           # Book exercises
+│   ├── learncpp/                    #   learncpp.com
+│   ├── lectures/                    #   Lecture code samples
+│   ├── modern-cpp-challenge/        #   "The Modern C++ Challenge"
+│   └── effective-cpp/               #   "55 Specific Ways..."
 │
-├── misc_play_blind_75       # Blind 75 LeetCode problems
-├── misc_play_lc             # Additional LeetCode problems
-├── misc_play_programs       # Miscellaneous algorithm programs
-├── online_play_lc           # Online judge solutions with Boost tests
+├── leetcode/                        # LeetCode problems
+│   ├── blind75/                     #   Blind 75
+│   ├── problems/                    #   Per-problem directories
+│   └── online/                      #   Online judge solutions (Boost tests)
 │
-├── projects_play_btree      # B-tree implementation
-├── projects_play_cms        # Content management system
-├── projects_play_ping_pong  # Ping-pong game (ncurses)
-├── projects_play_scheduler  # Job scheduler
-├── projects_play_servers    # Server experiments
-├── projects_play_python_tools  # Python utilities
+├── misc/                            # Miscellaneous algorithm programs
 │
-├── cmake/                   # CMake modules (GitUtils, FindGLEW)
-├── CMakeLists.txt           # Top-level build
-└── .travis.yml              # CI configuration
+├── projects/                        # Standalone projects
+│   ├── btree/                       #   B-tree implementation
+│   ├── cms/                         #   Content management system
+│   ├── ping-pong/                   #   Ping-pong game (ncurses)
+│   ├── scheduler/                   #   Job scheduler
+│   ├── servers/                     #   Server experiments
+│   └── python-tools/                #   Python utilities
+│
+├── cmake/                           # CMake modules (GitUtils, FindGLEW)
+├── CMakeLists.txt                   # Top-level build
+└── .travis.yml                      # CI configuration
 ```
 
 ## License

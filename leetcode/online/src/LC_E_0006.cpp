@@ -18,6 +18,7 @@ bool isValid(std::string s)
 			stack.push_back(c);
 		else
 		{
+			if (stack.empty()) return false;
 			auto top = stack.back();
 			if (((top == '[') and (c == ']')) or ((top == '{') and (c == '}'))
 					or ((top == '(') and (c == ')')))

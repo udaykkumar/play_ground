@@ -1,9 +1,9 @@
 # Minimum CMake
 cmake_minimum_required(VERSION 2.8...3.22)
-project(learncpp)
+project(lectures)
 #enable_testing()
 
-
+SET(PROJECT_COMPILER_FLAGS "-Wall -fprofile-arcs -ftest-coverage -std=c++11 ")
 file(GLOB APP_SOURCES *.c**)
 foreach(testsourcefile ${APP_SOURCES})
   get_filename_component(testname ${testsourcefile} NAME_WE)
@@ -13,9 +13,8 @@ foreach(testsourcefile ${APP_SOURCES})
   #message( ${TEST_IN} )
   add_executable(${testname} ${testsourcefile})
   if ( EXISTS ${TEST_IN} )
-    #add_test( NAME ${testname} COMMAND "${testname} < ${TEST_IN}" )
-message( "Skipping ${testname} Till we figure a way to handle stdin ")
+    add_test( NAME ${testname} COMMAND sh -c "$<TARGET_FILE:${testname}> < ${TEST_IN}")
   else()
-    add_test( NAME ${testname} COMMAND "${testname}" )
+    add_test( NAME ${testname} COMMAND ${testname} )
   endif()
 endforeach(testsourcefile ${APP_SOURCES})

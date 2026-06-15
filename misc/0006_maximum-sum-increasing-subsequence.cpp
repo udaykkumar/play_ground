@@ -20,7 +20,7 @@ int max_sum_increasing_subsequence(std::vector<int> &array)
 				max_ending_here + array.at(i));
 		if (array[i] <= array[i - 1])
 		{
-			for (size_t n = i; array[n] < array[n - 1]; n--)
+			for (size_t n = i; n > 0 && array[n] < array[n - 1]; n--)
 				max_ending_here -= array[n - 1];
 		}
 		max_so_far = std::max(max_ending_here, max_so_far);

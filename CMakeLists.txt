@@ -82,45 +82,44 @@ SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${PROJECT_COMPILER_FLAGS} ")
 SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${PROJECT_LINK_FLAGS}")
 
 
-# DS Algo
-add_subdirectory( dsalgo_play_c_graph )
-add_subdirectory( dsalgo_play_c_list  )
-add_subdirectory( dsalgo_play_c_queue )
-add_subdirectory( dsalgo_play_c_stack )
-add_subdirectory( dsalgo_play_c_tree  )
+# DS Algo — C
+add_subdirectory( ds/c/graph )
+add_subdirectory( ds/c/list  )
+add_subdirectory( ds/c/queue )
+add_subdirectory( ds/c/stack )
+add_subdirectory( ds/c/tree  )
 
-add_subdirectory( dsalgo_play_cpp_dsalgo)
-add_subdirectory( dsalgo_play_cpp_better-double-linked-list)
-add_subdirectory( dsalgo_play_cpp_circular-single-linked-list)
-add_subdirectory( dsalgo_play_cpp_binary-tree)
-add_subdirectory( dsalgo_play_cpp_single-linked-list)
-add_subdirectory( dsalgo_play_cpp_double-linked-list)
-#add_subdirectory(dsalgo_play_cpp_binary-search-tree)
+# DS Algo — C++
+add_subdirectory( ds/cpp/misc )
+add_subdirectory( ds/cpp/improved-dll )
+add_subdirectory( ds/cpp/circular-sll )
+add_subdirectory( ds/cpp/binary-tree )
+add_subdirectory( ds/cpp/sll )
+add_subdirectory( ds/cpp/dll )
+#add_subdirectory( ds/cpp/binary-search-tree )
 
-add_subdirectory( dsalgo_play_general_graphs )
+add_subdirectory( ds/graphs )
 
 
 # Books
-add_subdirectory( books_play_55_specific_ways_to_improve_your_programs_and_design )
-add_subdirectory( books_play_the_modern_cpp_challenge )
-add_subdirectory( books_play_learncpp )
-add_subdirectory( books_play_lectures )
-
-
+add_subdirectory( books/effective-cpp )
+add_subdirectory( books/modern-cpp-challenge )
+add_subdirectory( books/learncpp )
+add_subdirectory( books/lectures )
 
 
 # Projects
-add_subdirectory( projects_play_ping_pong )
-add_subdirectory( projects_play_servers )
-add_subdirectory( projects_play_cms )
+add_subdirectory( projects/ping-pong )
+add_subdirectory( projects/servers )
+add_subdirectory( projects/cms )
 #add_subdirectory( projects_play_left_justified_logging )
-add_subdirectory( projects_play_btree_not_working )
-add_subdirectory( projects_play_btree )
-add_subdirectory( projects_play_scheduler )
+add_subdirectory( projects/btree-wip )
+add_subdirectory( projects/btree )
+add_subdirectory( projects/scheduler )
 
-# Online Programs
-add_subdirectory( online_play_lc )
+# LeetCode / Online
+add_subdirectory( leetcode/online )
 
 # Miscellaneous programs
-add_subdirectory( misc_play_programs )
-add_subdirectory( misc_play_blind_75 )
+add_subdirectory( misc )
+add_subdirectory( leetcode/blind75 )
