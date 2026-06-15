@@ -1,4 +1,4 @@
-#include "chapter_2.hxx"
+#include "chapter_2.hpp"
 
 namespace ctci6e
 {

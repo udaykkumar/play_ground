@@ -1,4 +1,4 @@
-#include "btree.hxx"
+#include "btree.hpp"
 #include <iostream>
 
 void test_put_1()

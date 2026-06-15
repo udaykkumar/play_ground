@@ -1,4 +1,4 @@
-#include "chapter_1.hxx"
+#include "chapter_1.hpp"
 
 #include <vector>
 #include <algorithm>

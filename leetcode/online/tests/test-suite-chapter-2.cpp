@@ -1,4 +1,4 @@
-#include "chapter_2.hxx"
+#include "chapter_2.hpp"
 #include <boost/test/unit_test.hpp>
 
 using namespace boost::unit_test;
