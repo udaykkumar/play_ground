@@ -1,6 +1,8 @@
 /* class with member functionc defined outside */
 
 #include <iostream>
+#include <cstring>
+
 using namespace std;
 
 class test {

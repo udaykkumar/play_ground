@@ -41,6 +41,8 @@ Follow up: If this function is called many times, how would you optimize it?
 #include <vector>
 #include <algorithm>
 #include <unordered_map>
+#include <cstdint>
+
 class Solution {
 public:
     uint32_t reverseBits(uint32_t n) {

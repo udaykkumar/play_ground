@@ -35,7 +35,7 @@ struct error_handler : std::exception
 
 	}
 
-	~error_handler() _NOEXCEPT
+	~error_handler() noexcept
 	{
 
 	}

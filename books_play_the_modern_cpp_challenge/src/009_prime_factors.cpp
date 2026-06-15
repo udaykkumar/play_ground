@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cstdint>
 
 std::vector<uint32_t> prime_factors( uint32_t n ) 
 {

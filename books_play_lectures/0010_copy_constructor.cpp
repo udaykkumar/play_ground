@@ -1,6 +1,7 @@
 // Example for copy constructor,
 
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 class mobile {

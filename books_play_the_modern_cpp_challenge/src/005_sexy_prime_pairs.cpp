@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cstdint>
 
 typedef std::pair < uint32_t, uint32_t > sexy_pair_t;
 typedef std::vector < sexy_pair_t >      list_sexy_pair_t;

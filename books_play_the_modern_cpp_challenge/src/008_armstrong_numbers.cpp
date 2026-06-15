@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 #define CUBE(x) (x*x*x)
 

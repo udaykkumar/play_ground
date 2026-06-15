@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 void print_abundancy_if( uint32_t n ) 
 {
